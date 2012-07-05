@@ -32,7 +32,7 @@ interchange format that can contain any number of waypoints, routes and tracks
 in the same file.
 
 To load a GPX file you first need to load the plugin. 
-:menuselection:`Plugins -->` |mActionShowPluginManager| :guilabel:`Plugin Manager...` --> |checkbox| :guilabel:`GPS Tools`. When this 
+:menuselection:`Plugins -->` |mActionShowPluginManager| :menuselection:`Plugin Manager...-->` |checkbox| :guilabel:`GPS Tools`. When this 
 plugin is loaded a button with a small handheld GPS device will show up in the 
 toolbar. An example GPX file is available in the QGIS sample dataset:
 :file:`qgis_sample_data/gps/national_monuments.gpx`. See Section
@@ -99,7 +99,7 @@ be stored, and the name of the new layer.
 
 The device type you select in the GPS device menu determines how GPSBabel tries 
 to communicate with your GPS device. If none of the available types work with 
-your GPS device you can create a new type (see section `defining-new-device`_).
+your GPS device you can create a new type (see section :ref:`defining-new-device`).
 
 The port may be a file name or some other name that your operating system uses 
 as a reference to the physical port in your computer that the GPS device is 
@@ -124,7 +124,8 @@ This tool is very useful in combination with the vector editing capabilities of
 QGIS. It allows you to load a map, create waypoints and routes, and then upload 
 them and use them on your GPS device.
 
-.. _`defining-new-device`:
+.. _defining-new-device:
+
 Defining new device types
 -------------------------
 
