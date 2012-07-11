@@ -160,7 +160,145 @@ rst_epilog = """
    :width: 1.5em
 .. |mActionAddRasterLayer| image:: /img/en/mActionAddRasterLayer.png
 .. |mActionAddOgrLayer| image:: /img/en/mActionAddOgrLayer.png
+   :width: 1.5em
 .. |mActionShowPluginManager| image:: /img/en/mActionShowPluginManager.png
+.. |mActionFileNew| image:: /img/en/mActionFileNew.png
+.. |mActionFileOpen| image:: /img/en/mActionFileOpen.png
+.. |mActionFileSave| image:: /img/en/mActionFileSave.png
+   :width: 1.5em
+.. |mActionFileSaveAs| image:: /img/en/mActionFileSaveAs.png
+.. |mActionSaveMapAsImage| image:: /img/en/mActionSaveMapAsImage.png
+.. |mActionNewComposer| image:: /img/en/mActionNewComposer.png
+.. |mActionComposerManager| image:: /img/en/mActionComposerManager.png
+.. |mActionFileExit| image:: /img/en/mActionFileExit.png
+.. |mActionUndo| image:: /img/en/mActionUndo.png
+   :width: 1.5em
+.. |mActionRedo| image:: /img/en/mActionRedo.png
+   :width: 1.5em
+.. |mActionSelect| image:: /img/en/mActionSelect.png
+   :width: 1.5em
+.. |mActionEditCut| image:: /img/en/mActionEditCut.png
+   :width: 1.5em
+.. |mActionEditCopy| image:: /img/en/mActionEditCopy.png
+   :width: 1.5em
+.. |mActionEditPaste| image:: /img/en/mActionEditPaste.png
+   :width: 1.5em
+.. |mActionDeleteAttribute| image:: img/en/mActionDeleteAttribute.png
+   :width: 1.5em
+.. |mActionDeleteSelected| image:: /img/en/mActionDeleteSelected.png
+   :width: 1.5em
+.. |mActionDeleteVertex| image:: /img/en/mActionDeleteVertex.png
+   :width: 1.5em
+.. |mActionSimplify| image:: /img/en/mActionSimplify.png
+   :width: 2em
+.. |mActionAddRing| image:: /img/en/mActionAddRing.png
+   :width: 2em
+.. |mActionAddIsland| image:: /img/en/mActionAddIsland.png
+   :width: 2em
+.. |mActionDeleteRing| image:: /img/en/mActionDeleteRing.png
+   :width: 2em
+.. |mActionDeletePart| image:: /img/en/mActionDeletePart.png
+   :width: 2em
+.. |mActionReshape| image:: /img/en/mActionReshape.png
+   :width: 1.5em
+.. |mActionSplitFeatures| image:: /img/en/mActionSplitFeatures.png
+   :width: 1.5em
+.. |mActionMergeFeatures| image:: /img/en/mActionMergeFeatures.png
+   :width: 1.5em
+.. |mActionNodeTool| image:: /img/en/mActionNodeTool.png
+   :width: 1.5em
+.. |mActionSelectedToTop| image:: /img/en/mActionSelectedToTop.png
+   :width: 1.5em
+.. |mActionInvertSelection| image:: /img/en/mActionInvertSelection.png
+   :width: 1.5em
+.. |mActionCopySelected| image:: /img/en/mActionCopySelected.png
+   :width: 1.5em
+.. |mActionZoomToSelected| image:: /img/en/mActionZoomToSelected.png
+   :width: 1.5em
+.. |mActionNewAttribute| image:: /img/en/mActionNewAttribute.png
+   :width: 1.5em
+.. |mActionCalculateField| image:: /img/en/mActionCalculateField.png
+   :width: 1.5em
+.. |mActionRotatePointSymbols| image:: /img/en/mActionRotatePointSymbols.png
+   :width: 1.5em
+.. |mActionToggleEditing| image:: /img/en/mActionToggleEditing.png
+   :width: 1.5em
+.. |mActionCapturePoint| image:: /img/en/mActionCapturePoint.png
+   :width: 1.5em
+.. |mActionCaptureLine| image:: /img/en/mActionCaptureLine.png
+   :width: 1.5em
+.. |mActionCapturePolygon| image:: /img/en/mActionCapturePolygon.png
+   :width: 1.5em
+.. |mActionMoveFeature| image:: /img/en/mActionMoveFeature.png
+   :width: 1.5em
+.. |mActionPan| image:: /img/en/mActionPan.png
+   :width: 1.5em
+.. |mActionZoomIn| image:: /img/en/mActionZoomIn.png
+   :width: 1.5em
+.. |mActionZoomOut| image:: /img/en/mActionZoomOut.png
+   :width: 1.5em
+.. |mActionIdentify| image:: /img/en/mActionIdentify.png
+   :width: 1.5em
+.. |mActionNewVectorLayer| image:: /img/en/mActionNewVectorLayer.png
+   :width: 1.5em
+.. |mActionZoomFullExtent| image:: /img/en/mActionZoomFullExtent.png
+.. |mActionZoomToLayer| image:: /img/en/mActionZoomToLayer.png
+.. |mActionZoomToSelected| image:: /img/en/mActionZoomToSelected.png
+.. |mActionZoomLast| image:: /img/en/mActionZoomLast.png
+.. |mActionZoomNext| image:: /img/en/mActionZoomNext.png
+.. |mActionMapTips| image:: /img/en/mActionMapTips.png
+.. |mActionNewBookmark| image:: /img/en/mActionNewBookmark.png
+.. |mActionShowBookmarks| image:: /img/en/mActionShowBookmarks.png
+.. |mActionDraw| image:: /img/en/mActionDraw.png
+.. |mActionAddNonDbLayer| image:: /img/en/mActionAddNonDbLayer.png
+   :width: 1.5em
+.. |mActionAddLayer| image:: /img/en/mActionAddLayer.png
+   :width: 1.5em
+.. |mActionAddSpatiaLiteLayer| image:: /img/en/mActionAddSpatiaLiteLayer.png
+   :width: 1.5em
+.. |mActionAddWmsLayer| image:: /img/en/mActionAddWmsLayer.png
+.. |mActionOpenTable| image:: /img/en/mActionOpenTable.png
+   :width: 1.5em
+.. |mActionRemoveLayer| image:: /img/en/mActionRemoveLayer.png
+.. |mActionLabeling| image:: /img/en/mActionLabeling.png
+   :width: 1.5em
+.. |mActionInOverview| image:: /img/en/mActionInOverview.png
+.. |mActionAddAllToOverview| image:: /img/en/mActionAddAllToOverview.png
+.. |mActionRemoveAllFromOverview| image:: /img/en/mActionRemoveAllFromOverview.png
+.. |mActionShowAllLayers| image:: /img/en/mActionShowAllLayers.png
+.. |mActionHideAllLayers| image:: /img/en/mActionHideAllLayers.png
+.. |mActionProjectProperties| image:: /img/en/mActionProjectProperties.png
+.. |mActionCustomProjection| image:: /img/en/mActionCustomProjection.png
+.. |mActionOptions| image:: /img/en/mActionOptions.png
+.. |mActionHelpContents| image:: /img/en/mActionHelpContents.png
+.. |mActionQgisHomePage| image:: /img/en/mActionQgisHomePage.png
+.. |mActionCheckQgisVersion| image:: /img/en/mActionCheckQgisVersion.png
+.. |mActionHelpAbout| image:: /img/en/mActionHelpAbout.png
+.. |mActionHelpSponsors| image:: /img/en/mActionHelpSponsors.png
+.. |mActionTextAnnotation| image:: /img/en/mActionTextAnnotation.png
+.. |mActionAnnotation| image:: /img/en/mActionAnnotation.png
+.. |mIconStopRendering| image:: /img/en/mIconStopRendering.png
+.. |mIconProjectionDisabled| image:: /img/en/mIconProjectionDisabled.png
+.. |mActionMeasure| image:: /img/en/mActionMeasure.png
+.. |mActionMeasureArea| image:: /img/en/mActionMeasureArea.png
+.. |mActionMeasureAngle| image:: /img/en/mActionMeasureAngle.png
+.. |spiticon| image:: /plugins/img/en/plugins_spit/spiticon.png
+.. |mActionSelectRectangle| image:: /img/en/mActionSelectRectangle.png
+   :width: 1.5em
+.. |mActionSelectPolygon| image:: /img/en/mActionSelectPolygon.png
+   :width: 1.5em
+.. |mActionSelectFreehand| image:: /img/en/mActionSelectFreehand.png
+   :width: 1.5em
+.. |mActionSelectRadius| image:: /img/en/mActionSelectRadius.png
+   :width: 1.5em
+.. |mActionDeselectAll| image:: /img/en/mActionDeselectAll.png
+   :width: 1.5em
+.. |mActionFormAnnotation| image:: /img/en/mActionFormAnnotation.png
+   :width: 1.5em
+.. |gpstrack_barchart| image:: /img/en/gpstrack_barchart.png
+   :width: 1.5em
+.. |gpstrack_polarchart| image:: /img/en/gpstrack_polarchart.png
+   :width. 1.5em
 .. |gps_importer| image:: img/en/plugins_gps/gps_importer.png
    :width: 1.5em
 .. |matrix| image:: img/en/plugins_ftools/matrix.png
@@ -249,6 +387,7 @@ rst_epilog = """
    :width: 1.5em
 .. |dxf2shp_converter| image:: img/en/plugins_dxf2shape_converter/dxf2shp_converter.png
    :width: 1.5em
+.. |
 
 """
 
@@ -258,7 +397,7 @@ rst_epilog = """
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.
 #html_theme = 'sphinxdoc'
-html_theme = 'qgis-theme'
+html_theme = 'sphinxdoc'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
