@@ -158,11 +158,11 @@ When QGIS starts, you are presented with the GUI as shown below
 (the numbers 1 through 6 in yellow ovals refer to the six major areas of the
 interface as discussed below):
 
-.. `fig_startup`:
+.. _fig_startup:
 
 .. figure:: img/en/startup.png
    :align: center
-   :width: 40em
+   :width: 30em
 
    QGIS GUI with Alaska sample data (KDE)
 
@@ -184,7 +184,7 @@ These six components of the QGIS interface are described in more detail in
 the following sections. Two more sections present keyboard shortcuts and
 context help.
 
-.. `label_menubar`:
+.. _label_menubar:
 
 Menu Bar
 ---------
@@ -488,7 +488,7 @@ the mouse over the toolbars.
    **Restoring toolbars** 
 
    If you have accidentally hidden all your toolbars, you can get them
-   back by choosing menu option :menuselection:`Settings --> Toolbars`.
+   back by choosing menu option :menuselection:`Settings --> Toolbars -->`.
 
 .. _`label_legend`:
 
@@ -569,38 +569,13 @@ legend item is a raster or a vector layer. For GRASS vector layers
 
 It is possible to select more than one Layer or Group at the same time 
 by holding down the :kbd:`Ctrl`-Key while selecting the Layers with the 
-left mouse button. You can than move all selected Layers to a new Group at 
+left mouse button. You can then move all selected Layers to a new Group at 
 the same time.
 
 You are also able to delete more than one Layer or Group at once by selecting 
 several Layers with the :kbd:`Ctrl` - Key and pressing :kbd:`Ctrl D` afterwards.
 This way all selected Layers or Groups will be removed from the Layerlist.
 
-.. isn't included in Titan anymore, except for an "toggle overview"
-.. %Each legend entry can show the following mini icons:
-.. %
-
-.. image:: /img/pyramid.png
-  :width: 0.7 cm
-   
-   This is a raster that has pyramids built for it to improve rendering 
-   efficiency (see Section :ref:`raster_pyramids`)
-
-.. image:: no_pyramid.png
-   :width: 0.7 cm
-
-  This is a raster that has no pyramid layers 
-  (see Section :ref:`raster_pyramids`
-
-.. image:: inoverview.png
-   :width: 0.7 cm
-
-   This layer is shown in the overview map area as well as in the main map window.
-
-.. image:: editable.png
-   :width: 0.7 cm
-
-  This is a vector layer that is currently enabled for editing.\\
 
 .. _`label_mapview`:
 
@@ -712,11 +687,13 @@ Section :ref:`label_menubar` below. Additionally the menu option
 change the default keyboard shortcuts and to add new keyboard shortcuts to QGIS 
 features.
 
-.. figure:: img/en/shortcuts.png 
-   :align:center
-   :width: 8cm
+.. _shortcuts:
 
-    Define shortcut options |nix| (KDE)}
+.. figure:: img/en/shortcuts.png 
+   :align: center
+   :width: 30em
+
+   Define shortcut options |nix| (KDE)
 
 Configuration is very simple. Just select a feature from the list and click
 on :guilabel:`Change`, :guilabel:`Set none` or :guilabel:`Set default`. Once you 
@@ -902,32 +879,14 @@ The cursor becomes cross-shaped. Click to draw the first segment of the angle yo
 wish to measure, then move the the cursor to draw the desired angle. The measure
 is displayed in a popup dialog.
 
+.. _measure_in_action:
+
++------------------------+---------------------------+-----------------------+
+| |measure_line|         | |measure_area|            | |measure_angle|       |
++------------------------+---------------------------+-----------------------+
+| (a) Measure lines      | (b) Measure areas         | (c) Measure angles    |
++------------------------+---------------------------+-----------------------+
 Measure tools in action
-
-.. _`measure_line`:
-
-.. figure:: img/en/measure_line.png
-   :align: center
-   :width: 1em
-
-   Measure lines
-
-.. _`measure_area`:
-
-.. figure:: img/en/measure_area.png
-   :align: center
-   :width: 0.33em
-
-   Measure areas
-
-.. _`measure_angle`:
-
-.. figure:: img/en/measure_angle.png
-   :align: center
-   :width: 30em
-
-   Measure angles
-
 
 .. _`sec_selection`:
 
@@ -947,7 +906,7 @@ To select one or several features just click on
 
 To deselect all selected features click on |mActionDeselectAll|.
 
-.. _`sec_projects`:
+.. _sec_projects:
 
 Projects
 =========
@@ -956,17 +915,17 @@ Projects
 The state of your QGIS session is considered a Project.  QGIS
 works on one project at a time.  Settings are either considered
 as being per-project, or as a default for new projects (see
-Section :ref:`gui_options`). QGIS can save the state of your
+Section :ref:`subsec_gui_options`). QGIS can save the state of your
 workspace into a project file using the menu options
-:menuselection:`File` --> |mActionFileSave| :menuselection:`Save Project`
-or :menuselection:`File` |mActionFileSaveAs| :menuselection:`Save Project As`.
+:menuselection:`File -->` |mActionFileSave| :guilabel:`Save Project`
+or :menuselection:`File -->` |mActionFileSaveAs| :guilabel:`Save Project As`.
 
 Load saved projects into a QGIS session using
-:menuselection:`File` --> |mActionFileOpen| :menuselection:`Open Project`
+:menuselection:`File -->` |mActionFileOpen| :guilabel:`Open Project`
 or :menuselection:`File --> Open Recent Project`.
 
 If you wish to clear your session and start fresh, choose
-:menuselection:`File` --> |mActionFileNew| :menuselection:`New Project`.
+:menuselection:`File -->` |mActionFileNew| :guilabel:`New Project`.
 Either of these menu options will prompt you to save the existing project
 if changes have been made since it was opened or last saved.
 
@@ -1019,7 +978,7 @@ Output
 .. index::`output!save as image!print composer!quick print`
 
 There are several ways to generate output from your QGIS session. We have
-discussed one already in Section \ref{sec:projects}: saving as a project file.
+discussed one already in Section :ref:`sec_projects` saving as a project file.
 Here is a sampling of other ways to produce output files:
 
 * Menu option |mActionSaveMapAsImage| :menuselection:`Save as Image` opens
@@ -1030,16 +989,13 @@ Here is a sampling of other ways to produce output files:
   dialog where you can layout and print the current map canvas (see
   Section :ref:`label_printcomposer`).
 
-.. `subsec_gui_options`:
+.. _subsec_gui_options:
 
 GUI Options 
 =============
 
 
-|mActionOptions| Some basic options for QGIS can be selected using the :
-guilabel:`Options` dialog. Select the menu option :menuselection:`Settings` --> 
-|mActionOptions| :menuselection:`Options`. The tabs where you can optimize your 
-options are:
+|mActionOptions| Some basic options for QGIS can be selected using the :guilabel:`Options` dialog. Select the menu option :menuselection:`Settings -->` |mActionOptions| :menuselection:`Options`. The tabs where you can optimize your options are:
 
 **General Tab**
 
@@ -1154,26 +1110,28 @@ a layer without CRS is loaded.
 **Network Tab**
 
 
-.. _`fig_proxy-settings`:
+.. _fig_proxy-settings:
 
-.. figure::img/en/proxy-settings.png
+.. figure:: img/en/proxy-settings.png
+   :align: center
+   :width: 50em
    
    Proxy-settings in |qg|
 
 * |checkbox| :guilabel:`Use proxy for web access` and define host, port, user, 
   and password.
-* Set the :menuselection:`Proxy type` according to your needs.
+* Set the :menuselection:`Proxy type -->` according to your needs.
 
-  * :menuselection:`Default Proxy`: Proxy is determined based on the application 
+  * :menuselection:`Default Proxy -->`: Proxy is determined based on the application 
      proxy set using
-  * :menuselection:`Socks5Proxy`: Generic proxy for any kind of connection. 
+  * :menuselection:`Socks5Proxy -->`: Generic proxy for any kind of connection. 
      Supports TCP, UDP, binding to a port (incoming connections) and 
      authentication.
-  * :menuselection:`HttpProxy`: Implemented using the "CONNECT" command, supports 
+  * :menuselection:`HttpProxy -->`: Implemented using the "CONNECT" command, supports 
     only outgoing TCP connections; supports authentication.
-  * :menuselection:`HttpCachingProxy`: Implemented using normal HTTP commands, it 
+  * :menuselection:`HttpCachingProxy -->`: Implemented using normal HTTP commands, it 
     is useful only in the context of HTTP requests
-  * :menuselection:`FtpCachingProxy`: Implemented using an FTP proxy, it is 
+  * :menuselection:`FtpCachingProxy -->`: Implemented using an FTP proxy, it is 
     useful only in the context of FTP requests
  
 * Define Cache settings (path and size)
@@ -1221,9 +1179,11 @@ The |mActionTextAnnotation| text annotation tools in the attribute toolbar
 provides the possibility to place formatted text in a balloon on the QGIS map 
 canvas. Use the text annotation tool and click into the map canvas.
 
+.. _annotation:
+
 .. figure:: img/en/annotation.png
    :align: center
-   :width: 12 cm
+   :width: 30 em
 
    Annotation text dialog |nix| 
 
@@ -1249,9 +1209,11 @@ a vector layer in a customized qt designer form (see Figure :ref:`fig:custom-ann
 designer forms for the identify tool, but displayed in an annotation item.
 Also see QGIS blog http://blog.qgis.org/node/143 for more information.
 
+.. _custom_annotation:
+
 .. figure:: img/en/custom_annotation.png
    :align: center
-   :width: 10 cm
+   :width: 30em
 
    Customized qt designer annotation form |nix| 
 
@@ -1314,11 +1276,11 @@ Live GPS tracking
 ==================
 
 
-To activate Live GPS tracking in QGIS you need to select :menuselection:`View --> Live GPS tracking --> `. You will get a new docked Window on 
+To activate Live GPS tracking in QGIS you need to select :menuselection:`View --> Live GPS tracking -->` . You will get a new docked Window on 
 the left side of the canvas.
 
 There are 4 possible screens in this GPS tracking window
-(see Figure :ref:`fig:gpstrack_liv`) and Figure :ref:`fig:gpstrack_options`).
+(see Figure :ref:`fig:gpstrack_liv` and Figure :ref:`fig:gpstrack_options`).
 
 * |mActionToggleEditing| GPS position coordinates and for manually entering 
   Vertices and Features.
@@ -1328,54 +1290,49 @@ There are 4 possible screens in this GPS tracking window
 * |mActionOptions| GPS options screen (see Figure :ref:`fig:gpstrack_options`).
 
 With a plugged in GPS receiver (has to be supported by your operating system)
-a simple click on |button| :menuselection:`Connect` connects the GPS to QGIS. 
-A second click (now |button| :menuselection:`Disconnect`) disconnects the 
+a simple click on :guilabel:`Connect` connects the GPS to QGIS. 
+A second click (now :guilabel:`Disconnect`) disconnects the 
 GPS-Receiver from your Computer. For GNU/Linux gpsd support is integrated to 
 support connection to most GPS receivers. Therefore you first have to configure 
 gpsd properly to connect QGIS to it.
 
 .. warning::
    If you want to record your position to the canvas you have to
-   create a new vector layer first and switch it to editable status to be able
+   create a new vector layer first and switch it to editable status to be able 
    to record your track.
 
-.. `fig:gpstrack_liv`
+.. _table_figure_gps_tracking:
 
-.. figure:: gpstrack_main.png
-   :width: 0.33	cm
-   Position coordinates
+Live GPS tracking |nix| 
 
++----------------------------------+--------------------------------+-----------------------------+
+| |gpstrack_main|                  |   |gpstrack_stren|             |    |gpstrack_polar|         |
++----------------------------------+--------------------------------+-----------------------------+
+| (a) Position coordinates         | (b) GPS signal_strength        | (c) GPS polar window        |
++----------------------------------+--------------------------------+-----------------------------+
+ 
 
-.. figure:: gpstrack_stren.png
-   :width: 0.33	cm
-   GPS signal strenght
-
-.. figure:: gpstrack_polar.png
-   :width: 0.33	cm
-   GPS polar window
-
-   Live GPS Track |nix|
 
 Position coordinates
 ---------------------
 
 |mActionToggleEditing| If the GPS is
 receiving signals from satellites you will see your position in latitude,
-longitude and elevation as you can see in Figure :ref:`subfig:gpstrack_main`.
+longitude and elevation as you can see in Figure :ref:`table_figure_gps_tracking`.
 
 GPS signal strength
 --------------------
 
 |gpstrack_barchart| Here you can see
 the signal strenght of the satellites you are receiving signals from
-Figure :ref:`subfig:gpstrack_stren`.
+Figure :ref:`gpstrack_stren`.
 
 GPS polar window
 ----------------
 
 |gpstrack_polarchart| If you want
 to know where in the sky all the connected satellites are, you have to
-switch to the polar screen (Figure :ref:`subfig:gpstrack_polar`).
+switch to the polar screen (Figure :ref:`gpstrack_polar`).
 You can also see the ID numbers of the satellites you are receiving signals from.
 
 GPS options
@@ -1384,10 +1341,10 @@ GPS options
 |mActionOptions| In case of connection problems you can switch from 
 |radiobuttonon| :menuselection:`Autodetect` to |radiobuttonon| 
 :menuselection:`Use path/port below` and select the path/port your GPS receiver 
-is connected to.  A click on |button| :menuselection:`Connect` again initiates 
+is connected to.  A click on :guilabel:`Connect` again initiates 
 the connection to the GPS receiver.
 
-With the slider |slider| :menuselection:`GPS Cursor Size` you can shrink and grow 
+With the slider :menuselection:`GPS Cursor Size` |slider| you can shrink and grow 
 the position cursor on the canvas. Activating |radiobuttonon| 
 :menuselection:`Auto-add vertices` within GPS digitizing your track will 
 automatically be recorded in the active vector layer (of course the layer has to 
@@ -1401,7 +1358,7 @@ Track color and width sets the color of and the width of your drawn track.
 
 If you want to set a feature manually you have to go back to
 |mActionToggleEditing| ''Position Coordinates''
-and click on |button| :menuselection:`Add feature`.
+and click on :guilabel:`Add feature`.
 
 .. [1] Keyboard shortcuts can now be configured manually
    (shortcuts presented in this section are the defaults), using the Configure
