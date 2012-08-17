@@ -97,6 +97,7 @@ rst_epilog = """
 .. |QG| replace:: QGIS
 .. |degrees| unicode:: 0x00B0
    :ltrim:
+.. |geographic| image:: /img/en/geographic.png
 .. |wedge| unicode:: 0x005e
 .. |checkbox| image:: /img/en/checkbox.png
 .. |radiobuttonon| image:: /img/en/radiobuttonon.png
@@ -162,6 +163,7 @@ rst_epilog = """
 .. |interpolation| image:: img/en/plugins_interpolation/interpolation.png
    :width: 1.5em
 .. |mActionAddRasterLayer| image:: /img/en/mActionAddRasterLayer.png
+   :width: 1.5em
 .. |mActionAddOgrLayer| image:: /img/en/mActionAddOgrLayer.png
    :width: 1.5em
 .. |mActionShowPluginManager| image:: /img/en/mActionShowPluginManager.png
@@ -291,6 +293,7 @@ rst_epilog = """
 .. |mActionMeasureArea| image:: /img/en/mActionMeasureArea.png
 .. |mActionMeasureAngle| image:: /img/en/mActionMeasureAngle.png
 .. |spiticon| image:: /plugins/img/en/plugins_spit/spiticon.png
+.. |mActionOptions| image:: /img/en/mActionOptions.png
 .. |mActionSelectRectangle| image:: /img/en/mActionSelectRectangle.png
    :width: 1.5em
 .. |mActionSelectPolygon| image:: /img/en/mActionSelectPolygon.png
@@ -306,6 +309,8 @@ rst_epilog = """
 .. |mActionContextHelp| image:: /img/en/mActionContextHelp.png
    :width: 1.5em
 .. |mActionFolder| image:: /img/en/mActionFolder.png
+   :width: 1.5em
+.. |mIconNew| image:: /img/en/mIconNew.png
    :width: 1.5em
 .. |gpstrack_barchart| image:: /introduction/img/en/gpstrack_barchart.png
    :width: 1.5em
