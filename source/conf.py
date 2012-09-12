@@ -559,6 +559,37 @@ rst_epilog = """
    :width: 1.5em
 .. |grass_refresh| image:: /grass_integration/img/en/grass_refresh.png
    :width: 1.5em
+.. |grass_module_option| image:: /grass_integration/img/en/grass_module_option.png
+   :width: 20em
+.. |grass_module_output| image:: /grass_integration/img/en/grass_module_output.png
+   :width: 20em
+.. |grass_module_manual| image:: /grass_integration/img/en/grass_module_manual.png
+   :width: 20em
+.. |grass_toolbox_moduletree| image:: /grass_integration/img/en/grass_toolbox_moduletree.png
+   :width: 30em
+.. |grass_toolbox_modulelist| image:: /grass_integration/img/en/grass_toolbox_modulelist.png
+   :width: 30em
+.. |grass_toolbox_rcontour| image:: /grass_integration/img/en/grass_toolbox_rcontour.png
+   :width: 20em
+.. |grass_toolbox_rcontour2| image:: /grass_integration/img/en/grass_toolbox_rcontour2.png
+   :width: 20em
+.. |delimited_text| image:: img/en/plugins_delimited_text/delimited_text.png
+   :width: 1.5em
+.. |mActionGDALScript| image:: img/en/plugins_georeferencer/mActionGDALScript.png
+   :width: 1.5em
+.. |mActionLinkQGisToGeoref| image:: img/en/plugins_georeferencer/mActionLinkQGisToGeoref.png
+   :width: 1.5em
+.. |mActionStartGeoref| image:: img/en/plugins_georeferencer/mActionStartGeoref.png
+   :width: 1.5em
+.. |mActionLinkGeorefToQGis| image:: img/en/plugins_georeferencer/mActionLinkGeorefToQGis.png
+   :width: 1.5em
+.. |georeferencer| image:: img/en/plugins_georeferencer/georeferencer.png
+   :width: 1.5em
+.. |mActionCapturePoint| image:: img/en/plugins_georeferencer/mActionCapturePoint.png
+   :width: 1.5em
+.. |pencil| image:: img/en/plugins_georeferencer/pencil.png
+   :width: 1.5em
+
 """
 
 
