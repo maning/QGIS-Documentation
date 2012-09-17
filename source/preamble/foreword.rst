@@ -29,9 +29,9 @@ under this license means that you can inspect and modify the source code,
 and guarantees that you, our happy user, will always have access to a GIS
 program that is free of cost and can be freely modified. You should have
 received a full copy of the license with your copy of QGIS, and you also can
-find it in Appendix `gpl_appendix`_.  
+find it in Appendix :ref:`gpl_appendix`.  
 
-:index:documentation
+.. index:: documentation
 
 .. tip::
         **Up-to-date Documentation**
@@ -113,7 +113,7 @@ supported formats using the fTools Python plugin. QGIS currently offers
 vector analysis, sampling, geoprocessing, geometry and database management
 tools. You can also use the integrated GRASS tools, which 
 include the complete GRASS functionality of more than 400 modules (See Section
-`sec_grass`_).
+:ref:`sec_grass`).
 
 **Publish maps on the Internet**
 
