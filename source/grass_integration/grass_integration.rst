@@ -1,4 +1,5 @@
 
+
 .. index:: GRASS
 
 .. _sec_grass:
@@ -95,7 +96,7 @@ GRASS LOCATION and MAPSET
 
 GRASS data are stored in a directory referred to as GISDBASE. This directory often called :file:`grassdata`, must be created before you start working with the GRASS plugin in QGIS. Within this directory, the GRASS GIS data are organized by projects stored in subdirectories called :file:`LOCATION`.
 Each :file:`LOCATION` is defined by its coordinate system, map projection and geographical boundaries. Each :file:`LOCATION` can have several
-:file:`MAPSETs` (subdirectories of the :file:`LOCATION`) that are used to subdivide the project into different topics, subregions, or as workspaces for individual team members (Neteler \& Mitasova 2008 [neteler_mitasova08]_). In order to analyze vector and raster layers with GRASS modules, you must import them into a GRASS :file:`LOCATION` [#].
+:file:`MAPSETs` (subdirectories of the :file:`LOCATION`) that are used to subdivide the project into different topics, subregions, or as workspaces for individual team members (Neteler \& Mitasova 2008 [neteler_mitasova08]_). In order to analyze vector and raster layers with GRASS modules, you must import them into a GRASS :file:`LOCATION` [#]_ .
 
 .. _figure_grass_location_1:
 .. figure:: img/en/grass_location.png
@@ -242,7 +243,17 @@ The GRASS vector data model
 .. index::
    single:GRASS;vector data model
 
-It is important to understand the GRASS vector data model prior to digitizing.:index:`GRASS!digitizing` In general, GRASS uses a topological vector model.:index:`GRASS!topology` This means that areas are not represented as closed polygons, but by one or more boundaries. A boundary between two adjacent areas is digitized only once, and it is shared by both areas.
+It is important to understand the GRASS vector data model prior to digitizing.
+
+.. index::
+   single:GRASS;digitizing
+
+In general, GRASS uses a topological vector model.
+
+.. index::
+   single:GRASS;topology
+
+This means that areas are not represented as closed polygons, but by one or more boundaries. A boundary between two adjacent areas is digitized only once, and it is shared by both areas.
 Boundaries must be connected and closed without gaps. An area is identified (and labeled) by the **centroid** of the area.
 
 Besides boundaries and centroids, a vector map can also contain points and lines. All these geometry elements can be mixed in one vector and will be represented in different so called 'layers' inside one GRASS vector map. So in GRASS a layer is not a vector or raster map but a level inside a vector layer. This is important to distinguish carefully.
@@ -253,9 +264,15 @@ It is possible to store several 'layers' in one vector dataset. For example, fie
 The 'layer' of the feature is defined by 'layer' inside GRASS. 'Layer' is the number which defines if there are more than one layer inside the dataset, e.g.
 if the geometry is forest or lake. For now, it can be only a number, in the future GRASS will also support names as fields in the user interface.
 
-Attributes can be stored inside the GRASS :file:`LOCATION` as DBase or SQLITE3 or in external database tables, for example PostgreSQL, MySQL, Oracle, etc.:index:`GRASS!attribute storage`
+Attributes can be stored inside the GRASS :file:`LOCATION` as DBase or SQLITE3 or in external database tables, for example PostgreSQL, MySQL, Oracle, etc. .
 
-Attributes in database tables are linked to geometry elements using a 'category' value.:index:`GRASS!attribute linkage` 'Category' (key, ID) is an integer attached to geometry primitives, and it is used as the link to one key column in the database table.
+.. index::
+   single:GRASS;attribute storage
+Attributes in database tables are linked to geometry elements using a 'category' value. 
+
+.. index::
+   single:GRASS;attribute linkage
+'Category' (key, ID) is an integer attached to geometry primitives, and it is used as the link to one key column in the database table.
 
 .. tip:: **Learning the GRASS Vector Model**
    
@@ -266,7 +283,6 @@ Attributes in database tables are linked to geometry elements using a 'category'
 Creating a new GRASS vector layer
 =================================
 .. index::
-   single:GRASS;Creating new vectors
       see:GRASS;Creating new vectors;editing;creating a new layer
 
 To create a new GRASS vector layer with the GRASS plugin click the
@@ -368,9 +384,12 @@ The :guilabel:`Category` tab allows you to define the way in which the category 
 
    If you would like to add more layers to your dataset, just add a new number in the 'Field (layer)' entry box and press return. In the Table tab you can create     your new table connected to your new layer.
 
+.. _label_settingtab:
+
 **Settings Tab**
 
-`label_settingtab`::index:`GRASS!snapping tolerance`
+.. index::
+   single:GRASS;snapping tolerance
 
 The :guilabel:`Settings` tab allows you to set the snapping in screen pixels. The threshold defines at what distance new points or line ends are snapped to existing nodes. This helps to prevent gaps or dangles between boundaries. The default is set to 10 pixels.
 
@@ -427,10 +446,15 @@ The region definition (setting a spatial working window) in GRASS is important f
 
 It is possible to switch on/off the visualization of the GRASS region in the QGIS canvas using the |grass_region| :sup:`Display current GRASS region`
 button. 
+
 .. index::
    single:GRASS;region display
 
-With the |grass_region_edit| :sup:`Edit current GRASS region` icon you can open a dialog to change the current region and the symbology of the GRASS region rectangle in the QGIS canvas. Type in the new region bounds and resolution and click **[OK]**. It also allows to select a new region interactively with your mouse on the QGIS canvas. Therefore click with the left mouse button in the QGIS canvas, open a rectangle, close it using the left mouse button again and click **[OK]**.:index:`GRASS!region!editing`
+With the |grass_region_edit| :sup:`Edit current GRASS region` icon you can open a dialog to change the current region and the symbology of the GRASS region rectangle in the QGIS canvas. Type in the new region bounds and resolution and click **[OK]**. It also allows to select a new region interactively with your mouse on the QGIS canvas. Therefore click with the left mouse button in the QGIS canvas, open a rectangle, close it using the left mouse button again and click **[OK]**.
+
+.. index::
+   single:GRASS;region editing
+
 The GRASS module :file:`g.region` provide a lot more parameters to define an appropriate region extend and resolution for your raster analysis. You can use these parameters with the GRASS Toolbox, described in Section :ref:`subsec_grass_toolbox`.
 
 .. _subsec_grass_toolbox:
@@ -438,7 +462,7 @@ The GRASS module :file:`g.region` provide a lot more parameters to define an app
 The GRASS toolbox
 =================
 .. index::
-   single:GRASS;toolbox
+   single:GRASS toolbox
 
 The |grass_tools| :sup:`Open GRASS Tools` box provides GRASS module functionalities to work with data inside a selected GRASS :file:`LOCATION`
 and :file:`MAPSET`. To use the GRASS toolbox you need to open a :file:`LOCATION` and :file:`MAPSET` where you have write-permission
@@ -502,7 +526,9 @@ The :guilabel:`Output` tab provides information about the output status of the m
 The :guilabel:`Manual` tab shows the HTML help page of the GRASS module. You can use it to check further module parameters and flags or to get a deeper knowledge about the purpose of the module. At the end of each module manual page you see further links to the :file:`Main Help index`, the
 :file:`Thematic index` and the :file:`Full index`. These links provide the same information as if you use the module :file:`g.manual`.
 
-.. tip:: **Display results immediately** :index:`GRASS!display results`
+.. index::
+   single:GRASS;display results
+.. tip:: **Display results immediately** 
    
    If you want to display your calculation results immediately in your map canvas, you can use the 'View Output' button at the bottom of the module tab.
 
@@ -545,8 +571,11 @@ Since this is a large region, it will take a while to display. After it finishes
 Next zoom in to a small mountainous area in the center of Alaska.
 Zooming in close you will notice that the contours have sharp corners. GRASS offers the **v.generalize** tool to slightly alter vector maps while keeping their overall shape. The tool uses several different algorithms with different purposes. Some of the algorithms (i.e. Douglas Peuker and Vertex reduction) simplify the line by removing some of the vertices. The resulting vector will load faster. This process will be used when you have a highly detailed vector, but you are creating a very small scale map, so the detail is unnecessary.
 
-.. tip:: **The simplify tool** }}:index:`GRASS!display results`
-   
+.. index::
+   single:GRASS;display results
+ 
+.. tip:: **The simplify tool** 
+  
    Note that the QGIS fTools plugin has a :menuselection:`Simplify geometries -->` tool that works just like the GRASS **v.generalize**
    Douglas-Peuker algorithm.
 
@@ -573,7 +602,9 @@ additional vertices to the vector, causing it to load even more slowly.
 
    Figure GRASS module 2: GRASS module v.generalize to smooth a vector map |nix|
 
-.. tip:: **Other uses for r.contour**:index:`GRASS!toolbox`
+.. index::
+   single:GRASS;toolbox
+.. tip:: **Other uses for r.contour**
 
    The procedure described above can be used in other equivalent situations. If you have a raster map of precipitation data, for example, then the same method will  be used to create a vector map of isohyetal (constant rainfall) lines.
 
@@ -639,7 +670,7 @@ The next example shows how a GRASS module can aggregate raster data and add colu
 Working with the GRASS LOCATION browser
 ---------------------------------------
 .. index::
-   single:GRASS;toolbox;Browser
+   single:GRASS toolbox;Browser
 
 Another useful feature inside the GRASS Toolbox is the GRASS
 :file:`LOCATION` browser. In figure_grass_module_5_ you can see the current working :file:`LOCATION` with its :file:`MAPSETs`.
@@ -670,7 +701,7 @@ The |grass_rename_map| :guilabel:`Rename selected map` and |grass_delete_map| :g
 Customizing the GRASS Toolbox
 ------------------------------
 .. index::
-   single:GRASS;toolbox;customize
+   single:GRASS toolbox;customize
 
 
 Nearly all GRASS modules can be added to the GRASS toolbox. A XML interface is provided to parse the pretty simple XML files which configures the modules appearance and parameters inside the toolbox.
