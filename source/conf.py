@@ -25,7 +25,7 @@ import sys, os
 extensions = []
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ['../templates']
 
 
 # The suffix of source filenames.
@@ -46,7 +46,7 @@ copyright = u'2012, QGIS project'
 # built documents.
 #
 # The short X.Y version.
-version = '1.7.4'
+version = '1.7'
 # The full version, including alpha/beta/rc tags.
 release = '1.7.4'
 
@@ -65,7 +65,7 @@ release = '1.7.4'
 
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
-exclude_trees = ['buildout', '_build']
+exclude_trees = ['buildout', 'build']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -88,33 +88,33 @@ pygments_style = 'sphinx'
 #modindex_common_prefix = []
 
 rst_epilog = """
-.. |nix| image:: /img/en/nix.png
+.. |nix| image:: /static/common/nix.png
    :width: 1em
-.. |win| image:: /img/en/win.png
+.. |win| image:: /static/common/win.png
    :width: 1em
-.. |osx| image:: /img/en/osx.png
+.. |osx| image:: /static/common/osx.png
    :width: 1em
 .. |QG| replace:: QGIS
 .. |degrees| unicode:: 0x00B0
    :ltrim:
-.. |geographic| image:: /img/en/geographic.png
+.. |geographic| image:: /static/common/geographic.png
 .. |wedge| unicode:: 0x005e
-.. |checkbox| image:: /img/en/checkbox.png
-.. |radiobuttonon| image:: /img/en/radiobuttonon.png
-.. |radiobuttonoff| image:: /img/en/radiobuttonoff.png
-.. |selectnumber| image:: /img/en/selectnumber.png
-.. |selectstring| image:: /img/en/selectstring.png
-.. |selectstring2| image:: /img/en/selectstring2.png
-.. |browsebutton| image:: /img/en/browsebutton.png
-.. |selectcolor| image:: /img/en/selectcolor.png
-.. |slider| image:: /img/en/slider.png
-.. |inputtext| image:: /img/en/inputtext.png
-.. |tab| image:: /img/en/tab.png
-.. |icon_sqlanywhere| image:: img/en/plugins_sql_anywhere/sqlanywhere.png
+.. |checkbox| image:: /static/common/checkbox.png
+.. |radiobuttonon| image:: /static/common/radiobuttonon.png
+.. |radiobuttonoff| image:: /static/common/radiobuttonoff.png
+.. |selectnumber| image:: /static/common/selectnumber.png
+.. |selectstring| image:: /static/common/selectstring.png
+.. |selectstring2| image:: /static/common/selectstring2.png
+.. |browsebutton| image:: /static/common/browsebutton.png
+.. |selectcolor| image:: /static/common/selectcolor.png
+.. |slider| image:: /static/common/slider.png
+.. |inputtext| image:: /static/common/inputtext.png
+.. |tab| image:: /static/common/tab.png
+.. |icon_sqlanywhere| image:: /static/user_manual/plugins/sqlanywhere.png
    :width: 1.5em
-.. |oracle_raster| image:: img/en/plugins_oracle_raster/oracle_raster.png
+.. |oracle_raster| image:: /static/user_manual/plugins/oracle_raster.png
    :width: 1.5em
-.. |raster_terrain| image:: img/en/plugins_raster_terrain/raster_terrain.png
+.. |raster_terrain| image:: /static/user_manual/plugins/raster_terrain.png
    :width: 1.5em
 .. |osm_load| image:: img/en/plugins_openstreetmap/osm_load.png
    :width: 1.5em
@@ -146,259 +146,247 @@ rst_epilog = """
    :width: 1.5em
 .. |osm_generateTags| image:: img/en/plugins_openstreetmap/osm_generateTags.png
    :width: 1.5em
-.. |osm_identify| image:: img/en/plugins_openstreetmap/osm_identify.png
-   :width: 1.5em
 .. |osm_editRelation| image:: img/en/plugins_openstreetmap/osm_editRelation.png
    :width: 1.5em
 .. |osm_questionMark| image:: img/en/plugins_openstreetmap/osm_questionMark.png
-   :width: 1.5em
-.. |osm_upload| image:: img/en/plugins_openstreetmap/osm_upload.png
-   :width: 1.5em 
-.. |osm_save| image:: img/en/plugins_openstreetmap/osm_save.png
-   :width: 1.5em
-.. |osm_import| image:: img/en/plugins_openstreetmap/osm_import.png
    :width: 1.5em
 .. |offline_editing_copy| image:: img/en/plugins_offline_editing/offline_editing_copy.png
    :width: 1.5em
 .. |interpolation| image:: img/en/plugins_interpolation/interpolation.png
    :width: 1.5em
-.. |mActionAddRasterLayer| image:: /img/en/mActionAddRasterLayer.png
+.. |mActionAddRasterLayer| image:: /static/common/mActionAddRasterLayer.png
    :width: 1.5em
-.. |mActionAddOgrLayer| image:: /img/en/mActionAddOgrLayer.png
+.. |mActionAddOgrLayer| image:: /static/common/mActionAddOgrLayer.png
    :width: 1.5em
-.. |mActionShowPluginManager| image:: /img/en/mActionShowPluginManager.png
-.. |mActionFileNew| image:: /img/en/mActionFileNew.png
-.. |mActionFileOpen| image:: /img/en/mActionFileOpen.png
-.. |mActionFileSave| image:: /img/en/mActionFileSave.png
+.. |mActionShowPluginManager| image:: /static/common/mActionShowPluginManager.png
+.. |mActionFileNew| image:: /static/common/mActionFileNew.png
+.. |mActionFileOpen| image:: /static/common/mActionFileOpen.png
+.. |mActionFileSave| image:: /static/common/mActionFileSave.png
    :width: 1.5em
-.. |mActionFileSaveAs| image:: /img/en/mActionFileSaveAs.png
-.. |mActionSaveMapAsImage| image:: /img/en/mActionSaveMapAsImage.png
-.. |mActionNewComposer| image:: /img/en/mActionNewComposer.png
-.. |mActionComposerManager| image:: /img/en/mActionComposerManager.png
+.. |mActionFileSaveAs| image:: /static/common/mActionFileSaveAs.png
+.. |mActionSaveMapAsImage| image:: /static/common/mActionSaveMapAsImage.png
+.. |mActionNewComposer| image:: /static/common/mActionNewComposer.png
+.. |mActionComposerManager| image:: /static/common/mActionComposerManager.png
 .. |mapserver_export| image:: img/en/plugins_mapserver_export/mapserver_export.png
-.. |mActionExportMapServer| image:: /img/en/mActionExportMapServer.png
+.. |mActionExportMapServer| image:: /static/common/mActionExportMapServer.png
    :width: 1.5em
-.. |mActionSaveAsSVG| image:: /img/en/mActionSaveAsSVG.png
+.. |mActionSaveAsSVG| image:: /static/common/mActionSaveAsSVG.png
    :width: 1.5em
-.. |mActionSaveAsPDF| image:: /img/en/mActionSaveAsPDF.png
+.. |mActionSaveAsPDF| image:: /static/common/mActionSaveAsPDF.png
    :width: 1.5em
-.. |mActionFilePrint| image:: /img/en/mActionFilePrint.png
+.. |mActionFilePrint| image:: /static/common/mActionFilePrint.png
    :width: 1.5em
-.. |mActionAddArrow| image:: /img/en/mActionAddArrow.png
+.. |mActionAddArrow| image:: /static/common/mActionAddArrow.png
    :width: 1.5em
-.. |mActionAddBasicShape| image:: /img/en/mActionAddBasicShape.png
+.. |mActionAddBasicShape| image:: /static/common/mActionAddBasicShape.png
    :width: 1.5em
-.. |mActionAddLegend| image:: /img/en/mActionAddLegend.png
+.. |mActionAddLegend| image:: /static/common/mActionAddLegend.png
    :width: 1.5em
-.. |mActionAddMap| image:: /img/en/mActionAddMap.png
+.. |mActionAddMap| image:: /static/common/mActionAddMap.png
    :width: 1.5em
-.. |mActionLabel| image:: /img/en/mActionLabel.png
+.. |mActionLabel| image:: /static/common/mActionLabel.png
    :width: 1.5em
-.. |mActionScaleBar| image:: /img/en/mActionScaleBar.png
+.. |mActionScaleBar| image:: /static/common/mActionScaleBar.png
    :width: 1.5em
-.. |mActionSelectPan| image:: /img/en/mActionSelectPan.png
+.. |mActionSelectPan| image:: /static/common/mActionSelectPan.png
    :width: 1.5em
-.. |mActionGroupItems| image:: /img/en/mActionGroupItems.png
+.. |mActionGroupItems| image:: /static/common/mActionGroupItems.png
    :width: 1.5em
-.. |mActionUnGroupItems| image:: /img/en/mActionUnGroupItems.png
+.. |mActionUnGroupItems| image:: /static/common/mActionUnGroupItems.png
    :width: 1.5em
-.. |mActionRaiseItems| image:: /img/en/mActionRaiseItems.png
+.. |mActionRaiseItems| image:: /static/common/mActionRaiseItems.png
    :width: 1.5em
-.. |mActionLowerItems| image:: /img/en/mActionLowerItems.png
+.. |mActionLowerItems| image:: /static/common/mActionLowerItems.png
    :width: 1.5em
-.. |mActionMoveItemContent| image:: /img/en/mActionMoveItemContent.png
+.. |mActionMoveItemContent| image:: /static/common/mActionMoveItemContent.png
    :width: 1.5em
-.. |mActionMoveItemsToTop| image:: /img/en/mActionMoveItemsToTop.png
+.. |mActionMoveItemsToTop| image:: /static/common/mActionMoveItemsToTop.png
    :width: 1.5em
-.. |mActionMoveItemsToBottom| image:: /img/en/mActionMoveItemsToBottom.png
+.. |mActionMoveItemsToBottom| image:: /static/common/mActionMoveItemsToBottom.png
    :width: 1.5em
-.. |mActionAlignLeft|  image:: /img/en/mActionAlignLeft.png
+.. |mActionAlignLeft|  image:: /static/common/mActionAlignLeft.png
    :width: 1.5em
-.. |mActionAlignRight|  image:: /img/en/mActionAlignRight.png
+.. |mActionAlignRight|  image:: /static/common/mActionAlignRight.png
    :width: 1.5em
-.. |mActionAlignHCenter|  image:: /img/en/mActionAlignHcenter.png
+.. |mActionAlignHCenter|  image:: /static/common/mActionAlignHcenter.png
    :width: 1.5em
-.. |mActionAlignVCenter|  image:: /img/en/mActionAlignVCenter.png
+.. |mActionAlignVCenter|  image:: /static/common/mActionAlignVCenter.png
    :width: 1.5em
-.. |mActionAlignTop|  image:: /img/en/mActionAlignTop.png
+.. |mActionAlignTop|  image:: /static/common/mActionAlignTop.png
    :width: 1.5em
-.. |mActionAlignBottom|  image:: /img/en/mActionAlignBottom.png
+.. |mActionAlignBottom|  image:: /static/common/mActionAlignBottom.png
    :width: 1.5em
-.. |mIconLock|  image:: /img/en/mIconLock.png
+.. |mIconLock|  image:: /static/common/mIconLock.png
    :width: 1.5em
-.. |mActionFileExit| image:: /img/en/mActionFileExit.png
-.. |mActionUndo| image:: /img/en/mActionUndo.png
+.. |mActionFileExit| image:: /static/common/mActionFileExit.png
+.. |mActionUndo| image:: /static/common/mActionUndo.png
    :width: 1.5em
-.. |mActionRedo| image:: /img/en/mActionRedo.png
+.. |mActionRedo| image:: /static/common/mActionRedo.png
    :width: 1.5em
-.. |mActionSelect| image:: /img/en/mActionSelect.png
+.. |mActionSelect| image:: /static/common/mActionSelect.png
    :width: 1.5em
-.. |mActionEditCut| image:: /img/en/mActionEditCut.png
+.. |mActionEditCut| image:: /static/common/mActionEditCut.png
    :width: 1.5em
-.. |mActionEditCopy| image:: /img/en/mActionEditCopy.png
+.. |mActionEditCopy| image:: /static/common/mActionEditCopy.png
    :width: 1.5em
-.. |mActionEditPaste| image:: /img/en/mActionEditPaste.png
+.. |mActionEditPaste| image:: /static/common/mActionEditPaste.png
    :width: 1.5em
 .. |mActionDeleteAttribute| image:: img/en/mActionDeleteAttribute.png
    :width: 1.5em
-.. |mActionDeleteSelected| image:: /img/en/mActionDeleteSelected.png
+.. |mActionDeleteSelected| image:: /static/common/mActionDeleteSelected.png
    :width: 1.5em
-.. |mActionDeleteVertex| image:: /img/en/mActionDeleteVertex.png
+.. |mActionDeleteVertex| image:: /static/common/mActionDeleteVertex.png
    :width: 1.5em
-.. |mActionSimplify| image:: /img/en/mActionSimplify.png
+.. |mActionSimplify| image:: /static/common/mActionSimplify.png
    :width: 2em
-.. |mActionAddRing| image:: /img/en/mActionAddRing.png
+.. |mActionAddRing| image:: /static/common/mActionAddRing.png
    :width: 2em
-.. |mActionAddIsland| image:: /img/en/mActionAddIsland.png
+.. |mActionAddIsland| image:: /static/common/mActionAddIsland.png
    :width: 2em
-.. |mActionDeleteRing| image:: /img/en/mActionDeleteRing.png
+.. |mActionDeleteRing| image:: /static/common/mActionDeleteRing.png
    :width: 2em
-.. |mActionDeletePart| image:: /img/en/mActionDeletePart.png
+.. |mActionDeletePart| image:: /static/common/mActionDeletePart.png
    :width: 2em
-.. |mActionReshape| image:: /img/en/mActionReshape.png
+.. |mActionReshape| image:: /static/common/mActionReshape.png
    :width: 1.5em
-.. |mActionSplitFeatures| image:: /img/en/mActionSplitFeatures.png
+.. |mActionSplitFeatures| image:: /static/common/mActionSplitFeatures.png
    :width: 1.5em
-.. |mActionMergeFeatures| image:: /img/en/mActionMergeFeatures.png
+.. |mActionMergeFeatures| image:: /static/common/mActionMergeFeatures.png
    :width: 1.5em
-.. |mergeFeats| image:: /img/en/mActionMergeFeatures.png
+.. |mergeFeats| image:: /static/common/mActionMergeFeatures.png
    :width: 1.5em
-.. |mActionNodeTool| image:: /img/en/mActionNodeTool.png
+.. |mActionNodeTool| image:: /static/common/mActionNodeTool.png
    :width: 1.5em
-.. |mActionSelectedToTop| image:: /img/en/mActionSelectedToTop.png
+.. |mActionSelectedToTop| image:: /static/common/mActionSelectedToTop.png
    :width: 1.5em
-.. |mActionInvertSelection| image:: /img/en/mActionInvertSelection.png
+.. |mActionInvertSelection| image:: /static/common/mActionInvertSelection.png
    :width: 1.5em
-.. |mActionCopySelected| image:: /img/en/mActionCopySelected.png
+.. |mActionCopySelected| image:: /static/common/mActionCopySelected.png
    :width: 1.5em
-.. |mActionZoomToSelected| image:: /img/en/mActionZoomToSelected.png
+.. |mActionZoomToSelected| image:: /static/common/mActionZoomToSelected.png
    :width: 1em
-.. |mActionNewAttribute| image:: /img/en/mActionNewAttribute.png
+.. |mActionNewAttribute| image:: /static/common/mActionNewAttribute.png
    :width: 1.5em
-.. |mActionCalculateField| image:: /img/en/mActionCalculateField.png
+.. |mActionCalculateField| image:: /static/common/mActionCalculateField.png
    :width: 1.5em
-.. |mActionRotatePointSymbols| image:: /img/en/mActionRotatePointSymbols.png
+.. |mActionRotatePointSymbols| image:: /static/common/mActionRotatePointSymbols.png
    :width: 1.5em
-.. |mActionToggleEditing| image:: /img/en/mActionToggleEditing.png
+.. |mActionToggleEditing| image:: /static/common/mActionToggleEditing.png
    :width: 1.5em
-.. |mActionCapturePoint| image:: /img/en/mActionCapturePoint.png
+.. |mActionCapturePoint| image:: /static/common/mActionCapturePoint.png
    :width: 1.5em
-.. |mActionCaptureLine| image:: /img/en/mActionCaptureLine.png
+.. |mActionCaptureLine| image:: /static/common/mActionCaptureLine.png
    :width: 1.5em
-.. |mActionCapturePolygon| image:: /img/en/mActionCapturePolygon.png
+.. |mActionCapturePolygon| image:: /static/common/mActionCapturePolygon.png
    :width: 1.5em
-.. |mActionMoveFeature| image:: /img/en/mActionMoveFeature.png
+.. |mActionMoveFeature| image:: /static/common/mActionMoveFeature.png
    :width: 1.5em
-.. |mActionPan| image:: /img/en/mActionPan.png
+.. |mActionPan| image:: /static/common/mActionPan.png
    :width: 1.5em
-.. |mActionZoomIn| image:: /img/en/mActionZoomIn.png
+.. |mActionZoomIn| image:: /static/common/mActionZoomIn.png
    :width: 1.5em
-.. |mActionZoomOut| image:: /img/en/mActionZoomOut.png
+.. |mActionZoomOut| image:: /static/common/mActionZoomOut.png
    :width: 1.5em
-.. |mActionIdentify| image:: /img/en/mActionIdentify.png
+.. |mActionIdentify| image:: /static/common/mActionIdentify.png
    :width: 1.5em
-.. |mActionNewVectorLayer| image:: /img/en/mActionNewVectorLayer.png
+.. |mActionNewVectorLayer| image:: /static/common/mActionNewVectorLayer.png
    :width: 1.5em
-.. |mActionZoomFullExtent| image:: /img/en/mActionZoomFullExtent.png
+.. |mActionZoomFullExtent| image:: /static/common/mActionZoomFullExtent.png
    :width: 1.5em
-.. |mActionZoomToLayer| image:: /img/en/mActionZoomToLayer.png
+.. |mActionZoomToLayer| image:: /static/common/mActionZoomToLayer.png
    :width: 1.5em
-.. |mActionZoomToSelected| image:: /img/en/mActionZoomToSelected.png
+.. |mActionZoomLast| image:: /static/common/mActionZoomLast.png
    :width: 1.5em
-.. |mActionZoomLast| image:: /img/en/mActionZoomLast.png
+.. |mActionZoomNext| image:: /static/common/mActionZoomNext.png
    :width: 1.5em
-.. |mActionZoomNext| image:: /img/en/mActionZoomNext.png
+.. |mActionMapTips| image:: /static/common/mActionMapTips.png
    :width: 1.5em
-.. |mActionMapTips| image:: /img/en/mActionMapTips.png
+.. |mActionNewBookmark| image:: /static/common/mActionNewBookmark.png
    :width: 1.5em
-.. |mActionNewBookmark| image:: /img/en/mActionNewBookmark.png
+.. |mActionShowBookmarks| image:: /static/common/mActionShowBookmarks.png
    :width: 1.5em
-.. |mActionShowBookmarks| image:: /img/en/mActionShowBookmarks.png
+.. |mActionDraw| image:: /static/common/mActionDraw.png
    :width: 1.5em
-.. |mActionDraw| image:: /img/en/mActionDraw.png
+.. |mActionAddNonDbLayer| image:: /static/common/mActionAddNonDbLayer.png
    :width: 1.5em
-.. |mActionAddNonDbLayer| image:: /img/en/mActionAddNonDbLayer.png
+.. |mActionAddLayer| image:: /static/common/mActionAddLayer.png
    :width: 1.5em
-.. |mActionAddLayer| image:: /img/en/mActionAddLayer.png
+.. |mActionAddSpatiaLiteLayer| image:: /static/common/mActionAddSpatiaLiteLayer.png
    :width: 1.5em
-.. |mActionAddSpatiaLiteLayer| image:: /img/en/mActionAddSpatiaLiteLayer.png
+.. |mActionAddWmsLayer| image:: /static/common/mActionAddWmsLayer.png
    :width: 1.5em
-.. |mActionAddWmsLayer| image:: /img/en/mActionAddWmsLayer.png
+.. |mActionOpenTable| image:: /static/common/mActionOpenTable.png
    :width: 1.5em
-.. |mActionOpenTable| image:: /img/en/mActionOpenTable.png
+.. |mActionRemoveLayer| image:: /static/common/mActionRemoveLayer.png
    :width: 1.5em
-.. |mActionRemoveLayer| image:: /img/en/mActionRemoveLayer.png
+.. |mActionLabeling| image:: /static/common/mActionLabeling.png
    :width: 1.5em
-.. |mActionLabeling| image:: /img/en/mActionLabeling.png
+.. |mActionInOverview| image:: /static/common/mActionInOverview.png
    :width: 1.5em
-.. |mActionInOverview| image:: /img/en/mActionInOverview.png
+.. |mActionAddAllToOverview| image:: /static/common/mActionAddAllToOverview.png
    :width: 1.5em
-.. |mActionAddAllToOverview| image:: /img/en/mActionAddAllToOverview.png
+.. |mActionRemoveAllFromOverview| image:: /static/common/mActionRemoveAllFromOverview.png
    :width: 1.5em
-.. |mActionRemoveAllFromOverview| image:: /img/en/mActionRemoveAllFromOverview.png
+.. |RemoveAllOVerview| image:: /static/common/mActionRemoveAllFromOverview.png
    :width: 1.5em
-.. |RemoveAllOVerview| image:: /img/en/mActionRemoveAllFromOverview.png
+.. |mActionShowAllLayers| image:: /static/common/mActionShowAllLayers.png
    :width: 1.5em
-.. |mActionShowAllLayers| image:: /img/en/mActionShowAllLayers.png
+.. |mActionHideAllLayers| image:: /static/common/mActionHideAllLayers.png
    :width: 1.5em
-.. |mActionHideAllLayers| image:: /img/en/mActionHideAllLayers.png
+.. |mActionProjectProperties| image:: /static/common/mActionProjectProperties.png
    :width: 1.5em
-.. |mActionProjectProperties| image:: /img/en/mActionProjectProperties.png
+.. |mActionCustomProjection| image:: /static/common/mActionCustomProjection.png
    :width: 1.5em
-.. |mActionCustomProjection| image:: /img/en/mActionCustomProjection.png
-   :width: 1.5em
-.. |mActionOptions| image:: /img/en/mActionOptions.png
+.. |mActionOptions| image:: /static/common/mActionOptions.png
    :width: 1em
-.. |mActionHelpContents| image:: /img/en/mActionHelpContents.png
+.. |mActionHelpContents| image:: /static/common/mActionHelpContents.png
    :width: 1.5em
-.. |mActionQgisHomePage| image:: /img/en/mActionQgisHomePage.png
+.. |mActionQgisHomePage| image:: /static/common/mActionQgisHomePage.png
    :width: 1.5em
-.. |mActionCheckQgisVersion| image:: /img/en/mActionCheckQgisVersion.png
+.. |mActionCheckQgisVersion| image:: /static/common/mActionCheckQgisVersion.png
    :width: 1.5em
-.. |mActionHelpAbout| image:: /img/en/mActionHelpAbout.png
+.. |mActionHelpAbout| image:: /static/common/mActionHelpAbout.png
    :width: 1.5em
-.. |mActionHelpSponsors| image:: /img/en/mActionHelpSponsors.png
+.. |mActionHelpSponsors| image:: /static/common/mActionHelpSponsors.png
    :width: 1.5em
-.. |mActionTextAnnotation| image:: /img/en/mActionTextAnnotation.png
+.. |mActionTextAnnotation| image:: /static/common/mActionTextAnnotation.png
    :width: 1.5em
-.. |mActionAnnotation| image:: /img/en/mActionAnnotation.png
+.. |mActionAnnotation| image:: /static/common/mActionAnnotation.png
    :width: 1.5em
-.. |mIconStopRendering| image:: /img/en/mIconStopRendering.png
+.. |mIconStopRendering| image:: /static/common/mIconStopRendering.png
    :width: 1.5em
-.. |mIconProjectionDisabled| image:: /img/en/mIconProjectionDisabled.png
+.. |mIconProjectionDisabled| image:: /static/common/mIconProjectionDisabled.png
    :width: 1.5em
-.. |mIconProjectionEnabled| image:: /img/en/mIconProjectionEnabled.png
+.. |mIconProjectionEnabled| image:: /static/common/mIconProjectionEnabled.png
    :width: 1.5em
-.. |mActionMeasure| image:: /img/en/mActionMeasure.png
+.. |mActionMeasure| image:: /static/common/mActionMeasure.png
    :width: 1.5em
-.. |mActionMeasureArea| image:: /img/en/mActionMeasureArea.png
+.. |mActionMeasureArea| image:: /static/common/mActionMeasureArea.png
    :width: 1.5em
-.. |mActionMeasureAngle| image:: /img/en/mActionMeasureAngle.png
+.. |mActionMeasureAngle| image:: /static/common/mActionMeasureAngle.png
    :width: 1.5em
-.. |spiticon| image:: /plugins/img/en/plugins_spit/spiticon.png
-.. |mActionOptions| image:: /img/en/mActionOptions.png
+.. |spiticon| image:: /plugins/static/common/plugins_spit/spiticon.png
+.. |mActionSelectRectangle| image:: /static/common/mActionSelectRectangle.png
    :width: 1.5em
-.. |mActionSelectRectangle| image:: /img/en/mActionSelectRectangle.png
+.. |mActionSelectPolygon| image:: /static/common/mActionSelectPolygon.png
    :width: 1.5em
-.. |mActionSelectPolygon| image:: /img/en/mActionSelectPolygon.png
+.. |mActionSelectFreehand| image:: /static/common/mActionSelectFreehand.png
    :width: 1.5em
-.. |mActionSelectFreehand| image:: /img/en/mActionSelectFreehand.png
+.. |mActionSelectRadius| image:: /static/common/mActionSelectRadius.png
    :width: 1.5em
-.. |mActionSelectRadius| image:: /img/en/mActionSelectRadius.png
+.. |mActionDeselectAll| image:: /static/common/mActionDeselectAll.png
    :width: 1.5em
-.. |mActionDeselectAll| image:: /img/en/mActionDeselectAll.png
+.. |mActionFormAnnotation| image:: /static/common/mActionFormAnnotation.png
    :width: 1.5em
-.. |mActionFormAnnotation| image:: /img/en/mActionFormAnnotation.png
+.. |mActionContextHelp| image:: /static/common/mActionContextHelp.png
    :width: 1.5em
-.. |mActionContextHelp| image:: /img/en/mActionContextHelp.png
+.. |mActionFolder| image:: /static/common/mActionFolder.png
    :width: 1.5em
-.. |mActionFolder| image:: /img/en/mActionFolder.png
+.. |mIconNew| image:: /static/common/mIconNew.png
    :width: 1.5em
-.. |mIconNew| image:: /img/en/mIconNew.png
+.. |raster-info| image:: /static/common/raster-info.png
    :width: 1.5em
-.. |raster-info| image:: /img/en/raster-info.png
-   :width: 1.5em
-.. |plugin_installer| image:: /img/en/plugin_installer.png
+.. |plugin_installer| image:: /static/common/plugin_installer.png
    :width: 1.5em
 .. |gpstrack_barchart| image:: /introduction/img/en/gpstrack_barchart.png
    :width: 1.5em
@@ -406,207 +394,191 @@ rst_epilog = """
    :width: 1.5em
 .. |gps_importer| image:: img/en/plugins_gps/gps_importer.png
    :width: 1.5em
-.. |wfs| image:: /img/en/wfs.png
+.. |wfs| image:: /static/common/wfs.png
    :width: 1.5em
-.. |ftools| image:: img/en/plugins_ftools/ftools_logo.png
+.. |ftools| image:: /static/user_manual/plugins/ftools_logo.png
    :width: 1.5em
-.. |matrix| image:: img/en/plugins_ftools/matrix.png
+.. |matrix| image:: /static/user_manual/plugins/matrix.png
    :width: 3em
-.. |sum_lines| image:: img/en/plugins_ftools/sum_lines.png
+.. |sum_lines| image:: /static/user_manual/plugins/sum_lines.png
    :width: 3em
-.. |sum_points| image:: img/en/plugins_ftools/sum_points.png
+.. |sum_points| image:: /static/user_manual/plugins/sum_points.png
    :width: 3em
-.. |unique| image:: img/en/plugins_ftools/unique.png
+.. |unique| image:: /static/user_manual/plugins/unique.png
    :width: 3em
-.. |basic_statistics| image:: img/en/plugins_ftools/basic_statistics.png
+.. |basic_statistics| image:: /static/user_manual/plugins/basic_statistics.png
    :width: 3em
-.. |neighbor| image:: img/en/plugins_ftools/neighbour.png
+.. |neighbor| image:: /static/user_manual/plugins/neighbour.png
    :width: 3em
-.. |mean| image:: img/en/plugins_ftools/mean.png
+.. |mean| image:: /static/user_manual/plugins/mean.png
    :width: 3em
-.. |intersections| image:: img/en/plugins_ftools/intersections.png
+.. |intersections| image:: /static/user_manual/plugins/intersections.png
    :width: 3em
-.. |random_selection| image:: img/en/plugins_ftools/random_selection.png
+.. |random_selection| image:: /static/user_manual/plugins/random_selection.png
    :width: 3em
-.. |sub_selection| image:: img/en/plugins_ftools/sub_selection.png
+.. |sub_selection| image:: /static/user_manual/plugins/sub_selection.png
    :width: 3em
-.. |random_points| image:: img/en/plugins_ftools/random_points.png
+.. |random_points| image:: /static/user_manual/plugins/random_points.png
    :width: 3em
-.. |regular_points| image:: img/en/plugins_ftools/regular_points.png
+.. |regular_points| image:: /static/user_manual/plugins/regular_points.png
    :width: 3em
-.. |vector_grid| image:: img/en/plugins_ftools/vector_grid.png
+.. |vector_grid| image:: /static/user_manual/plugins/vector_grid.png
    :width: 3em
-.. |select_location| image:: img/en/plugins_ftools/select_location.png
+.. |select_location| image:: /static/user_manual/plugins/select_location.png
    :width: 3em
-.. |layer_extent| image:: img/en/plugins_ftools/layer_extent.png
+.. |layer_extent| image:: /static/user_manual/plugins/layer_extent.png
    :width: 3em
-.. |convex_hull| image:: img/en/plugins_ftools/convex_hull.png
+.. |convex_hull| image:: /static/user_manual/plugins/convex_hull.png
    :width: 3em
-.. |buffer| image:: img/en/plugins_ftools/buffer.png
+.. |buffer| image:: /static/user_manual/plugins/buffer.png
    :width: 3em
-.. |intersect| image:: img/en/plugins_ftools/intersect.png
+.. |intersect| image:: /static/user_manual/plugins/intersect.png
    :width: 3em
-.. |union| image:: img/en/plugins_ftools/union.png
+.. |union| image:: /static/user_manual/plugins/union.png
    :width: 3em
-.. |sym_difference| image:: img/en/plugins_ftools/sym_difference.png
+.. |sym_difference| image:: /static/user_manual/plugins/sym_difference.png
    :width: 3em
-.. |clip| image:: img/en/plugins_ftools/clip.png
+.. |clip| image:: /static/user_manual/plugins/clip.png
    :width: 3em
-.. |difference| image:: img/en/plugins_ftools/difference.png
+.. |difference| image:: /static/user_manual/plugins/difference.png
    :width: 3em
-.. |dissolve| image:: img/en/plugins_ftools/dissolve.png
+.. |dissolve| image:: /static/user_manual/plugins/dissolve.png
    :width: 3em
-.. |check_geometry| image::  img/en/plugins_ftools/check_geometry.png
+.. |check_geometry| image::  /static/user_manual/plugins/check_geometry.png
    :width: 3em
-.. |export_geometry| image:: img/en/plugins_ftools/export_geometry.png
+.. |export_geometry| image:: /static/user_manual/plugins/export_geometry.png
    :width: 3em
-.. |centroids| image:: img/en/plugins_ftools/centroids.png
+.. |centroids| image:: /static/user_manual/plugins/centroids.png
    :width: 3em
-.. |delaunay| image:: img/en/plugins_ftools/delaunay.png
+.. |delaunay| image:: /static/user_manual/plugins/delaunay.png
    :width: 3em
-.. |simplify| image:: img/en/plugins_ftools/simplify.png
+.. |simplify| image:: /static/user_manual/plugins/simplify.png
    :width: 3em
-.. |multi_to_single| image:: img/en/plugins_ftools/multi_to_single.png
+.. |multi_to_single| image:: /static/user_manual/plugins/multi_to_single.png
    :width: 3em
-.. |single_to_multi| image:: img/en/plugins_ftools/single_to_multi.png
+.. |single_to_multi| image:: /static/user_manual/plugins/single_to_multi.png
    :width: 3em
-.. |to_lines| image:: img/en/plugins_ftools/to_lines.png
+.. |to_lines| image:: /static/user_manual/plugins/to_lines.png
    :width: 3em
-.. |lines_to|  image:: img/en/plugins_ftools/lines_to.png
+.. |lines_to|  image:: /static/user_manual/plugins/lines_to.png
    :width: 3em
-.. |extract_nodes| image:: img/en/plugins_ftools/extract_nodes.png
+.. |extract_nodes| image:: /static/user_manual/plugins/extract_nodes.png
    :width: 3em
-.. |export_projection| image:: img/en/plugins_ftools/export_projection.png
+.. |export_projection| image:: /static/user_manual/plugins/export_projection.png
    :width: 3em
-.. |define_projection| image:: img/en/plugins_ftools/define_projection.png
+.. |define_projection| image:: /static/user_manual/plugins/define_projection.png
    :width: 3em
-.. |join_location| image:: img/en/plugins_ftools/join_location.png
+.. |join_location| image:: /static/user_manual/plugins/join_location.png
    :width: 3em
-.. |split_layer| image:: img/en/plugins_ftools/split_layer.png
+.. |split_layer| image:: /static/user_manual/plugins/split_layer.png
    :width: 3em
-.. |merge_shapes| image:: img/en/plugins_ftools/merge_shapes.png
+.. |merge_shapes| image:: /static/user_manual/plugins/merge_shapes.png
    :width: 3em
-.. |event_browser| image:: img/en/plugins_evis/event_browser.png
+.. |event_browser| image:: /static/user_manual/plugins/event_browser.png
    :width: 1.5em
-.. |event_id| image:: img/en/plugins_evis/event_id.png
+.. |event_id| image:: /static/user_manual/plugins/event_id.png
    :width: 1.5em
-.. |evis_connect| image:: img/en/plugins_evis/evis_connect.png
+.. |evis_connect| image:: /static/user_manual/plugins/evis_connect.png
    :width: 1.5em
-.. |evis_file| image:: img/en/plugins_evis/evis_file.png
+.. |evis_file| image:: /static/user_manual/plugins/evis_file.png
    :width: 1.5em
-.. |dxf2shp_converter| image:: img/en/plugins_dxf2shape_converter/dxf2shp_converter.png
+.. |dxf2shp_converter| image:: /static/user_manual/plugins/dxf2shp_converter.png
    :width: 1.5em
 .. |measure_line| image:: /introduction/img/en/measure_line.png
    :width: 22em
 .. |measure_area| image:: /introduction/img/en/measure_area.png
    :width: 22em
 .. |measure_angle| image:: /introduction/img/en/measure_angle.png
-   :width: 18em
+   :width: 17em
 .. |gpstrack_main| image:: /introduction/img/en/gpstrack_main.png
-   :width: 15em
+   :width: 20em
 .. |gpstrack_stren| image:: /introduction/img/en/gpstrack_stren.png
    :width: 15em
 .. |gpstrack_polar| image:: /introduction/img/en/gpstrack_polar.png
    :width: 15em
-.. |grass| image:: /grass_integration/img/en/grasslogo.png
+.. |grass| image:: /static/common/grasslogo.png
    :width: 1.5em
-.. |grass_open_mapset| image:: /grass_integration/img/en/grass_open_mapset.png
+.. |grass_open_mapset| image:: /static/common/grass_open_mapset.png
    :width: 1.5em
-.. |grass_new_mapset| image:: /grass_integration/img/en/grass_new_mapset.png
+.. |grass_new_mapset| image:: /static/common/grass_new_mapset.png
    :width: 1.5em
-.. |grass_close_mapset| image:: /grass_integration/img/en/grass_close_mapset.png
+.. |grass_close_mapset| image:: /static/common/grass_close_mapset.png
    :width: 1.5em
-.. |grass_add_vector| image:: /grass_integration/img/en/grass_add_vector.png
+.. |grass_add_vector| image:: /static/common/grass_add_vector.png
    :width: 1.5em
-.. |grass_add_raster| image:: /grass_integration/img/en/grass_add_raster.png
+.. |grass_add_raster| image:: /static/common/grass_add_raster.png
    :width: 1.5em
-.. |grass_new_vector_layer| image:: /grass_integration/img/en/grass_new_vector_layer.png
+.. |grass_new_vector_layer| image:: /static/common/grass_new_vector_layer.png
    :width: 1.5em
-.. |grass_edit| image:: /grass_integration/img/en/grass_edit.png
+.. |grass_edit| image:: /static/common/grass_edit.png
    :width: 1.5em
-.. |grass_tools| image:: /grass_integration/img/en/grass_tools.png
+.. |grass_tools| image:: /static/common/grass_tools.png
    :width: 1.5em
-.. |grass_region| image:: /grass_integration/img/en/grass_region.png
+.. |grass_region| image:: /static/common/grass_region.png
    :width: 1.5em
-.. |grass_region_edit| image:: /grass_integration/img/en/grass_region_edit.png
+.. |grass_region_edit| image:: /static/common/grass_region_edit.png
    :width: 1.5em
-.. |grass_open_mapset| image:: /grass_integration/img/en/grass_open_mapset.png
+.. |grass_new_point| image:: /static/common/grass_new_point.png
    :width: 1.5em
-.. |grass_new_point| image:: /grass_integration/img/en/grass_new_point.png
+.. |grass_new_line| image:: /static/common/grass_new_line.png
    :width: 1.5em
-.. |grass_new_line| image:: /grass_integration/img/en/grass_new_line.png
+.. |grass_new_boundary| image:: /static/common/grass_new_boundary.png
    :width: 1.5em
-.. |grass_new_boundary| image:: /grass_integration/img/en/grass_new_boundary.png
+.. |grass_new_centroid| image:: /static/common/grass_new_centroid.png
    :width: 1.5em
-.. |grass_new_centroid| image:: /grass_integration/img/en/grass_new_centroid.png
+.. |grass_move_vertex| image:: /static/common/grass_move_vertex.png
    :width: 1.5em
-.. |grass_move_vertex| image:: /grass_integration/img/en/grass_move_vertex.png
+.. |grass_add_vertex| image:: /static/common/grass_add_vertex.png
    :width: 1.5em
-.. |grass_add_vertex| image:: /grass_integration/img/en/grass_add_vertex.png
+.. |grass_delete_vertex| image:: /static/common/grass_delete_vertex.png
    :width: 1.5em
-.. |grass_delete_vertex| image:: /grass_integration/img/en/grass_delete_vertex.png
+.. |grass_move_line| image:: /static/common/grass_move_line.png
    :width: 1.5em
-.. |grass_move_line| image:: /grass_integration/img/en/grass_move_line.png
+.. |grass_split_line| image:: /static/common/grass_split_line.png
    :width: 1.5em
-.. |grass_split_line| image:: /grass_integration/img/en/grass_split_line.png
+.. |grass_delete_line| image:: /static/common/grass_delete_line.png
    :width: 1.5em
-.. |grass_delete_line| image:: /grass_integration/img/en/grass_delete_line.png
+.. |grass_edit_attributes| image:: /static/common/grass_edit_attributes.png
    :width: 1.5em
-.. |grass_edit_attributes| image:: /grass_integration/img/en/grass_edit_attributes.png
+.. |grass_close_edit| image:: /static/common/grass_close_edit.png
    :width: 1.5em
-.. |grass_close_edit| image:: /grass_integration/img/en/grass_close_edit.png
+.. |grass_add_map| image:: /static/common/grass_add_map.png
    :width: 1.5em
-.. |grass_add_map| image:: /grass_integration/img/en/grass_add_map.png
+.. |grass_copy_map| image:: /static/common/grass_copy_map.png
    :width: 1.5em
-.. |grass_copy_map| image:: /grass_integration/img/en/grass_copy_map.png
+.. |grass_rename_map| image:: /static/common/grass_rename_map.png
    :width: 1.5em
-.. |grass_rename_map| image:: /grass_integration/img/en/grass_rename_map.png
+.. |grass_delete_map| image:: /static/common/grass_delete_map.png
    :width: 1.5em
-.. |grass_delete_map| image:: /grass_integration/img/en/grass_delete_map.png
+.. |grass_set_region| image:: /static/common/grass_set_region.png
    :width: 1.5em
-.. |grass_set_region| image:: /grass_integration/img/en/grass_set_region.png
+.. |grass_refresh| image:: /static/common/grass_refresh.png
    :width: 1.5em
-.. |grass_refresh| image:: /grass_integration/img/en/grass_refresh.png
-   :width: 1.5em
-.. |grass_module_option| image:: /grass_integration/img/en/grass_module_option.png
-   :width: 20em
-.. |grass_module_output| image:: /grass_integration/img/en/grass_module_output.png
-   :width: 20em
-.. |grass_module_manual| image:: /grass_integration/img/en/grass_module_manual.png
-   :width: 20em
-.. |grass_toolbox_moduletree| image:: /grass_integration/img/en/grass_toolbox_moduletree.png
-   :width: 30em
-.. |grass_toolbox_modulelist| image:: /grass_integration/img/en/grass_toolbox_modulelist.png
-   :width: 30em
-.. |grass_toolbox_rcontour| image:: /grass_integration/img/en/grass_toolbox_rcontour.png
-   :width: 20em
-.. |grass_toolbox_rcontour2| image:: /grass_integration/img/en/grass_toolbox_rcontour2.png
-   :width: 20em
-.. |delimited_text| image:: img/en/plugins_delimited_text/delimited_text.png
+.. |delimited_text| image:: /static/user_manual/plugins/delimited_text.png
    :width: 1.5em   
-.. |mActionGDALScript| image:: img/en/plugins_georeferencer/mActionGDALScript.png
+.. |mActionGDALScript| image:: /static/user_manual/plugins/mActionGDALScript.png
    :width: 1.5em
-.. |mActionLinkQGisToGeoref| image:: img/en/plugins_georeferencer/mActionLinkQGisToGeoref.png
+.. |mActionLinkQGisToGeoref| image:: /static/user_manual/plugins/mActionLinkQGisToGeoref.png
    :width: 2.5em
-.. |mActionStartGeoref| image:: img/en/plugins_georeferencer/mActionStartGeoref.png
+.. |mActionStartGeoref| image:: /static/user_manual/plugins/mActionStartGeoref.png
    :width: 1.5em
-.. |mActionLinkGeorefToQGis| image:: img/en/plugins_georeferencer/mActionLinkGeorefToQGis.png
+.. |mActionLinkGeorefToQGis| image:: /static/user_manual/plugins/mActionLinkGeorefToQGis.png
    :width: 2.5em
-.. |georeferencer| image:: img/en/plugins_georeferencer/georeferencer.png
+.. |georeferencer| image:: /static/user_manual/plugins/georeferencer.png
    :width: 1.5em
-.. |pencil| image:: img/en/plugins_georeferencer/pencil.png
+.. |pencil| image:: /static/user_manual/plugins/pencil.png
    :width: 1.5em
-.. |coordinate_capture| image:: img/en/plugins_coordinate_capture/coordinate_capture.png
+.. |coordinate_capture| image:: /static/user_manual/plugins/coordinate_capture.png
    :width: 1.5em
-.. |tracking| image:: img/en/plugins_coordinate_capture/tracking.png
+.. |tracking| image:: /static/user_manual/plugins/tracking.png
    :width: 1.5em
 .. |plugin| image:: img/en/plugins_road_graph/plugin.png
    :width: 1.5em
-.. |spatialquery| image:: img/en/plugins_spatial_query/spatialquery.png
+.. |spatialquery| image:: /static/user_manual/plugins/spatialquery.png
    :width: 1.5em
-.. |selectesubsetlayer| image:: img/en/plugins_spatial_query/selectesubsetlayer.png
+.. |selectesubsetlayer| image:: /static/user_manual/plugins/selectesubsetlayer.png
    :width: 1.5em
-.. |selectcreatelayer| image:: img/en/plugins_spatial_query/selectcreatelayer.png
+.. |selectcreatelayer| image:: /static/user_manual/plugins/selectcreatelayer.png
    :width: 1.5em
 
 """
@@ -617,7 +589,7 @@ rst_epilog = """
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.
 #html_theme = 'sphinxdoc'
-html_theme = 'sphinxdoc'
+html_theme = 'linfiniti-sphinx-theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -646,7 +618,7 @@ html_theme_path = ['../themes']
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['img']
+html_static_path = ['static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -698,8 +670,8 @@ htmlhelp_basename = 'QGISUserGuide'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('user_guide', 'QGISUserGuide.tex', u'QGIS Workshop Documentation',
-   u'Greg Corradini and Aaron Racicot', 'manual'),
+  ('user_manual/index', 'QGISUserGuide.tex', u'QGIS User Guide',
+   u'QGIS Project', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -724,7 +696,7 @@ latex_documents = [
 # Grouping the document tree into PDF files. List of tuples
 # (source start file, target name, title, author).
 pdf_documents = [
-    ('user_guide', u'QGISUserGuide', u'QGIS User Guide', u'QGIS Project'),
+    ('user_manual/index', u'QGISUserGuide', u'QGIS User Guide', u'QGIS Project'),
 ]
 
 # A comma-separated list of custom stylesheets. Example:
@@ -749,6 +721,6 @@ pdf_stylesheets = ['sphinx','kerning','a4']
 # If false, no coverpage is generated.
 #pdf_use_coverpage = True
 
-locale_dirs = ['translated']
+locale_dirs = ['../i18n']
 
 
