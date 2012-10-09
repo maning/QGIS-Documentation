@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QGIS User Guide 1.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-07 20:51\n"
+"POT-Creation-Date: 2012-10-08 15:01\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3306,7 +3306,7 @@ msgstr ""
 # 50f1a6a86192483fb46559d8a9048202
 # 6c88d5d26c144edd8d707d127e6b6f3f
 #: ../../source/user_manual/introduction/general_tools.rst:173
-#: ../../source/user_manual/introduction/qgis_configuration.rst:68
+#: ../../source/user_manual/introduction/qgis_configuration.rst:73
 msgid ""
 "|checkbox| :guilabel:`Make lines appear less jagged at the expense of some "
 "drawing performance`"
@@ -3315,7 +3315,7 @@ msgstr ""
 # a668cdae12f44b4ab4aa1c132adbb216
 # 0ce9100c074c4c83ba183a9cc8b0950b
 #: ../../source/user_manual/introduction/general_tools.rst:175
-#: ../../source/user_manual/introduction/qgis_configuration.rst:70
+#: ../../source/user_manual/introduction/qgis_configuration.rst:75
 msgid "|checkbox| :guilabel:`Fix problems with incorrectly filled polygons`"
 msgstr ""
 
@@ -3384,47 +3384,47 @@ msgid ""
 msgstr ""
 
 # 4fd6d395113c484eb20f091a10aef4d1
-#: ../../source/user_manual/introduction/general_tools.rst:230
+#: ../../source/user_manual/introduction/general_tools.rst:238
 msgid "|measure_line|"
 msgstr ""
 
 # 4a27661232d84b8887d18b813d8d96d7
-#: ../../source/user_manual/introduction/general_tools.rst:230
+#: ../../source/user_manual/introduction/general_tools.rst:238
 msgid "|measure_angle|"
 msgstr ""
 
 # 1205bdd19a1446fc8f3d9bd434652657
-#: ../../source/user_manual/introduction/general_tools.rst:232
+#: ../../source/user_manual/introduction/general_tools.rst:240
 msgid "Measure lines"
 msgstr ""
 
 # 75fe1cc750f34a31949199827248ba55
-#: ../../source/user_manual/introduction/general_tools.rst:232
+#: ../../source/user_manual/introduction/general_tools.rst:240
 msgid "Measure angles"
 msgstr ""
 
 # f834da43a91b46a891c95622325e3124
-#: ../../source/user_manual/introduction/general_tools.rst:236
+#: ../../source/user_manual/introduction/general_tools.rst:244
 msgid "|measure_area|"
 msgstr ""
 
 # 083da902f7494b28a1fbf688bf17b613
-#: ../../source/user_manual/introduction/general_tools.rst:238
+#: ../../source/user_manual/introduction/general_tools.rst:246
 msgid "Measure areas"
 msgstr ""
 
 # 1f1d617fe4a342e7b1e0be651a82a86a
-#: ../../source/user_manual/introduction/general_tools.rst:241
+#: ../../source/user_manual/introduction/general_tools.rst:249
 msgid "Measure tools in action"
 msgstr ""
 
 # eca0a05e59a94979ac5136f5b21b2e3c
-#: ../../source/user_manual/introduction/general_tools.rst:246
+#: ../../source/user_manual/introduction/general_tools.rst:254
 msgid "Select and deselect features"
 msgstr ""
 
 # 6a67a93668694a5682b93cf0ff07a131
-#: ../../source/user_manual/introduction/general_tools.rst:248
+#: ../../source/user_manual/introduction/general_tools.rst:256
 msgid ""
 "The QGIS toolbar provides several tools to select features in the map "
 "canvas. To select one or several features just click on |mActionSelect| and "
@@ -3432,42 +3432,42 @@ msgid ""
 msgstr ""
 
 # f5e3f1b6f583410aa964e32e67d42f0b
-#: ../../source/user_manual/introduction/general_tools.rst:252
+#: ../../source/user_manual/introduction/general_tools.rst:260
 msgid "|mActionSelect| :sup:`Select features`"
 msgstr ""
 
 # c7d375998ece49b69631176afe6726be
-#: ../../source/user_manual/introduction/general_tools.rst:253
+#: ../../source/user_manual/introduction/general_tools.rst:261
 msgid "|mActionSelectRectangle| :sup:`Select features by rectangle`"
 msgstr ""
 
 # f91f17fc6d8f4cf7ab17476c2101c085
-#: ../../source/user_manual/introduction/general_tools.rst:254
+#: ../../source/user_manual/introduction/general_tools.rst:262
 msgid "|mActionSelectPolygon| :sup:`Select features by polygon`"
 msgstr ""
 
 # f46677ab26054c398661bd2fce08bcc9
-#: ../../source/user_manual/introduction/general_tools.rst:255
+#: ../../source/user_manual/introduction/general_tools.rst:263
 msgid "|mActionSelectFreehand| :sup:`Select features by freehand`"
 msgstr ""
 
 # 0450d2d21962412489e374109cbfb3c4
-#: ../../source/user_manual/introduction/general_tools.rst:256
+#: ../../source/user_manual/introduction/general_tools.rst:264
 msgid "|mActionSelectRadius| :sup:`Select features by radius`"
 msgstr ""
 
 # ab12c6b91ab343afbecff87daae202a6
-#: ../../source/user_manual/introduction/general_tools.rst:258
+#: ../../source/user_manual/introduction/general_tools.rst:266
 msgid "To deselect all selected features click on |mActionDeselectAll|."
 msgstr ""
 
 # 7e622be2c5bd41f4a4c5b72663da5c7c
-#: ../../source/user_manual/introduction/general_tools.rst:266
+#: ../../source/user_manual/introduction/general_tools.rst:274
 msgid "Annotation Tools"
 msgstr ""
 
 # a5dc4c07a997441687e7f235d3f7910e
-#: ../../source/user_manual/introduction/general_tools.rst:268
+#: ../../source/user_manual/introduction/general_tools.rst:276
 msgid ""
 "The |mActionTextAnnotation| text annotation tools in the attribute t oolbar "
 "provides the possibility to place formatted text in a balloon on the QGIS "
@@ -3475,7 +3475,7 @@ msgid ""
 msgstr ""
 
 # 432a1ecda09f4f42b87e6c333174c033
-#: ../../source/user_manual/introduction/general_tools.rst:280
+#: ../../source/user_manual/introduction/general_tools.rst:288
 msgid ""
 "Double click on the item opens a dialog with various options. There is the "
 "text editor to enter the formatted text and other item settings. E.g. there "
@@ -3487,14 +3487,14 @@ msgid ""
 msgstr ""
 
 # 7240967c2c6c4dc1809d3799bfc56a05
-#: ../../source/user_manual/introduction/general_tools.rst:288
+#: ../../source/user_manual/introduction/general_tools.rst:296
 msgid ""
 "The |mActionAnnotation| move annotation tool allows to move the annotation "
 "on the map canvas."
 msgstr ""
 
 # 882f83a906f44123a7d07545b1d88062
-#: ../../source/user_manual/introduction/general_tools.rst:297
+#: ../../source/user_manual/introduction/general_tools.rst:305
 msgid ""
 "Additionally you can also create your own annotation forms. The |"
 "mActionFormAnnotation| form annotation tool is useful to display attributes "
@@ -3505,7 +3505,7 @@ msgid ""
 msgstr ""
 
 # 0ee365ef47cf48198bc76922012bfd7f
-#: ../../source/user_manual/introduction/general_tools.rst:312
+#: ../../source/user_manual/introduction/general_tools.rst:320
 msgid ""
 "If you press :kbd:`Ctrl+T` while an annotation tool is active (move "
 "annotation, text annotation, form annotation), the visibility states of the "
@@ -3513,63 +3513,63 @@ msgid ""
 msgstr ""
 
 # ab6bafec5d984b9f8607c962e9d0dfdc
-#: ../../source/user_manual/introduction/general_tools.rst:319
+#: ../../source/user_manual/introduction/general_tools.rst:327
 msgid "Spatial Bookmarks"
 msgstr ""
 
 # eef8c0d5d0794017ad68819632c11c73
-#: ../../source/user_manual/introduction/general_tools.rst:326
+#: ../../source/user_manual/introduction/general_tools.rst:334
 msgid ""
 "Spatial Bookmarks allow you to \"bookmark\" a geographic location and return "
 "to it later."
 msgstr ""
 
 # d3a04723eb11404bb3b370ba4470a4be
-#: ../../source/user_manual/introduction/general_tools.rst:330
+#: ../../source/user_manual/introduction/general_tools.rst:338
 msgid "Creating a Bookmark"
 msgstr ""
 
 # 6fb28bf84db547088ff5ee308df703eb
-#: ../../source/user_manual/introduction/general_tools.rst:332
+#: ../../source/user_manual/introduction/general_tools.rst:340
 msgid "To create a bookmark:"
 msgstr ""
 
 # fa1d734cf00e4e4e89e4e96152d155d8
-#: ../../source/user_manual/introduction/general_tools.rst:334
+#: ../../source/user_manual/introduction/general_tools.rst:342
 msgid "Zoom or pan to the area of interest."
 msgstr ""
 
 # abb1082e6c8347e6a112e9b4e14f1455
-#: ../../source/user_manual/introduction/general_tools.rst:335
+#: ../../source/user_manual/introduction/general_tools.rst:343
 msgid ""
 "Select the menu option :menuselection:`View --> New Bookmark -->` or press :"
 "kbd:`Ctrl-B`."
 msgstr ""
 
 # c396950129fe479095539ea2f857ce15
-#: ../../source/user_manual/introduction/general_tools.rst:336
+#: ../../source/user_manual/introduction/general_tools.rst:344
 msgid "Enter a descriptive name for the bookmark (up to 255 characters)."
 msgstr ""
 
 # 86cdb3e0ecbd4bc0bc11161d60c17d7e
-#: ../../source/user_manual/introduction/general_tools.rst:337
+#: ../../source/user_manual/introduction/general_tools.rst:345
 msgid ""
 "Click **[OK]** to add the bookmark or **[Cancel]** to exit without adding "
 "the bookmark."
 msgstr ""
 
 # b98e2b8b27e44e8dba4dde13c3835532
-#: ../../source/user_manual/introduction/general_tools.rst:339
+#: ../../source/user_manual/introduction/general_tools.rst:347
 msgid "Note that you can have multiple bookmarks with the same name."
 msgstr ""
 
 # 12b707d9d971479db3d8cc07096ee04e
-#: ../../source/user_manual/introduction/general_tools.rst:342
+#: ../../source/user_manual/introduction/general_tools.rst:350
 msgid "Working with Bookmarks"
 msgstr ""
 
 # 481b46cfecd74a6986217099c508994e
-#: ../../source/user_manual/introduction/general_tools.rst:344
+#: ../../source/user_manual/introduction/general_tools.rst:352
 msgid ""
 "To use or manage bookmarks, select the menu option :menuselection:`View --> "
 "Show Bookmarks -->`. The :menuselection:`Geospatial Bookmarks` dialog allows "
@@ -3578,12 +3578,12 @@ msgid ""
 msgstr ""
 
 # 83144dd6b08e448282e6866d46c2bd30
-#: ../../source/user_manual/introduction/general_tools.rst:350
+#: ../../source/user_manual/introduction/general_tools.rst:358
 msgid "Zooming to a Bookmark"
 msgstr ""
 
 # 02a18570f9604f0b9f2eb465c9da72d9
-#: ../../source/user_manual/introduction/general_tools.rst:352
+#: ../../source/user_manual/introduction/general_tools.rst:360
 msgid ""
 "From the :menuselection:`Geospatial Bookmarks` dialog, select the desired "
 "bookmark by clicking on it, then click **[Zoom To]**. You can also zoom to a "
@@ -3591,12 +3591,12 @@ msgid ""
 msgstr ""
 
 # 7aa56c8db6d24a248acbb6fcb819deca
-#: ../../source/user_manual/introduction/general_tools.rst:357
+#: ../../source/user_manual/introduction/general_tools.rst:365
 msgid "Deleting a Bookmark"
 msgstr ""
 
 # a779e320d5ad4901a6e15c961cc67307
-#: ../../source/user_manual/introduction/general_tools.rst:359
+#: ../../source/user_manual/introduction/general_tools.rst:367
 msgid ""
 "To delete a bookmark from the :guilabel:`Geospatial Bookmarks` dialog, click "
 "on it then click **[Delete]**. Confirm your choice by clicking **[Yes]** or "
@@ -4139,13 +4139,23 @@ msgid ""
 "version of QGIS`"
 msgstr ""
 
-# 6ac6c3eec4f44cbdb6ba3294075ba8a3
+# eea7b1e52c084d22af081d723e261d28
 #: ../../source/user_manual/introduction/qgis_configuration.rst:3
+msgid "QGIS Configuration"
+msgstr ""
+
+# 8287d9a09f1a481e81188f6ca1e02fd7
+#: ../../source/user_manual/introduction/qgis_configuration.rst:5
+msgid "QGIS is highly configurable ... (please add more introduction here)"
+msgstr ""
+
+# 6ac6c3eec4f44cbdb6ba3294075ba8a3
+#: ../../source/user_manual/introduction/qgis_configuration.rst:8
 msgid "Project Properties"
 msgstr ""
 
 # 765cc8fbcfdb47eabb387d3f6096df7e
-#: ../../source/user_manual/introduction/qgis_configuration.rst:5
+#: ../../source/user_manual/introduction/qgis_configuration.rst:10
 msgid ""
 "In the properties window for the project under |nix| :menuselection:`File --"
 "> Project Properties` or |win| :menuselection:`Settings --> Project "
@@ -4153,7 +4163,7 @@ msgid ""
 msgstr ""
 
 # 1eac198938c14d0794c8be0b502276cc
-#: ../../source/user_manual/introduction/qgis_configuration.rst:10
+#: ../../source/user_manual/introduction/qgis_configuration.rst:15
 msgid ""
 "In the :guilabel:`General` tab the project title, selection and background "
 "color, layer units, precision, and the option to save relative paths to "
@@ -4162,7 +4172,7 @@ msgid ""
 msgstr ""
 
 # e2b41348b70a4d8d81f3c62ccfcde2a3
-#: ../../source/user_manual/introduction/qgis_configuration.rst:14
+#: ../../source/user_manual/introduction/qgis_configuration.rst:19
 msgid ""
 "The :guilabel:`CRS Coordinate Reference System` tab enables you to choose "
 "the CRS for this project, and to enable on-the-fly re-projection of raster "
@@ -4170,7 +4180,7 @@ msgid ""
 msgstr ""
 
 # 4a3f0d561bce44df8bb5e25598220217
-#: ../../source/user_manual/introduction/qgis_configuration.rst:17
+#: ../../source/user_manual/introduction/qgis_configuration.rst:22
 msgid ""
 "With the third :guilabel:`Identifiable layers` tab you set (or disable) "
 "which layers will respond to the identify tool. (See the Map tools paragraph "
@@ -4179,7 +4189,7 @@ msgid ""
 msgstr ""
 
 # 444fcda910324524adae4a20dbbe2f57
-#: ../../source/user_manual/introduction/qgis_configuration.rst:20
+#: ../../source/user_manual/introduction/qgis_configuration.rst:25
 msgid ""
 "The tab :guilabel:`WMS Server` allows to define information about the QGIS "
 "mapserver Service Capabilities, the Extent and the CRS Restrictions. "
@@ -4187,13 +4197,13 @@ msgid ""
 "response` will allow to query the WMS layers."
 msgstr ""
 
-# d72c05995b05476ba508c7e97d743638
-#: ../../source/user_manual/introduction/qgis_configuration.rst:28
-msgid "GUI Options"
+# 336bb606ae9d48a3ae662e1159576164
+#: ../../source/user_manual/introduction/qgis_configuration.rst:33
+msgid "Options"
 msgstr ""
 
 # 09aa6c6b83884280900d2436856d0e0c
-#: ../../source/user_manual/introduction/qgis_configuration.rst:30
+#: ../../source/user_manual/introduction/qgis_configuration.rst:35
 msgid ""
 "|mActionOptions| Some basic options for QGIS can be selected using the :"
 "guilabel:`Options` dialog. Select the menu option :menuselection:`Settings --"
@@ -4203,149 +4213,149 @@ msgstr ""
 
 # 6ffeb72743994623bceb5e12da1fc7cd
 # d9ff8f801a6f492da309cfbc85feb277
-#: ../../source/user_manual/introduction/qgis_configuration.rst:36
+#: ../../source/user_manual/introduction/qgis_configuration.rst:41
 #: ../../source/user_manual/working_with_raster/raster_properties.rst:188
 #: ../../source/user_manual/working_with_vector/vector_properties.rst:803
 msgid "General Tab"
 msgstr ""
 
 # e5755a16ca614865bef3e962bd1a6eff
-#: ../../source/user_manual/introduction/qgis_configuration.rst:38
+#: ../../source/user_manual/introduction/qgis_configuration.rst:43
 msgid "|checkbox| :guilabel:`Prompt to save project changes when required`"
 msgstr ""
 
 # ac3526ae5455429a9923e11a32417a3b
-#: ../../source/user_manual/introduction/qgis_configuration.rst:39
+#: ../../source/user_manual/introduction/qgis_configuration.rst:44
 msgid ""
 "|checkbox| :guilabel:`Warn when opening a project file saved with an older "
 "version of QGIS`"
 msgstr ""
 
 # c2630ebfc1c44af3a62bba8d0583d461
-#: ../../source/user_manual/introduction/qgis_configuration.rst:40
+#: ../../source/user_manual/introduction/qgis_configuration.rst:45
 msgid "Change Selection and background Color"
 msgstr ""
 
 # be3909d19969480684071ec649277cb8
-#: ../../source/user_manual/introduction/qgis_configuration.rst:41
+#: ../../source/user_manual/introduction/qgis_configuration.rst:46
 msgid "Change the icon theme (choose between default, classic, gis and newgis)"
 msgstr ""
 
 # 762bda0f96e9417ca77bf5b56588dd5a
-#: ../../source/user_manual/introduction/qgis_configuration.rst:42
+#: ../../source/user_manual/introduction/qgis_configuration.rst:47
 msgid "Change icon size between 16, 24 and 32 pixel."
 msgstr ""
 
 # 9b149a855ed04c93b2f0dcd83a1d37fc
-#: ../../source/user_manual/introduction/qgis_configuration.rst:43
+#: ../../source/user_manual/introduction/qgis_configuration.rst:48
 msgid ""
 "Define double click action in legend (choose between 'open layer properties' "
 "and 'open ') attribute table."
 msgstr ""
 
 # 780024f2fed74ceba3909b2d337be48c
-#: ../../source/user_manual/introduction/qgis_configuration.rst:45
+#: ../../source/user_manual/introduction/qgis_configuration.rst:50
 msgid "|checkbox| :guilabel:`Capitalize layer names in legend`"
 msgstr ""
 
 # f75e061924714077bc550ddea9e040c2
-#: ../../source/user_manual/introduction/qgis_configuration.rst:46
+#: ../../source/user_manual/introduction/qgis_configuration.rst:51
 msgid "|checkbox| :guilabel:`Display classification attribute names in legend`"
 msgstr ""
 
 # ca34f900c9ad41528efdbf9e5d66371a
-#: ../../source/user_manual/introduction/qgis_configuration.rst:47
+#: ../../source/user_manual/introduction/qgis_configuration.rst:52
 msgid "|checkbox| :guilabel:`Create raster icons in legend`"
 msgstr ""
 
 # de0734e9ff0b45c5acbe938a8935e3bd
-#: ../../source/user_manual/introduction/qgis_configuration.rst:48
+#: ../../source/user_manual/introduction/qgis_configuration.rst:53
 msgid "|checkbox| :guilabel:`Hide splash screen at startup`"
 msgstr ""
 
 # 01a06781c518413fb6dffda85a6afbf6
-#: ../../source/user_manual/introduction/qgis_configuration.rst:49
+#: ../../source/user_manual/introduction/qgis_configuration.rst:54
 msgid ""
 "|checkbox| :guilabel:`Open identify results in a dock window (QGIS restart "
 "required)`"
 msgstr ""
 
 # 90118ff7ad4347b3b469d78b0d69ea84
-#: ../../source/user_manual/introduction/qgis_configuration.rst:51
+#: ../../source/user_manual/introduction/qgis_configuration.rst:56
 msgid ""
 "|checkbox| :guilabel:`Open snapping options in a dock window (QGIS restart "
 "required)`"
 msgstr ""
 
 # 41acda02812c47828e190443506326cc
-#: ../../source/user_manual/introduction/qgis_configuration.rst:53
+#: ../../source/user_manual/introduction/qgis_configuration.rst:58
 msgid "|checkbox| :guilabel:`Open attribute table in a dock window`"
 msgstr ""
 
 # 938f2e7dfec34e1d81803a8a05eebb90
-#: ../../source/user_manual/introduction/qgis_configuration.rst:54
+#: ../../source/user_manual/introduction/qgis_configuration.rst:59
 msgid ""
 "|checkbox| :guilabel:`Add PostGIS layers with double click and select in "
 "extended mode`"
 msgstr ""
 
 # 92685249c6ad494fb62436287b138f8e
-#: ../../source/user_manual/introduction/qgis_configuration.rst:55
+#: ../../source/user_manual/introduction/qgis_configuration.rst:60
 msgid "|checkbox| :guilabel:`Add new layers to selected group`"
 msgstr ""
 
 # 09c6d12491524835a28c4d7481d09cd7
-#: ../../source/user_manual/introduction/qgis_configuration.rst:56
+#: ../../source/user_manual/introduction/qgis_configuration.rst:61
 msgid ""
 "Attribute table behavior (choose between Show all features (default), Show "
 "selected features, show features in current canvas)"
 msgstr ""
 
 # 015b5895571d4173a8702864a89ac51f
-#: ../../source/user_manual/introduction/qgis_configuration.rst:59
+#: ../../source/user_manual/introduction/qgis_configuration.rst:64
 msgid "Define representation for NULL values"
 msgstr ""
 
 # 46cc37669d8f48609b4ebb1033c93191
-#: ../../source/user_manual/introduction/qgis_configuration.rst:60
+#: ../../source/user_manual/introduction/qgis_configuration.rst:65
 msgid "Add path(s) to search for additional C++ plugin libraries."
 msgstr ""
 
 # b09f7e93bf3a459b88c8ec3d3c32f5c7
-#: ../../source/user_manual/introduction/qgis_configuration.rst:63
+#: ../../source/user_manual/introduction/qgis_configuration.rst:68
 msgid "Rendering Tab"
 msgstr ""
 
 # 5fa8c106180a4fec90689507179b35f3
-#: ../../source/user_manual/introduction/qgis_configuration.rst:65
+#: ../../source/user_manual/introduction/qgis_configuration.rst:70
 msgid ""
 "|checkbox| :guilabel:`By default new layers added to the map should be "
 "displayed`"
 msgstr ""
 
 # 2fe8036598d44a889f3c90814f502291
-#: ../../source/user_manual/introduction/qgis_configuration.rst:66
+#: ../../source/user_manual/introduction/qgis_configuration.rst:71
 msgid "Define number of features to draw before updating the display."
 msgstr ""
 
 # 26cc3b65f5a64be1b394d580ae5c4a7e
-#: ../../source/user_manual/introduction/qgis_configuration.rst:67
+#: ../../source/user_manual/introduction/qgis_configuration.rst:72
 msgid ""
 "|checkbox| :guilabel:`Use render caching where possible to speed up redraws`"
 msgstr ""
 
 # f7a412211ea54a8bbca7e2260947e7f1
-#: ../../source/user_manual/introduction/qgis_configuration.rst:71
+#: ../../source/user_manual/introduction/qgis_configuration.rst:76
 msgid "|checkbox| :guilabel:`Use new generation symbology for rendering`"
 msgstr ""
 
 # eb2eeaeec8ab4fc490b6825a494436c8
-#: ../../source/user_manual/introduction/qgis_configuration.rst:72
+#: ../../source/user_manual/introduction/qgis_configuration.rst:77
 msgid "Add/remove path(s) to search for Scalable Vector Graphics (SVG) symbols"
 msgstr ""
 
 # 68186da58b0248b59fd365672f38b161
-#: ../../source/user_manual/introduction/qgis_configuration.rst:75
+#: ../../source/user_manual/introduction/qgis_configuration.rst:80
 msgid ""
 "Additionally you can define whether to save the path for svg textures "
 "absolute or relative in the :guilabel:`General` tab of the :menuselection:"
@@ -4353,12 +4363,12 @@ msgid ""
 msgstr ""
 
 # 3a45ce219f8749e18774b57f26b5a49c
-#: ../../source/user_manual/introduction/qgis_configuration.rst:80
+#: ../../source/user_manual/introduction/qgis_configuration.rst:85
 msgid "Map tools Tab"
 msgstr ""
 
 # 674536f02dfc4bd489d854e3e0bccf95
-#: ../../source/user_manual/introduction/qgis_configuration.rst:82
+#: ../../source/user_manual/introduction/qgis_configuration.rst:87
 msgid ""
 "The Mode setting determines which layers will be shown by the Identify tool. "
 "By switching to ``Top down`` or ``Top down, stop at first`` instead of "
@@ -4368,259 +4378,259 @@ msgid ""
 msgstr ""
 
 # 2bf0b1648ace4a9d8f8daa773fd575b3
-#: ../../source/user_manual/introduction/qgis_configuration.rst:87
+#: ../../source/user_manual/introduction/qgis_configuration.rst:92
 msgid ""
 "|checkbox| :guilabel:`Open feature form, if a single feature is identified`"
 msgstr ""
 
 # ae3b42ffd88f42a8ae1bfc38e581575d
-#: ../../source/user_manual/introduction/qgis_configuration.rst:88
+#: ../../source/user_manual/introduction/qgis_configuration.rst:93
 msgid ""
 "Define search radius for identifying and displaying map tips as a percentage "
 "of the map width"
 msgstr ""
 
 # 1d8e11d0b5764392b261651ed8e05e2c
-#: ../../source/user_manual/introduction/qgis_configuration.rst:90
+#: ../../source/user_manual/introduction/qgis_configuration.rst:95
 msgid "Define ellipsoid for distance calculations"
 msgstr ""
 
 # c54359dbf3ba48aa86542a0b17020712
-#: ../../source/user_manual/introduction/qgis_configuration.rst:91
+#: ../../source/user_manual/introduction/qgis_configuration.rst:96
 msgid "Define rubberband color for measure tools"
 msgstr ""
 
 # 967e4069a8264d7ab1d87b2a51bfe50f
-#: ../../source/user_manual/introduction/qgis_configuration.rst:92
+#: ../../source/user_manual/introduction/qgis_configuration.rst:97
 msgid "Define decimal places"
 msgstr ""
 
 # e88eb037e1214790be3212d033756e3c
-#: ../../source/user_manual/introduction/qgis_configuration.rst:93
+#: ../../source/user_manual/introduction/qgis_configuration.rst:98
 msgid "|checkbox| :guilabel:`Keep base unit`"
 msgstr ""
 
 # 9d68e99807d04991b2c0ac45da0fb1ea
-#: ../../source/user_manual/introduction/qgis_configuration.rst:94
+#: ../../source/user_manual/introduction/qgis_configuration.rst:99
 msgid ""
 "|radiobuttonon| :guilabel:`Define preferred measurement units (meters or "
 "feet)`"
 msgstr ""
 
 # 892c9f69511f49cab63733fe61aafd11
-#: ../../source/user_manual/introduction/qgis_configuration.rst:95
+#: ../../source/user_manual/introduction/qgis_configuration.rst:100
 msgid ""
 "|radiobuttonon| :guilabel:`Define preferred angle units (Degrees, Radians or "
 "Gon)`"
 msgstr ""
 
 # 1b53ada8a2184401987b6800a9b3b33f
-#: ../../source/user_manual/introduction/qgis_configuration.rst:96
+#: ../../source/user_manual/introduction/qgis_configuration.rst:101
 msgid ""
 "Define Mouse wheel action (Zoom, Zoom and recenter, Zoom to mouse cursor, "
 "Nothing)"
 msgstr ""
 
 # 5486d6d6a0c4446a817bbe86c52464c9
-#: ../../source/user_manual/introduction/qgis_configuration.rst:98
+#: ../../source/user_manual/introduction/qgis_configuration.rst:103
 msgid "Define Zoom factor for wheel mouse"
 msgstr ""
 
 # 56f3769b5be740a5a69b64988fd7dc47
-#: ../../source/user_manual/introduction/qgis_configuration.rst:101
+#: ../../source/user_manual/introduction/qgis_configuration.rst:106
 msgid "Overlays Tab"
 msgstr ""
 
 # b1f4d77c45f14f828e0d5d7182efec22
-#: ../../source/user_manual/introduction/qgis_configuration.rst:103
+#: ../../source/user_manual/introduction/qgis_configuration.rst:108
 msgid ""
 "Define placement algorithm for labels (choose between central point "
 "(standard), chain, popmusic tabu chain, popmusic tabu and popmusic chain)"
 msgstr ""
 
 # 1250d661a1b745249b3d3513799eec3a
-#: ../../source/user_manual/introduction/qgis_configuration.rst:107
+#: ../../source/user_manual/introduction/qgis_configuration.rst:112
 msgid "Digitizing Tab"
 msgstr ""
 
 # d43b90829f4540d1b971d1e6b19fcc0b
-#: ../../source/user_manual/introduction/qgis_configuration.rst:109
+#: ../../source/user_manual/introduction/qgis_configuration.rst:114
 msgid "Define Rubberband line color and line width"
 msgstr ""
 
 # d85cfa478df54bc9ad4e4b7848e6e644
-#: ../../source/user_manual/introduction/qgis_configuration.rst:110
+#: ../../source/user_manual/introduction/qgis_configuration.rst:115
 msgid "Define default snap mode (to vertex, to segment, to vertex and segment)"
 msgstr ""
 
 # 94624befd20044c69c0b7f001784bb56
-#: ../../source/user_manual/introduction/qgis_configuration.rst:111
+#: ../../source/user_manual/introduction/qgis_configuration.rst:116
 msgid "Define default snapping tolerance in map units or pixel"
 msgstr ""
 
 # debd2fadb9c64c10acbd131d8e2c7b39
-#: ../../source/user_manual/introduction/qgis_configuration.rst:112
+#: ../../source/user_manual/introduction/qgis_configuration.rst:117
 msgid "Define search radius for vertex edits in map units or pixel"
 msgstr ""
 
 # fd4a2c27c47d456fb8d80ca9591aa36a
-#: ../../source/user_manual/introduction/qgis_configuration.rst:113
+#: ../../source/user_manual/introduction/qgis_configuration.rst:118
 msgid "|checkbox| :guilabel:`Show markers only for selected features`"
 msgstr ""
 
 # 0916a23ddcf946feae569075f5bc234e
-#: ../../source/user_manual/introduction/qgis_configuration.rst:114
+#: ../../source/user_manual/introduction/qgis_configuration.rst:119
 msgid ""
 "Define vertex marker style (cross (default), semi transparent circle or "
 "none) and vertex marker size."
 msgstr ""
 
 # a88a0436133549119e698c9cb6666607
-#: ../../source/user_manual/introduction/qgis_configuration.rst:116
+#: ../../source/user_manual/introduction/qgis_configuration.rst:121
 msgid "|checkbox| :guilabel:`Reuse last entered attribute values`"
 msgstr ""
 
 # 82ca6a564bf247b9a7e600badb0d40aa
-#: ../../source/user_manual/introduction/qgis_configuration.rst:117
+#: ../../source/user_manual/introduction/qgis_configuration.rst:122
 msgid ""
 "|checkbox| :guilabel:`Suppress attributes pop-up windows after each created "
 "feature`"
 msgstr ""
 
 # b8df4ae09d824421acd777d95c8a6d34
-#: ../../source/user_manual/introduction/qgis_configuration.rst:120
+#: ../../source/user_manual/introduction/qgis_configuration.rst:125
 msgid "CRS Tab"
 msgstr ""
 
 # c01adb7cdcaf41608242e52940b89ee9
-#: ../../source/user_manual/introduction/qgis_configuration.rst:122
+#: ../../source/user_manual/introduction/qgis_configuration.rst:127
 msgid ""
 "The CRS tab is divided in two areas. The first area allows to define the "
 "default CRS for new projects."
 msgstr ""
 
 # 9d890e6f943b48d48a97726277041e85
-#: ../../source/user_manual/introduction/qgis_configuration.rst:125
+#: ../../source/user_manual/introduction/qgis_configuration.rst:130
 msgid "Select a CRS and always start new projects with this CRS."
 msgstr ""
 
 # 593f954465f747b3beb83a6a05c53f27
-#: ../../source/user_manual/introduction/qgis_configuration.rst:126
+#: ../../source/user_manual/introduction/qgis_configuration.rst:131
 msgid "|checkbox| :guilabel:`Enable on the fly re-projection by default`"
 msgstr ""
 
 # a06c28fbbc374b24b43f05e65c1d61c6
-#: ../../source/user_manual/introduction/qgis_configuration.rst:128
+#: ../../source/user_manual/introduction/qgis_configuration.rst:133
 msgid ""
 "The second area allows to define the action, when a new layer is created, or "
 "when a layer without CRS is loaded."
 msgstr ""
 
 # 5b62d4514f4c49b6886540a714c46cb6
-#: ../../source/user_manual/introduction/qgis_configuration.rst:131
+#: ../../source/user_manual/introduction/qgis_configuration.rst:136
 msgid ""
 "|radiobuttonoff| :guilabel:`Prompt for Coordinate Reference System (CRS)`"
 msgstr ""
 
 # 3c82fcc3a165477886e33af5f67f2329
-#: ../../source/user_manual/introduction/qgis_configuration.rst:132
+#: ../../source/user_manual/introduction/qgis_configuration.rst:137
 msgid ""
 "|radiobuttonoff| :guilabel:`Project wide default Coordinate Reference System "
 "(CRS) will be used`"
 msgstr ""
 
 # ec66568555834a1f90bee61a9e4ff22e
-#: ../../source/user_manual/introduction/qgis_configuration.rst:133
+#: ../../source/user_manual/introduction/qgis_configuration.rst:138
 msgid ""
 "|radiobuttonon| :guilabel:`Global default Coordinate Reference System (CRS) "
 "displayed below will be used`"
 msgstr ""
 
 # b524a7bdf2ae4854bf2cfb028f3cd254
-#: ../../source/user_manual/introduction/qgis_configuration.rst:136
+#: ../../source/user_manual/introduction/qgis_configuration.rst:141
 msgid "Locale Tab"
 msgstr ""
 
 # 4070273b81a24455a662a78579c8ac54
-#: ../../source/user_manual/introduction/qgis_configuration.rst:138
+#: ../../source/user_manual/introduction/qgis_configuration.rst:143
 msgid ""
 "|checkbox| :guilabel:`Overwrite system locale and use defined locale instead`"
 msgstr ""
 
 # 00e60b2af9464ada935a9db888a3d19a
-#: ../../source/user_manual/introduction/qgis_configuration.rst:139
+#: ../../source/user_manual/introduction/qgis_configuration.rst:144
 msgid "Information about active system locale"
 msgstr ""
 
 # 1f6460f85cd34268a295477d0789ff98
-#: ../../source/user_manual/introduction/qgis_configuration.rst:142
+#: ../../source/user_manual/introduction/qgis_configuration.rst:147
 msgid "Network Tab"
 msgstr ""
 
 # 77ba82555523446a930f5fc6ff2028fc
-#: ../../source/user_manual/introduction/qgis_configuration.rst:152
+#: ../../source/user_manual/introduction/qgis_configuration.rst:157
 msgid ""
 "|checkbox| :guilabel:`Use proxy for web access` and define host, port, user, "
 "and password."
 msgstr ""
 
 # 5affaa8fd8c14860a8da4418861f49a8
-#: ../../source/user_manual/introduction/qgis_configuration.rst:154
+#: ../../source/user_manual/introduction/qgis_configuration.rst:159
 msgid "Set the :menuselection:`Proxy type -->` according to your needs."
 msgstr ""
 
 # 2b9bb46a43bd45af910b1a198546cf90
-#: ../../source/user_manual/introduction/qgis_configuration.rst:157
+#: ../../source/user_manual/introduction/qgis_configuration.rst:162
 msgid "proxy set using"
 msgstr ""
 
 # 6343e523d6ba43cab9935452f43d189b
-#: ../../source/user_manual/introduction/qgis_configuration.rst:159
+#: ../../source/user_manual/introduction/qgis_configuration.rst:164
 msgid ""
 "Supports TCP, UDP, binding to a port (incoming connections) and "
 "authentication."
 msgstr ""
 
 # 20b2a5be2a7149f3b04b6d041fa0d6ec
-#: ../../source/user_manual/introduction/qgis_configuration.rst:161
+#: ../../source/user_manual/introduction/qgis_configuration.rst:166
 msgid ""
 ":menuselection:`HttpProxy -->`: Implemented using the \"CONNECT\" command, "
 "supports only outgoing TCP connections; supports authentication."
 msgstr ""
 
 # b02874bdf82e40d4a43fb26ee90a37f2
-#: ../../source/user_manual/introduction/qgis_configuration.rst:163
+#: ../../source/user_manual/introduction/qgis_configuration.rst:168
 msgid ""
 ":menuselection:`HttpCachingProxy -->`: Implemented using normal HTTP "
 "commands, it is useful only in the context of HTTP requests"
 msgstr ""
 
 # 145ac54bc4774ca389a56e152699837a
-#: ../../source/user_manual/introduction/qgis_configuration.rst:165
+#: ../../source/user_manual/introduction/qgis_configuration.rst:170
 msgid ""
 ":menuselection:`FtpCachingProxy -->`: Implemented using an FTP proxy, it is "
 "useful only in the context of FTP requests"
 msgstr ""
 
 # b9a3031e2ec14ab5b5c7e7d8904efb0b
-#: ../../source/user_manual/introduction/qgis_configuration.rst:168
+#: ../../source/user_manual/introduction/qgis_configuration.rst:173
 msgid "Define Cache settings (path and size)"
 msgstr ""
 
 # 11834041a156416495463525d59a191e
-#: ../../source/user_manual/introduction/qgis_configuration.rst:169
+#: ../../source/user_manual/introduction/qgis_configuration.rst:174
 msgid ""
 "Define WMS search address, default is ``http://geopole.org/wms/search?search="
 "\\%1\\&type=rss``"
 msgstr ""
 
 # ca23e028270d43229d0b1562a4c9640e
-#: ../../source/user_manual/introduction/qgis_configuration.rst:171
+#: ../../source/user_manual/introduction/qgis_configuration.rst:176
 msgid "Define timeout for network requests in ms - default is 60000"
 msgstr ""
 
 # 1ccbb162cbfe46d39c47b88d26ddb2db
-#: ../../source/user_manual/introduction/qgis_configuration.rst:173
+#: ../../source/user_manual/introduction/qgis_configuration.rst:178
 msgid ""
 "Excluding some URLs can be added to the text box below the proxy-settings "
 "(see Figure :ref:`fig_proxy-settings`) by pressing the **[Add]** button. "
@@ -4630,7 +4640,7 @@ msgid ""
 msgstr ""
 
 # 5f35a6f5a9594e4980e46a0fb9490924
-#: ../../source/user_manual/introduction/qgis_configuration.rst:179
+#: ../../source/user_manual/introduction/qgis_configuration.rst:184
 msgid ""
 "If you need more detailed information about the different proxy-settings, "
 "please refer to the manual of the underlying QT-library-documentation at "
@@ -4638,39 +4648,39 @@ msgid ""
 msgstr ""
 
 # b9b5714b91c94c3ab51f17657b9076f2
-#: ../../source/user_manual/introduction/qgis_configuration.rst:184
+#: ../../source/user_manual/introduction/qgis_configuration.rst:189
 msgid "**Using Proxies**"
 msgstr ""
 
 # 2e47226f968447c799a7d162e56f1cca
-#: ../../source/user_manual/introduction/qgis_configuration.rst:186
+#: ../../source/user_manual/introduction/qgis_configuration.rst:191
 msgid ""
 "Using proxies can sometimes be tricky. It is useful to 'trial and error' the "
 "above proxy types and check if they succeed in your case."
 msgstr ""
 
 # 9c76a29bd62a406e86ad788e4c8bdead
-#: ../../source/user_manual/introduction/qgis_configuration.rst:189
+#: ../../source/user_manual/introduction/qgis_configuration.rst:194
 msgid ""
 "You can modify the options according to your needs. Some of the changes may "
 "require a restart of QGIS before they will be effective."
 msgstr ""
 
 # cd1db3d1c54a49baa493db86fa7f8d1e
-#: ../../source/user_manual/introduction/qgis_configuration.rst:192
+#: ../../source/user_manual/introduction/qgis_configuration.rst:197
 msgid ""
 "|nix| settings are saved in a texfile: \\$HOME/.config/QuantumGIS/qgis.conf"
 msgstr ""
 
 # 32b569ca1e9e4500b21bcb1fcc3bc8d7
-#: ../../source/user_manual/introduction/qgis_configuration.rst:193
+#: ../../source/user_manual/introduction/qgis_configuration.rst:198
 msgid ""
 "|osx| you can find your settings in: \\$HOME/Library/Preferences/org.qgis."
 "qgis.plist"
 msgstr ""
 
 # 1d050274cf054ae290d545e1daf12f9b
-#: ../../source/user_manual/introduction/qgis_configuration.rst:195
+#: ../../source/user_manual/introduction/qgis_configuration.rst:200
 msgid "|win| settings are stored in the registry under:"
 msgstr ""
 
@@ -15989,46 +15999,46 @@ msgid ""
 msgstr ""
 
 # f9654c815ada4a44afd650b09f4fa633
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:35
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:43
 msgid "Live GPS tracking |nix|"
 msgstr ""
 
 # cba40e3b3a1e4df68612a517b65570ec
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:38
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:46
 msgid "|gpstrack_main|"
 msgstr ""
 
 # b8416d59db7341f296d8e9a07d1e55f3
 # c345e7ef3d4b4f628bd7f0d7c264b7e6
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:40
 #: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:48
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:56
 msgid "Position coordinates"
 msgstr ""
 
 # 66fc01ffef854263b763863cd446111c
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:42
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:50
 msgid "|gpstrack_stren|"
 msgstr ""
 
 # e9f061647447402b836d2cb864acf631
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:42
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:50
 msgid "|gpstrack_polar|"
 msgstr ""
 
 # c100996163f14e15b03318ec0924bca9
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:44
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:52
 msgid "GPS signal_strength"
 msgstr ""
 
 # fc7158b0aa8041f1ae402d09b58060e3
 # b7f7ecc2ac2f43648f9e2a27b30103e2
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:44
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:62
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:52
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:70
 msgid "GPS polar window"
 msgstr ""
 
 # f91e193b4bbf46bfa6efb676e1804e21
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:50
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:58
 msgid ""
 "|mActionToggleEditing| If the GPS is receiving signals from satellites you "
 "will see your position in latitude, longitude and elevation as you can see "
@@ -16036,19 +16046,19 @@ msgid ""
 msgstr ""
 
 # 92f903e47f754e6cb0c8980600030416
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:55
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:63
 msgid "GPS signal strength"
 msgstr ""
 
 # 9d6c2c3b70a74b91bf41ea34d6699282
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:57
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:65
 msgid ""
 "|gpstrack_barchart| Here you can see the signal strenght of the satellites "
 "you are receiving signals from table_figure_gps_tracking_."
 msgstr ""
 
 # b58c8f2a2f944558b43416029392523a
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:64
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:72
 msgid ""
 "|gpstrack_polarchart| If you want to know where in the sky all the connected "
 "satellites are, you have to switch to the polar screen (see "
@@ -16057,12 +16067,12 @@ msgid ""
 msgstr ""
 
 # 4a38b1a10f9c491e84b6254c87d94889
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:70
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:78
 msgid "GPS options"
 msgstr ""
 
 # 49a9b7b1bfca4d7f81cf6f6cf4478b47
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:72
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:80
 msgid ""
 "|mActionOptions| In case of connection problems you can switch from |"
 "radiobuttonon| :menuselection:`Autodetect` to |radiobuttonon| :menuselection:"
@@ -16072,7 +16082,7 @@ msgid ""
 msgstr ""
 
 # 30aea45c895845a79d42337712d37232
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:78
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:86
 msgid ""
 "With the slider :menuselection:`GPS Cursor Size` |slider| you can shrink and "
 "grow the position cursor on the canvas. Activating |radiobuttonon| :"
@@ -16082,7 +16092,7 @@ msgid ""
 msgstr ""
 
 # 92ae9d87ce1a407697a35507fcf03438
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:84
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:92
 msgid ""
 "With GPS map recenter you can decide in which way the canvas will be updated "
 "if your recorded coordinates start either to move out of canvas or there is "
@@ -16090,13 +16100,13 @@ msgid ""
 msgstr ""
 
 # 55a2cb53db3044c180577d9d3a600bf8
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:88
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:96
 msgid ""
 "Track color and width sets the color of and the width of your drawn track."
 msgstr ""
 
 # 2f1786a534c44e7ea5c57f4efdee8640
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:90
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:98
 msgid ""
 "If you want to set a feature manually you have to go back to |"
 "mActionToggleEditing| \"Position Coordinates\" and click on **[Add feature]"
@@ -16104,7 +16114,7 @@ msgid ""
 msgstr ""
 
 # fe4b75ef8af04370b93af9340a530802
-#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:104
+#: ../../source/user_manual/working_with_gps/live_GPS_tracking.rst:112
 msgid ""
 "Keyboard shortcuts can now be configured manually (shortcuts presented in "
 "this section are the defaults), using the Configure Shortcuts tool under "

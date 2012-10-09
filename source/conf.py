@@ -386,11 +386,17 @@ rst_epilog = """
    :width: 1.5em
 .. |raster-info| image:: /static/common/raster-info.png
    :width: 1.5em
+.. |copyright| image:: /static/common/copyright_label.png
+   :width: 1.5em
+.. |north_arrow| image:: /static/common/north_arrow.png
+   :width: 1.5em
+.. |scale_bar| image:: /static/common/scale_bar.png
+   :width: 1.5em
 .. |plugin_installer| image:: /static/common/plugin_installer.png
    :width: 1.5em
-.. |gpstrack_barchart| image:: /introduction/img/en/gpstrack_barchart.png
+.. |gpstrack_barchart| image:: /static/common//gpstrack_barchart.png
    :width: 1.5em
-.. |gpstrack_polarchart| image:: /introduction/img/en/gpstrack_polarchart.png
+.. |gpstrack_polarchart| image:: /static/common/gpstrack_polarchart.png
    :width: 1.5em
 .. |gps_importer| image:: img/en/plugins_gps/gps_importer.png
    :width: 1.5em
@@ -484,18 +490,6 @@ rst_epilog = """
    :width: 1.5em
 .. |dxf2shp_converter| image:: /static/user_manual/plugins/dxf2shp_converter.png
    :width: 1.5em
-.. |measure_line| image:: /introduction/img/en/measure_line.png
-   :width: 22em
-.. |measure_area| image:: /introduction/img/en/measure_area.png
-   :width: 22em
-.. |measure_angle| image:: /introduction/img/en/measure_angle.png
-   :width: 17em
-.. |gpstrack_main| image:: /introduction/img/en/gpstrack_main.png
-   :width: 20em
-.. |gpstrack_stren| image:: /introduction/img/en/gpstrack_stren.png
-   :width: 15em
-.. |gpstrack_polar| image:: /introduction/img/en/gpstrack_polar.png
-   :width: 15em
 .. |grass| image:: /static/common/grasslogo.png
    :width: 1.5em
 .. |grass_open_mapset| image:: /static/common/grass_open_mapset.png
