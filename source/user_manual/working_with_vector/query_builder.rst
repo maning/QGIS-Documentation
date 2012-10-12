@@ -1,12 +1,9 @@
-
-
 .. index:: Query_Builder
 
 .. _vector_query_builder:
 
 Query Builder
 =============
-
 
 The **[Advanced search...]** button opens the Query Builder and allows you to 
 define a subset of a table using a SQL-like WHERE clause, display the result 
@@ -65,8 +62,7 @@ window without changing the current selection.
 .. _sec_select_by_query:
 
 Select by query
-===============
-
+---------------
 
 With |qg| it is possible also to select features using a similar query 
 builder interface to that used in :ref:`vector_query_builder`. In the above 
@@ -83,7 +79,6 @@ in Section :ref:`vector_query_builder`.
 
 Save selected features as new layer
 -----------------------------------
-
 
 The selected features can be saved as any OGR supported vector format and 
 also transformed into another Coordinate Reference System (CRS). Just open 
