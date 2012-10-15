@@ -1,7 +1,11 @@
 #!/bin/bash
 
 # GENERATE PDF AND HTML FOR FOLLOWING LOCALES (EN IS ALWAYS GENERATED)
-LOCALES='nl'
+LOCALES='fr de it ja pt ru es nl'
+
+if [ $1 ]; then
+  LOCALES=$1
+fi
 
 BUILDDIR=build
 # be sure to remove an old build dir
@@ -16,18 +20,14 @@ mkdir -p ${HTMLDIR}
 
 VERSION=`cat source/conf.py | grep "version = '.*'" | grep -o "[0-9]\.[0-9]"`
 
-if [ $1 ]; then
-  LOCALES=$1
-fi
-
 if [[ $1 = "en" ]]; then
   echo "Not running localization for English."
 else
-  for LOCALE in $LOCALES
+  for LOCALE in ${LOCALES}
   do
-    for POFILE in `ls i18n/${LOCALE}/LC_MESSAGES/*.po`
+    for POFILE in `find i18n/${LOCALE}/LC_MESSAGES/ -type f`
     do
-      MOFILE=i18n/${LOCALE}/LC_MESSAGES/`basename ${POFILE} .po`.mo
+      MOFILE=`echo ${POFILE} | sed -e 's,\.po,\.mo,'`
       # Compile the translated strings
       echo "Compiling messages to ${MOFILE}"
       msgfmt --statistics -o ${MOFILE} ${POFILE}

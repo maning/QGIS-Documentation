@@ -574,7 +574,8 @@ rst_epilog = """
    :width: 1.5em
 .. |selectcreatelayer| image:: /static/common/selectcreatelayer.png
    :width: 1.5em
-
+.. |heatmap| image:: /static/common/heatmap.png
+   :width: 1.5em
 """
 
 
@@ -717,4 +718,5 @@ pdf_stylesheets = ['sphinx','kerning','a4']
 
 locale_dirs = ['../i18n']
 
-
+# create 1 po file per rst file instead of one po file per module
+gettext_compact = False

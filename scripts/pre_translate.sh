@@ -1,11 +1,10 @@
 #!/bin/bash
 
-LOCALES='de nl'
+LOCALES='fr de it ja pt ru es nl'
 
 if [ $1 ]; then
   LOCALES=$1
 fi
-
 
 # Create / update the translation catalogue - this will generate the master .pot files
 mkdir -p i18n/pot
@@ -36,16 +35,17 @@ do
   fi
 
   # Merge or copy all the updated pot files over to locale specific po files
-  for FILE in `ls i18n/pot`
+  for FILE in `find i18n/pot/ -type f`
   do
-    POTFILE=i18n/pot/${FILE}
-    POFILE=i18n/${LOCALE}/LC_MESSAGES/`basename ${POTFILE} .pot`.po
+    POTFILE=${FILE}
+    POFILE=`echo ${POTFILE} | sed -e 's,\.pot,\.po,' | sed -e 's,pot,'${LOCALE}'/LC_MESSAGES,'`
     if [ -f $POFILE ];
     then
       echo "Updating strings for ${POFILE}"
       msgmerge -U ${POFILE} ${POTFILE}
     else
       echo "Creating ${POFILE}"
+      mkdir -p `echo $(dirname ${POFILE})`
       cp ${POTFILE} ${POFILE} 
     fi
   done
