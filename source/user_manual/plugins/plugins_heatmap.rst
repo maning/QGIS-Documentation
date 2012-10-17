@@ -4,16 +4,20 @@ Heatmap Plugin
 ==============
 
 
-The |heatmap| :sup:`Heatmap` plugin allows to create a heatmap from a point vector map. A heatmap is a raster map showing the density or magnitude of point related information. From the result "hotspots" can easily be identified.
+The |heatmap| :sup:`Heatmap` plugin allows to create a heatmap from a point
+vector map. A heatmap is a raster map showing the density or magnitude of point
+related information. From the result "hotspots" can easily be identified.
 
 
 Activate the Heatmap plugin
 ---------------------------
 
-First this core plugin needs to be activated using the Plugin Manager (see Section 
-:ref:`load_core_plugin`). After activation the heatmap icon |heatmap| can be found in the Raster Toolbar. 
+First this core plugin needs to be activated using the Plugin Manager (see
+Section :ref:`load_core_plugin`). After activation the heatmap icon |heatmap|
+can be found in the Raster Toolbar. 
 
-Select from menu :menuselection:`View -->` :menuselection:`Toolbars -->` :menuselection:`Raster` to activate the Raster Toolbar when it is not yet activated.
+Select from menu :menuselection:`View -->` :menuselection:`Toolbars -->` :menuselection:`Raster`
+to activate the Raster Toolbar when it is not yet activated.
 
 
 Using the Heatmap plugin
@@ -35,14 +39,14 @@ The dialog has the following options:
 * **Radius**: can be used to give the radius in meters or mapunit. 
   When the radius is choosen too small you will not get a nice heatmap. In places 
   where more circles around points overlap eachother the brighter hotspots will occur! 
-* **Decay Ratio**: is used to show with which ratio the fire dies out from the center. 
+* **Decay Ratio**: is used to show with which ratio the heat dies out from the center. 
   
   * When 0 is given (=minimum) the heat will concentrated in the centre of given radius 
     and be completely extinguished at the edge.  
   * When 10 is given (=maximum) the heat is concentrated at the edge and in the centre 
     it is completely extinguished. Higher given values are allowed but have no effect.
   * When 1 is given the heat is spread evenly over the whole circel.
-  * When a negative Decay Ratio is given you will create coolmap instead of heatmap!
+  * When a negative Decay Ratio is given you will create a Coolmap instead of a Heatmap!
 
 
 When the |checkbox| :guilabel:`Advanced` checkbox is checked it will give acces to 
@@ -97,7 +101,7 @@ In Figure_Heatmap_1_ the airports of Alaska are shown.
 #. In field :guilabel:`Input Point Vector` select ``airpoirt`` from the list of 
    point layers loaded in current project.
 #. In field :guilabel:`Output Raster` five the name and location using the browse 
-   button |browse| of the output raster. Give the output raster file the 
+   button |browsebutton| of the output raster. Give the output raster file the 
    name ``heatmap_airports`` to give an file extension is not necessary. 
 #. In field :guilabel:`Output Format` choose ``GeoTIFF``.
 #. In the field :guilabel:`Radius` give ``1000000`` meters.
