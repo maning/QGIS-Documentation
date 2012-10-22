@@ -32,7 +32,7 @@
 {%- macro sidebar() %}
       {%- if render_sidebar %}
       <div class="well sidebar-nav">
-          <a class="brand" href="http://qgis.org">
+          <a class="brand" href="{{ pathto('index') }}">
           {%- block sidebarlogo %}
           {%- if logo %}
               <img src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
@@ -61,9 +61,9 @@
             {%- if customsidebar %}
             {%- include customsidebar %}
             {%- endif %}
-            {#%- block sidebarsearch %#}
-            {#%- include "searchbox.html" %#}
-            {#%- endblock %#}
+            {%- block sidebarsearch %}
+            {%- include "searchbox.html" %}
+            {%- endblock %}
           {%- endif %}
           <a rel="license"
             href="http://creativecommons.org/licenses/by-sa/3.0/"><img

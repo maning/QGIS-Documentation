@@ -1,3 +1,5 @@
+.. comment out this disclaimer (by putting '.. ' in front of it) if file is uptodate with release
+|updatedisclaimer|
 
 .. _coordcapt:
 
@@ -10,11 +12,16 @@ ability to display coordinates on the map canvas for two
 selected Coordinate Reference Systems (CRS).
 
 .. _figure_coordinate_capture_1:
+
+.. only:: html
+
+   **Figure Coordinate Capture 1:**
+
 .. figure:: /static/user_manual/plugins/coordinate_capture_dialog.png
    :align: center
    :width: 20em
 
-   Figure Coordinate Capture 1: Coordinate Capture Plugin |nix|
+   Coordinate Capture Plugin |nix|
 
 #. Start QGIS, select |mActionOptions| :guilabel:`Project Properties` from 
    the :guilabel:`Settings` (KDE, Windows) or :guilabel:`File` (Gnome, OSX) menu 
