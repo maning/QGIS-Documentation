@@ -1,4 +1,5 @@
 .. comment out this disclaimer (by putting '.. ' in front of it) if file is uptodate with release
+
 |updatedisclaimer|
 
 .. _`sec_gpstracking`:
@@ -62,21 +63,21 @@ Position coordinates
 
 |mActionToggleEditing| If the GPS is
 receiving signals from satellites you will see your position in latitude,
-longitude and elevation as you can see in Figure table_figure_gps_tracking_.
+longitude and elevation as you can see in Figure_GPS_Tracking_1_.
 
 GPS signal strength
 --------------------
 
 |gpstrack_barchart| Here you can see
 the signal strenght of the satellites you are receiving signals from
-table_figure_gps_tracking_.
+figure_gps_tracking_1_.
 
 GPS polar window
 ----------------
 
 |gpstrack_polarchart| If you want
 to know where in the sky all the connected satellites are, you have to
-switch to the polar screen (see table_figure_gps_tracking_).
+switch to the polar screen (see Figure_GPS_Tracking_1_).
 You can also see the ID numbers of the satellites you are receiving signals from.
 
 GPS options
@@ -115,9 +116,3 @@ and click on **[Add feature]**.
    :width: 15em
 
    GPS tracking options window |nix| 
-
-----
-
-.. [1] Keyboard shortcuts can now be configured manually
-   (shortcuts presented in this section are the defaults), using the Configure
-   Shortcuts tool under Settings Menu.
