@@ -18,7 +18,7 @@ in the legend or right-click on the layer and select
 
 
 .. do not change the order of reference-tag and only-tag, this figure has
-an external reference.
+   an external reference.
 
 .. only:: html
 
@@ -46,8 +46,6 @@ default, which provides a variety of improvements and new features.
 A description of the old symbology is available in section 
 :ref:`vector_old_symbology`.
 
-.. _vector_new_symbology:
-
 There are three types of symbols: marker symbols (for points), line symbols 
 (for lines) and fill and outline symbols (for polygons). Symbols can consist 
 of one or more symbol layers. It is possible to define the color of a symbol 
@@ -63,7 +61,8 @@ marker symbols.
 
 .. _vector_symbol_types:
 
-**Available symbol layer types**
+Available symbol layer types
+............................
 
 * Point layers
 
@@ -146,15 +145,19 @@ of the graduated renderer.
 The categorized and graduated renderer can be created by specifying a symbol 
 and a color ramp \- they will set the colors for symbols appropriately.
 
+.. _vector_new_symbology:
+
 Working with the New Generation Symbology
 .........................................
 
 In the :guilabel:`Style` tab you can choose one of the four renderers: single 
-symbol, categorized, graduated and rule-based. Depending on the chosen 
-renderer, the symbology tab provides different settings and options, that 
-will be described in the following sections. The new generation symbology 
-dialog also provides a **[Style Manager]** button which gives access to the 
-Style Manager
+symbol, categorized, graduated, rule-based and point displacement. For each 
+data type (points, lines and polygons) vector symbol layer types are 
+available (see :ref:`vector_symbol_types`). 
+Depending on the chosen renderer, the symbology tab provides different 
+settings and options, that will be described in the following sections. 
+The new generation symbology dialog also provides a **[Style Manager]** 
+button which gives access to the Style Manager
 (see section :ref:`vector_style_manager`). The Style Manager allows you to 
 edit and remove existing symbols and add new ones.
 
@@ -425,10 +428,6 @@ layer type options are described in section :ref:`vector_symbol_types`.
    Defining symbol properties |nix|
 
 
-.. Index:: Style_Manager, Manage_Symbols, Manage_Color_Ramps
-
-.. _vector_style_manager:
-
 .. index:: Old_Symbology, Symbology_Old
 
 .. _vector_old_symbology:
@@ -533,9 +532,9 @@ with the slider :guilabel:`Transparency` |slider| inside the
 :guilabel:`Style` tab. This is very useful for overlaying several vector 
 layers.
 
-.. index:: Labeling_Engine, Labeling_New, Labeling_Old
+.. Index:: Style_Manager, Manage_Symbols, Manage_Color_Ramps
 
-.. _vector_labels_tab:
+.. _vector_style_manager:
 
 Style Manager
 .............
@@ -556,6 +555,11 @@ Style Manager` in the main menu.
    :align: center
 
    Style Manager to manage symbols and color ramps |nix|
+
+
+.. index:: Labeling_Engine, Labeling_New, Labeling_Old
+
+.. _vector_labels_tab:
 
 Labels Tab
 ----------
