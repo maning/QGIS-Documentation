@@ -69,8 +69,8 @@ Available symbol layer types
   - **Font marker**: Rendering with a font.
   - **Simple marker**: Rendering with a hardcoded marker.
   - **SVG marker**: Rendering with a SVG picture.
-  - **Ellipse marker**: Rendering with ellipse shapes.
-  - **Vector field marker**: Rendering 
+  - **Ellipse marker**: Rendering with ellipse shapes derived from attributes.
+  - **Vector field marker**: Rendering with vector fields derived from attributes.
 
 * Line layers
 
@@ -161,7 +161,7 @@ edit and remove existing symbols and add new ones.
 
 **Single Symbol Renderer**
 
-The Single Symbol Renderer is used to render all features of the layer using 
+The Single Symbol Renderer (see figure_symbology_1_ to figure_symbology_3_) is used to render all features of the layer using 
 a single user-defined symbol. The properties, that can be adjusted in the
 ``Style`` tab, depend partially on the type of the layer, but all types share 
 the following structure. In the top left part of the tab, there is a preview 
@@ -181,14 +181,7 @@ consists of more than one layer).
 
 After having done any needed changes, the symbol can be added to the list of 
 current style symbols (using the **[Save as style]** button) and then easily 
-be used in the future.
-
-.. |singlesymbol_ng_point| image:: /static/user_manual/working_with_vector/singlesymbol_ng_point.png 
-   :width: 30em
-.. |singlesymbol_ng_line| image:: /static/user_manual/working_with_vector/singlesymbol_ng_line.png 
-   :width: 30em
-.. |singlesymbol_ng_area| image:: /static/user_manual/working_with_vector/singlesymbol_ng_area.png
-   :width: 30em
+be used in the future. You can choose between QGIS layer style file (.qml) and SLD file(.sld).
 
 .. _figure_symbology_1:
 
@@ -196,21 +189,35 @@ be used in the future.
 
    **Figure Symbology 1:** 
 
-+-----------------------------------+
-| |singlesymbol_ng_point|           |
-+-----------------------------------+
-| a. Single symbol point properties |
-+-----------------------------------+
-| |singlesymbol_ng_line|            |
-+-----------------------------------+
-| b. Single symbol line properties  |
-+-----------------------------------+
-| |singlesymbol_ng_area|            |
-+-----------------------------------+
-| c. Single symbol area properties  |
-+-----------------------------------+
+.. figure:: /static/user_manual/working_with_vector/singlesymbol_ng_point.png
+   :align: center
+   :width: 40em
 
-   Single Symbolizing options |nix|
+   Single symbol point properties |nix|
+
+.. figure_symbology_2:
+
+.. only:: html
+
+   **Figure Symbology 2:**
+
+.. figure:: /static/user_manual/working_with_vector/singlesymbol_ng_line.png
+   :align: center
+   :width: 40em
+
+   Single symbol line properties |nix|
+
+.. figure_symbology_3:
+
+.. only:: html
+
+   **Figure Symbology 3:**
+
+.. figure:: /static/user_manual/working_with_vector/singlesymbol_ng_area.png
+   :align: center
+   :width: 40em
+
+   Single symbol area properties |nix|
 
 
 .. index:: Categorized_Renderer, Renderer_Categorized
@@ -234,17 +241,17 @@ For convenience, the list in the bottom part of the tab lists the values of
 all currently selected attributes together, including the symbols that will 
 be rendered.
 
-The example in figure_symbology_2_ shows the category rendering dialog used 
+The example in figure_symbology_4_ shows the category rendering dialog used 
 for the rivers layer of the |qg| sample dataset.
 
-.. _figure_symbology_2:
+.. _figure_symbology_4:
 
 .. only:: html
 
-   **Figure Symbology 2:** 
+   **Figure Symbology 4:** 
 
 .. figure:: /static/user_manual/working_with_vector/categorysymbol_ng_line.png
-   :width: 40em
+   :width: 50em
    :align: center
 
    Categorized Symbolizing options |nix|
@@ -254,14 +261,14 @@ for the rivers layer of the |qg| sample dataset.
 You can create a custom color ramp choosing :menuselection:`New color ramp...` 
 from the Color ramp dropdown menu. A dialog will prompt for the ramp type: 
 Gradient, Random, ColorBrewer, then each one has options for number of steps 
-and/or multiple stops in the color ramp. See figure_symbology_3_ for an 
+and/or multiple stops in the color ramp. See figure_symbology_5_ for an 
 example of custom color ramp.
 
-.. _figure_symbology_3:
+.. _figure_symbology_5:
 
 .. only:: html
 
-   **Figure Symbology 3:** 
+   **Figure Symbology 5:** 
 
 .. figure:: /static/user_manual/working_with_vector/customColorRampGradient.png
    :align: center
@@ -300,14 +307,14 @@ modes are:
 The listbox in the  bottom part of the :guilabel:`Style` tab lists the classes 
 together with their ranges, labels and symbols that will be rendered.
 
-The example in figure_symbology_4_ shows the graduated rendering dialog for 
+The example in figure_symbology_6_ shows the graduated rendering dialog for 
 the rivers layer of the |qg| sample dataset.
 
-.. _figure_symbology_4:
+.. _figure_symbology_6:
 
 .. only:: html
 
-   **Figure Symbology 4:** 
+   **Figure Symbology 6:** 
 
 .. figure:: /static/user_manual/working_with_vector/graduatesymbol_ng_line.png
    :width: 40em
@@ -328,14 +335,14 @@ statements. You can also use the Query Builder to create them. The dialog
 allows rule grouping by filter or scale and you can decide if you want to 
 enable symbol levels or use only first matched rule.
 
-The example in figure_symbology_5_ shows the rule-based rendering dialog 
+The example in figure_symbology_7_ shows the rule-based rendering dialog 
 for the rivers layer of the |qg| sample dataset.
 
-.. _figure_symbology_5:
+.. _figure_symbology_7:
 
 .. only:: html
 
-   **Figure Symbology 5:** 
+   **Figure Symbology 7:** 
 
 .. figure:: /static/user_manual/working_with_vector/rulesymbol_ng_line.png
    :width: 40em
@@ -348,17 +355,15 @@ for the rivers layer of the |qg| sample dataset.
 
 **Point displacement**
 
-The point displacement renderer is only available, if you load the 
-Displacement plugin in the QGIS Plugin Manager. It offers to visualize 
-all features of a point layer, even if they have the same location. To do 
+The point displacement renderer offers to visualize all features of a point layer, even if they have the same location. To do 
 this, the symbols of the points are placed on a displacement circle around 
 a center symbol.
 
-.. _figure_symbology_6:
+.. _figure_symbology_8:
 
 .. only:: html
 
-   **Figure Symbology 6:** 
+   **Figure Symbology 8:** 
 
 .. figure:: /static/user_manual/working_with_vector/poi_displacement.png
    :width: 40em
@@ -371,10 +376,10 @@ a center symbol.
 **Symbol Properties**
 
 The symbol properties dialog allows the user to specify different properties 
-of the symbol to be rendered. In the top left part of the dialog, you find 
+of the symbol to be rendered. In the bottom left part of the dialog, you find 
 a preview of the current symbol as it will be displayed in the map canvas. 
-Below the preview is the list of symbol layers. To start the symbol 
-properties dialog, click the **[** |mActionOptions| **Properties...]** 
+Above the preview is the list of symbol layers. To start the symbol 
+properties dialog, click the **[** |mActionOptions| **Change...]** 
 button in the :guilabel:`Style` tab of the :guilabel:`Layer Properties` dialog.
 
 The control panels allow adding or removing layers, changing the position 
@@ -385,34 +390,61 @@ selected in the symbol layer list. The most important is the
 available options depend on the layer type (Point, Line, Polygon). The symbol 
 layer type options are described in section :ref:`vector_symbol_types`.
 
-.. |symbolproperties1| image:: /static/user_manual/working_with_vector/symbolproperties1.png
-   :width: 30em
-.. |symbolproperties2| image:: /static/user_manual/working_with_vector/symbolproperties2.png
-   :width: 30em
-.. |symbolproperties3| image:: /static/user_manual/working_with_vector/symbolproperties3.png
-   :width: 30em
-
-.. _figure_symbology_7:
+.. _figure_symbology_9:
 
 .. only:: html
 
-   **Figure Symbology 7:** 
+   **Figure Symbology 9:**
 
-+------------------------------------------+
-| |symbolproperties1|                      |
-+------------------------------------------+
-| a. Line composed from three simple lines |
-+------------------------------------------+
-| |symbolproperties2|                      |
-+------------------------------------------+
-| b. Symbol properties for point layer     |
-+------------------------------------------+
-| |symbolproperties3|                      |
-+------------------------------------------+
-| c. Filling pattern for a polygon         |
-+------------------------------------------+
+.. figure:: /static/user_manual/working_with_vector/symbolproperties1.png
+   :align: center
+   :width: 40em
 
-   Defining symbol properties |nix|
+   Line composed from three simple lines |nix|
+
+.. _figure_symbology_10:
+
+.. only:: html
+
+   **Figure Symbology 10:**
+
+.. figure:: /static/user_manual/working_with_vector/symbolproperties2.png
+   :align: center
+   :width: 40em
+
+   Symbol properties for point layer |nix|
+
+.. _figure_symbology_11:
+
+.. only:: html
+
+   **Figure Symbology 11:**
+
+.. figure:: /static/user_manual/working_with_vector/symbolproperties3.png
+   :align: center
+   :width: 40em
+   
+   Filling pattern for a polygon |nix|
+
+
+**Style Manager**
+
+The Style Manager is a small helper application, that lists symbols and color 
+ramps available in a style. It also allows you to add and/or remove items. 
+To launch the Style Manager, click on :menuselection:`Settings --> 
+Style Manager` in the main menu.
+
+.. _figure_symbology_12:
+
+.. only:: html
+
+   **Figure Symbology 12:** 
+
+.. figure:: /static/user_manual/working_with_vector/stylemanager.png
+   :width: 24em
+   :align: center
+
+   Style Manager to manage symbols and color ramps |nix|
 
 
 .. index:: Old_Symbology, Symbology_Old
@@ -450,6 +482,7 @@ The old |qg| symbology supports the following renderers:
 
 To :index:'change the symbology' for a layer, simply double click on its legend entry and the vector :guilabel:`Layer Properties` dialog will be shown.
 
+
 .. index:: Fill_Style, Fill_Color, Outline_Options
 
 **Style Options**
@@ -472,6 +505,8 @@ At least the following styling options apply for nearly all renderers:
   * Outline color - color of the ouline of your feature.
   * Outline width - width of your features.
 
+The **drawing by field** option provides the possibility to symbolize your features with a ...
+
 Once you have styled your layer you also could save your layer-style to a 
 separate file (ending with :file:`*.qml`).
 To do this, use the button **[Save Style...]**. No need to say that 
@@ -484,6 +519,7 @@ if you make changes to the style that you are not happy with, use the
 
 .. index:: Vector_Transparency, Transparency_Vector
 
+
 **Vector transparency**
 
 |qg| allows to set a transparency for every vector layer. This can be done 
@@ -495,26 +531,6 @@ layers.
 
 .. _vector_style_manager:
 
-Style Manager
-.............
-
-The Style Manager is a small helper application, that lists symbols and color 
-ramps available in a style. It also allows you to add and/or remove items. 
-To launch the Style Manager, click on :menuselection:`Settings --> 
-Style Manager` in the main menu.
-
-.. _figure_symbology_8:
-
-.. only:: html
-
-   **Figure Symbology 8:** 
-
-.. figure:: /static/user_manual/working_with_vector/stylemanager.png
-   :width: 24em
-   :align: center
-
-   Style Manager to manage symbols and color ramps |nix|
-
 
 .. index:: Labeling_Engine, Labeling_New, Labeling_Old
 
@@ -523,7 +539,7 @@ Style Manager` in the main menu.
 Labels Tab
 ----------
 
-As for the symbology |qg| 1.7.4 currently provides an old and a new labeling 
+As for the symbology |qg| 1.8 currently provides an old and a new labeling 
 engine in parallel. The :guilabel:`Labels` tab still contains the old 
 labeling. The new labeling is implemented as a core application and will 
 replace the features of the old labels tab in one of the next versions.
@@ -568,8 +584,7 @@ the text-label.
 
 To change the position of the text relative to the feature:
 
-#.  Click on the ``Font`` entry.
-#.  Change the placement by selecting one of the radio buttons in the 
+#.  Beneath the Basic label options change the placement by selecting one of the radio buttons in the 
     ``Placement`` group. To fix our labels, choose the |radiobuttonon| 
     :guilabel:`Right` radio button.
 #.  the ``Font size units`` allows you to select between |radiobuttonon| 
@@ -578,7 +593,7 @@ To change the position of the text relative to the feature:
 
 
 Things are looking better, but the labels are still too close to the marker. 
-To fix this we can use the options on the ``Position`` entry. Here we can 
+To fix this we can use the options on the ``Offset`` entry which is on the bottom of the menu. Here we can 
 add offsets for the X and Y directions. Adding an X offset of 5 will move 
 our labels off the marker and make them more readable. Of course if your 
 marker symbol or font is larger, more of an offset will be required.
@@ -587,7 +602,7 @@ The last adjustment we'll make is to ``Buffer`` the labels. This just means
 putting a backdrop around them to make them stand out better. To buffer the 
 lakes labels:
 
-#.  Click the |checkbox| :guilabel:`Buffer Labels?` checkbox to enable 
+#.  Click the |checkbox| :guilabel:`Buffer Labels` checkbox to enable 
     buffering.
 #.  Choose a size for the buffer using the spin box.
 #.  Choose a color by clicking on **[Color]** and choosing your favorite 
@@ -602,7 +617,7 @@ again by clicking **[Apply]**.
 A buffer of 1 points seems to give a good result. Notice you can also 
 specify the buffer size in map units if that works out better for you.
 
-The remaining entries inside the :guilabel:`Label` tab allow you control 
+The advanced entries inside the :guilabel:`Label` tab allow you control 
 the appearance of the labels using attributes stored in the layer. The 
 entries beginning with ``Data defined`` allow you to set all the parameters 
 for the labels using fields in the layer.
@@ -618,7 +633,7 @@ New Labeling
 ------------
 
 The new |mActionLabeling| :sup:`Labeling` core application provides smart 
-labeling for vector point,  line and polygon layers and only requires a 
+labeling for vector point, line and polygon layers and only requires a 
 few parameters.
 This new application will replace the current QGIS labeling, described in 
 section :ref:`vector_labels_tab` and also supports on-the-fly transformated 
@@ -646,7 +661,7 @@ features act as obstacles for labels or not (see Figure_labels_1_ ).
    **Figure Labels 1:** 
 
 .. figure:: /static/user_manual/working_with_vector/label_points.png
-   :width: 40em
+   :width: 70em
    :align: center
 
    Smart labeling of vector point layers |nix|
