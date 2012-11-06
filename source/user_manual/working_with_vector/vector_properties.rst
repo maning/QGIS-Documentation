@@ -649,10 +649,11 @@ layers.
 **Labeling point layers**
 
 First step is to activate the |checkbox| :guilabel:`Label this layer` 
-checkbox and select an attribute column to use for labeling. After that you 
-can define the label placement and text style, labeling priority, scale-based 
-visibility, if every part of multipart feature is to be labeled and if 
-features act as obstacles for labels or not (see Figure_labels_1_ ).
+checkbox and select an attribute column to use for labeling. Click |browsebutton| if you want to define labels based on expressions. 
+After that you can define the text style and the scale-based 
+visibility in the :guilabel:`Label settings` tab (see Figure_labels_1_ ). Choose the :guilabel:`Advanced` tab for the label placement and the labeling priority. You can define if every part of multipart feature is to be labeled here.
+
+.. features act as obstacles for labels or not .
 
 .. _figure_labels_1:
 
@@ -661,7 +662,7 @@ features act as obstacles for labels or not (see Figure_labels_1_ ).
    **Figure Labels 1:** 
 
 .. figure:: /static/user_manual/working_with_vector/label_points.png
-   :width: 70em
+   :width: 60em
    :align: center
 
    Smart labeling of vector point layers |nix|
@@ -669,12 +670,10 @@ features act as obstacles for labels or not (see Figure_labels_1_ ).
 **Labeling line layers**
 
 First step is to activate the |checkbox| :guilabel:`Label this layer` 
-checkbox and select an attribute column to use for labeling. After that 
-you can define the label placement, orientation, distance to feature, 
-text style, labeling priority, scale-based visibility, if every part of 
-a multipart line is to be labeled, if lines shall be merged to avoid 
-duplicate labels and if features act as obstacles for labels or not 
-(see Figure_labels_2_ ).
+checkbox in the :guilabel:`Label settings` tab and select an attribute column to use for labeling. Here you can also define labels based on expressions. After that 
+you can define the text style and the scale-based visibility.
+Further labeling options are available through the :guilabel:`Advanced` tab. You can define the label placement and label distance, a line orientation dependend position and the labeling priority here. Furthermore you can define if every part of a multipart line is to be labeled, if lines shall be merged to avoid 
+duplicate labels (and if features act as obstacles for labels or not) (see Figure_labels_2_ ).
 
 .. _figure_labels_2:
 
@@ -683,7 +682,7 @@ duplicate labels and if features act as obstacles for labels or not
    **Figure Labels 2:** 
 
 .. figure:: /static/user_manual/working_with_vector/label_line.png
-   :width: 40em
+   :width: 60em
    :align: center
 
    Smart labeling of vector line layers |nix|
@@ -706,7 +705,7 @@ not (see Figure_labels_3_ ).
    **Figure Labels 3:** 
 
 .. figure:: /static/user_manual/working_with_vector/label_area.png
-   :width: 40em
+   :width: 60em
    :align: center
 
    Smart labeling of vector polygon layers |nix|
