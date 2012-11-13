@@ -39,7 +39,7 @@ Style Tab
 
 .. index:: New_Symbology, Symbology_New
 
-Since |qg| 1.4.0 a new symbology was integrated in parallel to improve and 
+|symbology| Since |qg| 1.4.0 a new symbology was integrated in parallel to improve and 
 finally replace the old symbology. |qg| 1.8 now uses the new symbology as 
 default, which provides a variety of improvements and new features.
 
@@ -145,7 +145,7 @@ Depending on the chosen renderer, the symbology tab provides different
 settings and options, that will be described in the following sections. 
 The new generation symbology dialog also provides a **[Style Manager]** 
 button which gives access to the Style Manager
-(see section :ref:`vector_style_manager`). The Style Manager allows you to 
+(see section vector_style_manager_ ). The Style Manager allows you to 
 edit and remove existing symbols and add new ones.
 
 
@@ -173,15 +173,13 @@ Properties` dialog, or the **[Change]** button right of the preview, which
 opens an ordinary :guilabel:`Color` dialog.
 
 In the :guilabel:`Style` tab you can apart from a general layer transparency 
-also define to use millimeter or map units for the size scale. And you can 
-use data-defined size scale and rotation (available through **[Advanced]** 
-next to **[Save as style]**). The **[Symbol levels]** button allows to enable 
-and define the order in which the symbol layers are rendered (if the symbol 
+also define to use millimeter or map units for the size scale. In the **[Advanced]**button
+next to the **[Save as style]** button you can use data-defined size scale and rotation. Here the :menuselection:`Symbol levels -->` menu allows to enable and define the order in which the symbol layers are rendered (if the symbol 
 consists of more than one layer).
 
 After having done any needed changes, the symbol can be added to the list of 
 current style symbols (using the **[Save as style]** button) and then easily 
-be used in the future. You can choose between QGIS layer style file (.qml) and SLD file(.sld).
+be used in the future. Furthermore you can use the **[Save Style]** button to save the symbol as a QGIS layer style file (.qml) or SLD file(.sld).
 
 .. _figure_symbology_1:
 
@@ -195,7 +193,7 @@ be used in the future. You can choose between QGIS layer style file (.qml) and S
 
    Single symbol point properties |nix|
 
-.. figure_symbology_2:
+.. _figure_symbology_2:
 
 .. only:: html
 
@@ -207,7 +205,7 @@ be used in the future. You can choose between QGIS layer style file (.qml) and S
 
    Single symbol line properties |nix|
 
-.. figure_symbology_3:
+.. _figure_symbology_3:
 
 .. only:: html
 
@@ -389,6 +387,7 @@ selected in the symbol layer list. The most important is the
 'Symbol Layer Type' combo box, which allows you to choose the layer type. The 
 available options depend on the layer type (Point, Line, Polygon). The symbol 
 layer type options are described in section :ref:`vector_symbol_types`.
+You can also change the symbol layer properties in the right part of the dialog. For example if you have chosen an SVG marker for a point layer it is now possible to change its color using the :guilabel:`Color` menu (see figure_symbology_10_).
 
 .. _figure_symbology_9:
 
@@ -426,6 +425,8 @@ layer type options are described in section :ref:`vector_symbol_types`.
    
    Filling pattern for a polygon |nix|
 
+
+.. _vector_style_manager:
 
 **Style Manager**
 
@@ -539,7 +540,7 @@ layers.
 Labels Tab
 ----------
 
-As for the symbology |qg| 1.8 currently provides an old and a new labeling 
+|labels| As for the symbology |qg| 1.8 currently provides an old and a new labeling 
 engine in parallel. The :guilabel:`Labels` tab still contains the old 
 labeling. The new labeling is implemented as a core application and will 
 replace the features of the old labels tab in one of the next versions.
@@ -651,7 +652,9 @@ layers.
 First step is to activate the |checkbox| :guilabel:`Label this layer` 
 checkbox and select an attribute column to use for labeling. Click |browsebutton| if you want to define labels based on expressions. 
 After that you can define the text style and the scale-based 
-visibility in the :guilabel:`Label settings` tab (see Figure_labels_1_ ). Choose the :guilabel:`Advanced` tab for the label placement and the labeling priority. You can define if every part of multipart feature is to be labeled here.
+visibility in the :guilabel:`Label settings` tab (see Figure_labels_1_ ). Choose the :guilabel:`Advanced` tab for the label placement and the labeling priority. You can define if every part of a multipart feature is to be labeled here. With the wrap label on character function you can define a character for a line break in the labels.
+The :guilabel:`Data defined settings` tab provides you with the attribute-based definition of Font properties, Buffer properties and Position. Here you can use your database connection as well.
+
 
 .. features act as obstacles for labels or not .
 
@@ -670,10 +673,11 @@ visibility in the :guilabel:`Label settings` tab (see Figure_labels_1_ ). Choose
 **Labeling line layers**
 
 First step is to activate the |checkbox| :guilabel:`Label this layer` 
-checkbox in the :guilabel:`Label settings` tab and select an attribute column to use for labeling. Here you can also define labels based on expressions. After that 
-you can define the text style and the scale-based visibility.
-Further labeling options are available through the :guilabel:`Advanced` tab. You can define the label placement and label distance, a line orientation dependend position and the labeling priority here. Furthermore you can define if every part of a multipart line is to be labeled, if lines shall be merged to avoid 
-duplicate labels (and if features act as obstacles for labels or not) (see Figure_labels_2_ ).
+checkbox in the :guilabel:`Label settings` tab and select an attribute column to use for labeling. Here you can also define labels based on expressions. After that you can define the text style and the scale-based visibility.
+Further labeling options are available through the :guilabel:`Advanced` tab. You can define the label placement and label distance, a line orientation dependend position and the labeling priority here. Furthermore you can define if every part of a multipart line is to be labeled, if lines shall be merged to avoid duplicate labels and if a direction symbol is added (see Figure_labels_2_ ). It is also possible to supress labeling of features and wrap lables on characters.
+Use :guilabel:`Data defined settings` for attribute-based or database-connection-based settings.
+
+.. if features act as obstacles for labels or not. 
 
 .. _figure_labels_2:
 
@@ -691,12 +695,11 @@ duplicate labels (and if features act as obstacles for labels or not) (see Figur
 **Labeling polygon layers**
 
 First step is to activate the |checkbox| :guilabel:`Label this layer` 
-checkbox and select an attribute column to use for labeling. After that 
-you can define the label placement, distance and text style, 
-labeling priority, scale-based visibility, if every part of multipart 
-feature is to be labeled and if features act as obstacles for labels or 
-not (see Figure_labels_3_ ).
+checkbox and select an attribute column to use for labeling. Here you can also define labels based on expressions.
+In :guilabel:`Label settings` define the text style and the scale-based visibility (see Figure_labels_3_ ). Use the :guilabel:`Advanced` tab for label placement, label distance and labeling priority. Define if every part of a multipart feature is to be labeled, suppress labeling of features and wrap labels on characters here.
+Use :guilabel:`Data defined settings` for attribute-based or database-connection-based settings.
 
+.. if features act as obstacles for labels or not 
 
 .. _figure_labels_3:
 
@@ -738,7 +741,7 @@ colliding labels) and label candidates for debugging.
 **Keywords to use in attribute columns for labeling**
 
 There is a list of supported key words, that can be used for the placement 
-of labels in defined attribute colums.
+of labels in defined attribute columns.
 
 
 *  **For horizontal alignment**: left, center, right
@@ -753,11 +756,11 @@ bottom left.
 
 .. _vector_attributes_tab:
 
-Attributes Tab
---------------
+Fields Tab
+----------
 
-Within the :guilabel:`Attributes` tab the attributes of the selected 
-dataset can be manipulated. The buttons |mActionNewAttribute| 
+|attributes| Within the :guilabel:`Fields` tab the field attributes of the 
+selected dataset can be manipulated. The buttons |mActionNewAttribute| 
 :guilabel:`New Column` and |mActionDeleteAttribute| :sup:`Delete Column` 
 can be used, when the dataset is |mActionToggleEditing| :sup:`Editing mode`.
 
@@ -788,7 +791,7 @@ third-party plugin called Table Manager.
 
    Dialog to select an edit widget for an attribute column |nix|
 
-Within the :guilabel:`Attributes` tab you also find an ``edit widget`` column. 
+Within the :guilabel:`Fields` tab you also find an ``edit widget`` column. 
 This column can be used to define values or a range of values that are allowed 
 to be added to the specific attribute table column. If you click on the 
 **[edit widget]** button, a dialog opens, where you can define different 
@@ -827,7 +830,7 @@ widgets. These widgets are:
 General Tab
 -----------
 
-The :guilabel:`General` tab is essentially like that of the raster dialog. 
+|general| The :guilabel:`General` tab is essentially like that of the raster dialog. 
 It allows you to change the display name, set scale dependent rendering 
 options, create a spatial index of the vector file (only for OGR supported 
 formats and PostGIS) and view or change the projection of the specific vector 
@@ -844,7 +847,7 @@ attribute table and select the |browsebutton| button next to Advanced search.
 Metadata Tab
 ------------
 
-The :guilabel:`Metadata` tab contains general information about the layer, 
+|metadata| The :guilabel:`Metadata` tab contains general information about the layer, 
 including specifics about the type and location, number of features, feature 
 type, and the editing capabilities. The :guilabel:`Extents` section, providing 
 layer extent information, and the :guilabel:`Layer Spatial Reference System` 
@@ -854,7 +857,7 @@ to get information about the layer, but is not yet editable.
 Actions Tab
 -----------
 
-|qg| provides the ability to perform an action based on the attributes of a 
+|action| |qg| provides the ability to perform an action based on the attributes of a 
 feature. This can be used to perform any number of actions, for example, 
 running a program with arguments built from the attributes of a feature or 
 passing parameters to a web reporting tool.
@@ -1099,7 +1102,7 @@ Joins Tab
 ---------
 
 
-The :guilabel:`Joins` tab allows you to :index:`join a loaded attribute table 
+|join| The :guilabel:`Joins` tab allows you to :index:`join a loaded attribute table 
 to a loaded vector layer`. As key columns you have to define a :index:`join 
 layer`, a join field and a target field. QGIS currently supports to join non 
 spatial table formats supported by OGR, delimited text and the PostgreSQL 
@@ -1127,7 +1130,7 @@ Additionally the add vector join dialog allows to:
 Diagram Tab
 -----------
 
-The :guilabel:`Diagram` tab allows you to add a grahic overlay to a vector 
+|diagram| The :guilabel:`Diagram` tab allows you to add a graphic overlay to a vector 
 layer (see figure_diagrams_1_).
 
 .. _figure_diagrams_1:
