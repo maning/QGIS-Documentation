@@ -7,7 +7,34 @@
 QGIS Configuration
 ******************
 
-QGIS is highly configurable ... (please add more introduction here)
+QGIS is highly configurable through the :menuselection:`Settings -->` menu.
+Choose between Panels, Toolbars, Project properties, Options and Customization.
+..  (please add more introduction here)
+
+.. _sec_panels_and_toolbars:
+
+Panels and Toolbars
+===================
+
+In the :menuselection:`Panels-->` menu you can switch on and off QGIS widgets.
+The :menuselection:`Toolbars-->` menu provides the possibility to switch on
+and off icon groups in the QGIS toolbar.
+
+.. index::
+   single:Map overview
+
+.. tip:: **Activating the QGIS overview**
+   
+   In QGIS you can use an overview panel that provides a full extent view of layers added to it.
+   It can be selected under the menu :menuselection:`Settings --> Panels`.
+   Within the view is a rectangle showing the current map extent. This allows
+   you to quickly determine which area of the map you are currently viewing. Note
+   that labels are not rendered to the map overview even if the layers in the
+   map overview have been set up for labeling.
+   If you click and drag the red rectangle in the overview that shows your
+   current extent, the main map view will update accordingly.
+
+
 
 Project Properties
 ==================
@@ -27,10 +54,10 @@ include:
 * With the third :guilabel:`Identifiable layers` tab you set (or disable) 
   which layers will respond to the identify tool. (See the Map tools paragraph from
   the :ref:`gui_options` section to enable identifying of multiple layers.)
-* The tab :guilabel:`WMS Server` allows to define information about the QGIS 
-  mapserver Service Capabilities, the Extent and the CRS Restrictions. Activating 
-  the |checkbox| :guilabel:`Add WKT geometry to feature info response` will allow 
-  to query the WMS layers.
+* The tab :guilabel:`OWS Server` allows to define information about the QGIS 
+  mapserver Service Capabilities, the Extent and the CRS Restrictions as well as
+  the WFS Capabilities. Activating the |checkbox| :guilabel:`Add WKT geometry to feature info response`
+  will allow to query the WMS layers.
 
 .. _gui_options:
 
@@ -65,7 +92,7 @@ General Tab
   required)`
 * |checkbox| :guilabel:`Open attribute table in a dock window`
 * |checkbox| :guilabel:`Add PostGIS layers with double click and select in extended mode`
-* |checkbox| :guilabel:`Add new layers to selected group`
+* |checkbox| :guilabel:`Add new layers to selected or current group`
 * |checkbox| :guilabel:`Copy geometry in WKT representation from attribute table`
 * :guilabel:`Attribute table behavior` (choose between 'Show all features' (default), 'Show 
   selected features','Show features in current canvas')
@@ -234,7 +261,7 @@ Network Tab
 * Define :guilabel:`Cache settings` (path and size)
 * Define :guilabel:`WMS search address`, default is 
   ``http://geopole.org/wms/search?search=\%1\&type=rss``
-* Define :guilabel:`Timeout for network requests (ms)` - default is 60000
+* Define :guilabel:`Timeout for network requests (ms)` - deeingebundenfault is 60000
 
 Excluding some URLs can be added to the text box below the proxy-settings (see
 Figure_Network_Tab_) by pressing the **[Add]** button. After 
@@ -263,4 +290,47 @@ require a restart of QGIS before they will be effective.
 ::
 
    \\HKEY\CURRENT_USER\Software\QuantumGISqgis
+
+Customization
+=============
+The customization tool is a new development in QGIS 1.8.. It lets you (de)activate
+almost every element in the QGIS user interface. This can get very useful if you have 
+a lot of plug-ins installed that you never use and that are filling your screen.
+
+QGIS Customization is divided into five groups. In |checkbox| :guilabel:`Docks` you 
+find the dock windows. Dock windows are applications that can be started and used as
+a floating, top-level window or embedded to the QGIS main window as a docked widget (see also sec_panels_and_toolbars_).
+In |checkbox| :guilabel:`Menus` you can hide entries in the Menu bar. In the
+|checkbox| :guilabel:`Status Bar` features like the coordinate information can be daectivated.
+In |checkbox| :guilabel:`Toolbars` you can (de)activate the toolbar icons of QGIS
+and in |checkbox| :guilabel:`Widgets` you can (de)activate dialogs as well as their buttons.
+
+With |mActionSelect| :guilabel:`Switch to catching widgets in main application`
+you can click on elements in QGIS you want to be hidden and find the corresponding entry 
+in Customization (see figure_customization_). 
+
+.. _figure_customization:
+
+.. only:: html
+
+   **Figure Customization 1:**
+
+.. figure:: /static/user_manual/introduction/customization.png
+
+   The Customization dialog |nix|
+
+
+You can save your various different setups for different uses as well (see figure_ini_file_).
+
+.. _figure_ini_file:
+
+.. only:: html
+
+   **Figure Customization 2:**
+
+.. figure:: /static/user_manual/introduction/customization_ini_file.png
+
+   Saving settings as a customization ini file |nix|
+
+Before your changes are applied, you basically need to restart QGIS.
 
