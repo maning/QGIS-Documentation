@@ -1,4 +1,4 @@
-.. comment out this disclaimer (by putting '.. ' in front of it) if file is uptodate with release
+.. comment out this Section (by putting '|updatedisclaimer|' on top) if file is not uptodate with release
 
 |updatedisclaimer|
 
@@ -513,6 +513,8 @@ To delete a bookmark from the :guilabel:`Geospatial Bookmarks`
 dialog, click on it then click **[Delete]**.
 Confirm your choice by clicking **[Yes]** or cancel the
 delete by clicking **[No]**.
+
+.. _nesting_projects:
 
 Nesting Projects
 ================

@@ -61,8 +61,8 @@ marker symbols.
 
 .. _vector_symbol_types:
 
-Available symbol layer types
-............................
+**Available symbol layer types**
+
 
 * Point layers
 
@@ -119,6 +119,13 @@ your prefered or frequently used symbols, and can use it  without having
 to recreate it everytime. Style items (symbols and color ramps) have always 
 a name by which they can be queried from the style. There is at least one 
 default style in |qg| (modifiable) and the user can add further styles.
+In the lower part of the Style tab there are four buttons for managing styles:
+Use **[Restore Default Style]** to get back to your default settings, **[Save As Default]**
+to save your style as default, **[Load Style...]** to get to your own styles and 
+**[Save Style]** to save your own styles.
+Layer styles can also be transferred from one layer to another layer.
+Activate a layer and choose :menuselection:`Layer -->` |mActionEditCopy| :guilabel:`Copy style`
+and switch to another layer. Then choose :menuselection:`Layer -->` |mActionEditPaste| :guilabel:`Paste style`.
 
 .. index:: Renderers
 
@@ -134,18 +141,18 @@ and a color ramp \- they will set the colors for symbols appropriately.
 
 .. _vector_new_symbology:
 
-Working with the New Generation Symbology
-.........................................
+**Working with the New Generation Symbology**
+
 
 In the :guilabel:`Style` tab you can choose one of the four renderers: single 
 symbol, categorized, graduated, rule-based and point displacement. For each 
 data type (points, lines and polygons) vector symbol layer types are 
-available (see :ref:`vector_symbol_types`). 
+available (see vector_symbol_types_). 
 Depending on the chosen renderer, the symbology tab provides different 
 settings and options, that will be described in the following sections. 
 The new generation symbology dialog also provides a **[Style Manager]** 
 button which gives access to the Style Manager
-(see Section vector_style_manager_ ). The Style Manager allows you to 
+(see Section vector_style_manager_). The Style Manager allows you to 
 edit and remove existing symbols and add new ones.
 
 
@@ -404,8 +411,10 @@ dialog, there are shown the settings applicable to the single symbol layer
 selected in the symbol layer list. The most important is the 
 'Symbol Layer Type' combo box, which allows you to choose the layer type. The 
 available options depend on the layer type (Point, Line, Polygon). The symbol 
-layer type options are described in section :ref:`vector_symbol_types`.
-You can also change the symbol layer properties in the right part of the dialog. For example if you have chosen an SVG marker for a point layer it is now possible to change its color using the :guilabel:`Color` menu (see figure_symbology_10_).
+layer type options are described in section vector_symbol_types_.
+You can also change the symbol layer properties in the right part of the dialog. 
+For example if you have chosen an SVG marker for a point layer it is now 
+possible to change its color using the :guilabel:`Color` menu (see figure_symbology_10_).
 
 .. _figure_symbology_9:
 
@@ -446,12 +455,13 @@ You can also change the symbol layer properties in the right part of the dialog.
 
 .. _vector_style_manager:
 
-**Style Manager**
+Style Manager
+-------------
 
 The Style Manager is a small helper application, that lists symbols and color 
 ramps available in a style. It also allows you to add and/or remove items. 
 To launch the Style Manager, click on :menuselection:`Settings --> 
-Style Manager` in the main menu.
+Style Manager` in the main menu. Alternatively, you can access it via the :guilabel:`Style` tab.
 
 .. _figure_symbology_12:
 
@@ -471,12 +481,12 @@ Style Manager` in the main menu.
 .. _vector_old_symbology:
 
 Old Symbology
-.............
+-------------
 
 .. note::
    |qg| 1.8. still supports the usage of the old symbology, although it is 
    recommended to switch to the new symbology, described in section 
-   :ref:`vector_new_symbology`, because the old symbology will be removed in 
+   vector_new_symbology_, because the old symbology will be removed in 
    one of the next releases.
 
 If you want or need to switch back to the old symbology you can click on 
@@ -875,12 +885,31 @@ Actions Tab
 |action| |qg| provides the ability to perform an action based on the attributes of a 
 feature. This can be used to perform any number of actions, for example, 
 running a program with arguments built from the attributes of a feature or 
-passing parameters to a web reporting tool.
+passing parameters to a web reporting tool. 
+
+.. _figure_actions_1:
+
+.. only:: html
+
+   **Figure Actions 1:** 
+
+.. figure:: /static/user_manual/working_with_vector/action_dialog.png
+   :align: center
+
+   Overview action dialog with some sample actions |nix|
 
 Actions are useful when you frequently want to run an external application or 
-view a web page based on one or more values in your vector layer. An example 
-is performing a search based on an attribute value. This concept is used in 
-the following discussion.
+view a web page based on one or more values in your vector layer. They are 
+devided into 6 types and can be used like this:
+
+* Generic, Mac, Windows and Unix actions start an external process,
+* Python actions execute a python expression,
+* Generic and Python actions are visible everywhere,
+* Mac, Windows and Unix actions are visible only on the respective platform (ie. you can define three 'Edit' actions to open an editor and the users can only see and execute the one 'Edit' action for their platform to run the editor).
+
+There are several examples included in the dialog. You can load them clicking 
+on **[Add default actions]**. An example is performing a search based on an 
+attribute value. This concept is used in the following discussion.
 
 .. index:: Actions, Attribute_Actions
 
@@ -889,7 +918,7 @@ the following discussion.
 Attribute actions are defined from the vector :guilabel:`Layer Properties` 
 dialog. To :index:`define an action`, open the vector 
 :guilabel:`Layer Properties` dialog and click on the :guilabel:`Actions` tab. 
-Provide a descriptive name for the action. The action itself must contain 
+Select Generic as Type and provide a descriptive name for the action. The action itself must contain 
 the name of the application that will be executed when the action is invoked. 
 You can add one or more attribute field values as arguments to the application.
 When the action is invoked any set of characters that start with a \% 
@@ -937,13 +966,14 @@ the value of the selected field in the identify results or attribute table.
 
 **Using Actions**
 
-Actions can be invoked from either the :guilabel:`Identify Results` dialog or 
-an :guilabel:`Attribute Table` dialog (recall that these dialogs can be opened 
-by clicking |mActionIdentify| :sup:`Identify Features` or |mActionOpenTable| 
-:sup:`Open Attribute Table`). To invoke an action, right click on the record 
-and choose the action from the popup menu. Actions are listed in the popup 
-menu by the name you assigned when defining the actions. Click on the action 
-you wish to invoke.
+Actions can be invoked from either the :guilabel:`Identify Results` dialog, 
+an :guilabel:`Attribute Table` dialog or from :guilabel:`Run Feature Action` 
+(recall that these dialogs can be opened by clicking |mActionIdentify| 
+:sup:`Identify Features` or |mActionOpenTable| :sup:`Open Attribute Table` or 
+|mAction| :sup:`Run Feature Action`). To invoke an action, right 
+click on the record and choose the action from the popup menu. Actions are 
+listed in the popup menu by the name you assigned when defining the actions. 
+Click on the action you wish to invoke.
 
 If you are invoking an action that uses the \%\% notation, right-click on the 
 field value in the :guilabel:`Identify Results` dialog or the 
@@ -1017,11 +1047,11 @@ We can now use the action. Close the :guilabel:`Layer Properties` dialog and
 zoom in to an area of interest. Make sure the ``lakes`` layer is active and 
 identify a lake. In the result box you'll now see that our action is visible:
 
-.. _figure_actions_1:
+.. _figure_actions_2:
 
 .. only:: html
 
-   **Figure Actions 1:** 
+   **Figure Actions 2:** 
 
 .. figure:: /static/user_manual/working_with_vector/action_identifyaction.png
    :align: center
