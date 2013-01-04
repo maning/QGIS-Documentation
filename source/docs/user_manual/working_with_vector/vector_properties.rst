@@ -1,6 +1,4 @@
-.. comment out this disclaimer (by putting '.. ' in front of it) if file is uptodate with release
-
-|updatedisclaimer|
+.. comment out this Section (by putting '|updatedisclaimer|' on top) if file is not uptodate with release
 
 .. _vector_properties_dialog:
 
@@ -813,6 +811,7 @@ third-party plugin called Table Manager.
 
 .. figure:: /static/user_manual/working_with_vector/editwidgetsdialog.png
    :width: 40 em
+   :align: center
 
    Dialog to select an edit widget for an attribute column |nix|
 
@@ -848,6 +847,10 @@ widgets. These widgets are:
    be used.
 *  **Calendar**: Opens a calendar widget to enter a date. Column type must be 
    text.
+*  **Value Relation**: Offers values from a related table in a combobox. You can 
+   select layer, key column and value column.
+*  **UUID Generator**: Generates a read-only UUID (Universally Unique Identifiers) 
+   field, if empty. 
 
 
 .. _vectorgeneraltab:
@@ -856,16 +859,32 @@ General Tab
 -----------
 
 |general| The :guilabel:`General` tab is essentially like that of the raster dialog. 
-It allows you to change the display name, set scale dependent rendering 
-options, create a spatial index of the vector file (only for OGR supported 
-formats and PostGIS) and view or change the projection of the specific vector 
-layer. Additionally it is possible to define a certain Edit User Interface 
-for the vector layer written with the Qt Creator IDE and tools at 
-http://qt.nokia.com/products/developer-tools.
+There a several options available:
 
-The **[Query Builder]** button allows you to create a subset of the features 
-in the layer - but currently this button is only available when you open the 
-attribute table and select the |browsebutton| button next to Advanced search.
+* Change the display name of the layer.
+* Set a display field to be used for the ``Identify Results`` dialog. 
+* Define a certain Edit User Interface for the vector layer written with the Qt Creator IDE and tools at http://qt.digia.com/Product/Developer-Tools/.
+* Create a ``Spatial Index`` (only for OGR supported formats and PostGIS).
+* Add an ``Init function`` for the layer. They will overwrite existing QGIS widget initializations, if applied. 
+* ``Update Extents`` information for a layer.
+* View or change the projection of the specific vector layer, clicking on ``Specify CRS``.
+
+Furthermore you can activate and set |checkbox| :menuselection:`Use scale 
+dependent rendering`, define provider specific options (e.g. encoding) and with the 
+**[Query Builder]** button you can create a subset of the features in the layer 
+that will be visualized (also refer to section :ref:`sec_selection_query`). 
+
+.. _figure_general_vect:
+
+.. only:: html
+
+   **Figure General 1:** 
+
+.. figure:: /static/user_manual/working_with_vector/vector_general_tab.png
+   :width: 40 em
+   :align: center
+
+   General tab in vector layers properties dialog |nix|
 
 .. _vectormetadatatab:
 
@@ -877,7 +896,23 @@ including specifics about the type and location, number of features, feature
 type, and the editing capabilities. The :guilabel:`Extents` section, providing 
 layer extent information, and the :guilabel:`Layer Spatial Reference System` 
 section, providing information about the CRS of the layer. This is a quick way 
-to get information about the layer, but is not yet editable.
+to get information about the layer. 
+
+Additionally you can add/edit a title for the layer and some abtract information. 
+These information will be saved in the QGIS project file for following sessions 
+and will be used for QGIS server. 
+
+.. _figure_metadata_vect:
+
+.. only:: html
+
+   **Figure Metadata 1:** 
+
+.. figure:: /static/user_manual/working_with_vector/vector_metadata_tab.png
+   :width: 40 em
+   :align: center
+
+   Metadata tab in vector layers properties dialog |nix|
 
 Actions Tab
 -----------
@@ -894,6 +929,7 @@ passing parameters to a web reporting tool.
    **Figure Actions 1:** 
 
 .. figure:: /static/user_manual/working_with_vector/action_dialog.png
+   :width: 40 em
    :align: center
 
    Overview action dialog with some sample actions |nix|
@@ -1172,10 +1208,10 @@ Additionally the add vector join dialog allows to:
 
 .. _`sec_diagram`:
 
-Diagram Tab
------------
+Diagrams Tab
+------------
 
-|diagram| The :guilabel:`Diagram` tab allows you to add a graphic overlay to a vector 
+|diagram| The :guilabel:`Diagrams` tab allows you to add a graphic overlay to a vector 
 layer (see figure_diagrams_1_).
 
 .. _figure_diagrams_1:
@@ -1189,11 +1225,16 @@ layer (see figure_diagrams_1_).
    Vector properties dialog with diagram tab |nix|
 
 The current core implementation of diagrams provides support for piecharts 
-and text diagrams, and for linear scaling of the diagram size according to 
-a classification attribute. The placement of the diagrams interacts with the 
-new labeling. We will demonstrate an example and overlay the alaska boundary 
-layer a piechart diagram showing some temperature data from a climate vector 
-layer. Both vector layers are part of the |qg| sample dataset (see Section 
+and text diagrams. Text values ​​of different data columns are displayed one 
+below the other with a circle or a box and dividers. Diagram size is based 
+on a fixed size or on linear scaling according to a classification attribute. 
+The placement of the diagrams interacts with the new labeling, so position 
+conflicts between diagrams and labels are detected and solved. In addition 
+to chart positions can be fixed by the users hand.
+
+We will demonstrate an example and overlay the alaska boundary layer a 
+text diagram showing some temperature data from a climate vector layer. 
+Both vector layers are part of the |qg| sample dataset (see Section 
 :ref:`label_sampledata`).
 
 #.  First click on the |mActionAddOgrLayer| :sup:`Load Vector` icon, browse 
@@ -1201,15 +1242,15 @@ layer. Both vector layers are part of the |qg| sample dataset (see Section
     :file:`alaska.shp` and :file:`climate.shp`.
 #.  Double click the ``climate`` layer in the map legend to open the 
     :guilabel:`Layer Properties` dialog.
-#.  Click on the ``Diagram Overlay`` and select **[Pie chart]** as Diagram type.
+#.  Click on the ``Diagrams``, activate ``Display diagrams`` and select 
+    **[Text diagram]** as Diagram type.
+#.  As Background color we choose a light blue and set a fixed size to 18 mm.
+#.  Placement could be set to AroundPoint.
 #.  In the diagram we want to display the values of the three columns 
     ``T_F_JAN``, ``T_F_JUL`` and ``T_F_MEAN``. First select ``T_F_JAN`` as 
     Attributes and click the green **[\+]** button, then ``T_F_JUL`` and 
     finally ``T_F_MEAN``.
-#.  For linear scaling of the diagram size we define ``T_F_JUL`` as 
-    classification attribute.
-#.  Now click on **[Find maximum value]**, choose 10 as size value and click 
-    **[Apply]** to display the diagram in the |qg| main window.
+#.  Now click **[Apply]** to display the diagram in the |qg| main window.
 #.  You can now adapt the chart size, or change the attribute colors double 
     clicking on the color values in the attribute field. Figure_diagrams_2_ 
     gives an impression.
@@ -1225,4 +1266,9 @@ layer. Both vector layers are part of the |qg| sample dataset (see Section
 
    Diagram from temperature data overlayed on a map |nix|
 
+Additionally in the :menuselection:`Settings --> Options` dialog, there is a 
+``Overlay`` tab where it is possible to select the placement algorithm of the diagrams. 
+The central point method is a generic one, the others use algorithms of the PAL library. 
+They also consider diagram objects and labels in different layers. Also see section 
+:ref:`diagram_overlay` for additional diagram features. 
 

@@ -1,7 +1,5 @@
 .. comment out this Section (by putting '|updatedisclaimer|' on top) if file is not uptodate with release
 
-|updatedisclaimer|
-
 .. _`label.getstarted`:
 
 ***************
@@ -29,10 +27,10 @@ manager are provided. Get the latest information on binary packages at the
 Installation from source
 ........................
 
-If you need to build |qg| from source, please refer to the coding and
-compiling guide available at http://www.qgis.org/en/documentation/manuals.html.
-The installation instructions are also distributed with the |qg| source code
-in a file called 'INSTALL'.
+If you need to build |qg| from source, please refer to the installation 
+instructions. They are distributed with the |qg| source code in a file 
+called 'INSTALL'. You can also find it online at 
+https://github.com/qgis/Quantum-GIS/blob/master/INSTALL
 
 Installation on external media
 ..............................
@@ -196,7 +194,7 @@ The usage statement for QGIS is:
 ::
 
         qgis --help
-        Quantum GIS - 1.7.0-Wroclaw 'Wroclaw' (exported)
+        Quantum GIS - 1.8.0-Lisboa 'Lisboa' (exported)
         Quantum GIS (QGIS) is a viewer for spatial data sets, including
         raster and vector data.
         Usage: qgis [options] [FILES]
@@ -209,18 +207,19 @@ The usage statement for QGIS is:
                 [--extent xmin,ymin,xmax,ymax]  set initial map extent
                 [--nologo]                      hide splash screen
                 [--noplugins]                   don't restore plugins on startup
+                [--nocustomization]             don't apply GUI customization
                 [--optionspath path]            use the given QSettings path
                 [--configpath path]             use the given path for all user configuration
                 [--help]                        this text
 
           FILES:
             Files specified on the command line can include rasters,
-            vectors, and QGIS project files (.qgs):
-             1. Rasters - Supported formats include GeoTiff, DEM
-                and others supported by GDAL
-             2. Vectors - Supported formats include ESRI Shapefiles
-                and others supported by OGR and PostgreSQL layers using
-                the PostGIS extension
+            vectors, and QGIS project files (.qgs): 
+            1. Rasters - Supported formats include GeoTiff, DEM 
+               and others supported by GDAL
+            2. Vectors - Supported formats include ESRI Shapefiles
+               and others supported by OGR and PostgreSQL layers using
+               the PostGIS extension
 
 .. tip::
         **Example Using command line arguments**
@@ -249,7 +248,7 @@ to change your language, you can specify a language code. For example:
 ``--lang=it``
 starts QGIS in italian localization. A list of currently supported
 languages with language code and status is provided at
-http://www.qgis.org/wiki/GUI_Translation_Progress
+http://hub.qgis.org/wiki/quantum-gis/GUI_Translation_Progress
 
 **Command line option** ``--project``
 
@@ -276,6 +275,12 @@ This command line argument hides the splash screen when you start QGIS.
 
 If you have trouble at startup with plugins, you can avoid loading them at startup.
 They will still be available in Plugins Manager after-wards.
+
+**Command line option** ``--nocustomization``
+
+
+Using this command line argument existing GUI customization will not be applied 
+at startup. 
 
 **Command line option** ``--optionspath``
 
@@ -329,9 +334,10 @@ from older QGIS versions may not work properly anymore. To be made aware of this
 in the :guilabel:`General` tab under :menuselection:`Settings --> Options`
 you can select:
 
- |checkbox| :guilabel:`Prompt to save project changes when required`
- |checkbox| :guilabel:`Warn when opening a project file saved with an older
- version of QGIS`
+|checkbox| :guilabel:`Prompt to save project changes when required`
+
+|checkbox| :guilabel:`Warn when opening a project file saved with an older
+version of QGIS`
 
 .. _`sec_output`:
 
