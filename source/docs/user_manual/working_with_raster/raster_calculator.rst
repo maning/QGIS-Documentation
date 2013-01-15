@@ -7,7 +7,7 @@ Raster Calculator
 
 .. index:: Raster_Calculator
 
-The :menuselection:`Raster Calculator` in the :menuselection:`Layer` menu 
+The :menuselection:`Raster Calculator` in the :menuselection:`Raster` menu 
 (see figure_raster_2_) allows to perform calculations on basis of existing 
 raster pixel values. 
 The results are written to a new raster layer with a GDAL supported format. 
@@ -25,7 +25,7 @@ The results are written to a new raster layer with a GDAL supported format.
    Raster Calculator |nix|
 
 
-The **Fields list** contains all loaded raster layers that can be used. 
+The **Raster bands** list contains all loaded raster layers that can be used. 
 To add a raster to the raster calculator expression field, double
 click its name in the Fields list. You can then use the operators to construct 
 calculation expressions or you can just type it into the box.
@@ -41,7 +41,7 @@ to the raster calculator expression box, click the appropriate button. Mathemati
 calculations ( + , - , * , ... ) and trigonometric functions ( sin, cos, tan, ... ) 
 are available. Stay tuned for more operators to come!
 
-With the |checkbox| :guilabel:`Result to project` checkbox the result layer will 
+With the |checkbox| :guilabel:`Add result to project` checkbox the result layer will 
 automatically added to the legend area and can be visualized.
 
 
@@ -61,7 +61,7 @@ conversion factor for meters to feet: 3.28. The expression is:
 
 If you want to mask out parts of a raster, because you are only interested in 
 elevations above 0 meter, you can use following expression to create a mask 
-and apply the result to a ne raster in one step.
+and apply the result to a raster in one step.
 
 ::
 
@@ -78,7 +78,7 @@ it to 0. This creates the mask on the fly.
   le( elevation@1, 50, 200 )
 
 All cells in the elevation raster with a value less or equal (le) then 50 will 
-be replaces with the value 200. 
+be replaced with the value 200. 
 
 ::
 
