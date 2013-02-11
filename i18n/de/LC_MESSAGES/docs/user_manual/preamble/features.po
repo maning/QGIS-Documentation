@@ -85,7 +85,7 @@ msgid ""
 "section :ref:`sec_grass`."
 msgstr ""
 "GRASS Raster- und Vektordaten aus einer GRASS Datenbank (Location/Mapset), "
-"siehe Kapitel :\\ref:`sec:grass`."
+"siehe Kapitel :ref:`sec:grass`."
 
 # 42677598b5764b5e8ea0432119acaf44
 #: ../../source/docs/user_manual/preamble/features.rst:30
@@ -345,92 +345,107 @@ msgstr ""
 msgid ""
 "DB Manager (Exchange, edit and view layers and tables; execute SQL queries)"
 msgstr ""
+"DB Manager (Austauschen, Bearbeiten und Darstellen von Layern und Tabellen; "
+"Ausführen von SQL Abfragen."
 
 # d4904be6699d4f8cbb1526f0cccaa290
 #: ../../source/docs/user_manual/preamble/features.rst:107
 msgid "Diagram Overlay (Placing diagrams on vector layer)"
-msgstr ""
+msgstr "Diagramm Überlagerung (Diagramme auf einem Vektorlayer platzieren)"
 
 # ec9d28a497ca4e34b6716bab80e2569f
 #: ../../source/docs/user_manual/preamble/features.rst:108
 msgid "Dxf2Shp Converter (Convert DXF to Shape)"
-msgstr ""
+msgstr "Dxf2Shp Konverter (Konvertieren von DXF zu Shape)"
 
 # 70e8190068f948079d04e60da704b78d
 #: ../../source/docs/user_manual/preamble/features.rst:109
 msgid "GPS Tools (Loading and importing GPS data)"
-msgstr ""
+msgstr "GPS Werkzeuge (Laden und Importieren von GPS Daten"
 
 # 9da6005c029c41358e6e5c6713f54bab
 #: ../../source/docs/user_manual/preamble/features.rst:110
 msgid "GRASS (GRASS GIS integration)"
-msgstr ""
+msgstr "GRASS (GRASS GIS Integration)"
 
 # 2e598836abf44493849f34eef434aa7c
 #: ../../source/docs/user_manual/preamble/features.rst:111
 msgid "GDALTools (Integrate GDAL Tools into QGIS)"
-msgstr ""
+msgstr "GDALTools (Integriert GDALTools in QGIS)"
 
 # c6120220978f476d8730f37a70009fb6
 #: ../../source/docs/user_manual/preamble/features.rst:112
 msgid "Georeferencer GDAL (Adding projection information to raster using GDAL)"
 msgstr ""
+"GDAL-Georeferenzierer (Einem Raster Projektionsinformationen mit GDAL "
+"hinzufügen)"
 
 # fb46ff5765b740fdaa6ab444a5c564b9
 #: ../../source/docs/user_manual/preamble/features.rst:113
 msgid "Heatmap tool (Generating raster heatmaps from point data)"
-msgstr ""
+msgstr "Heatmap Werkzeug (Raster Heatmaps aus Punktdaten erstellen)"
 
 # b43d91dfbc66499997bfb7bb1d48f39a
 #: ../../source/docs/user_manual/preamble/features.rst:114
 msgid "Interpolation plugin (interpolate based on vertices of a vector layer)"
 msgstr ""
+"Interpolationserweiterung (Interpolation die auf Stützpunkten von "
+"Vektorlayern basiert)"
 
 # 93ef4f051f084beab50ffd3dcc0c00be
 #: ../../source/docs/user_manual/preamble/features.rst:115
 msgid "Mapserver Export (Export QGIS project file to a MapServer map file)"
 msgstr ""
+"Mapserver Export (Exportieren einer QGIS Projektdatei in einen MapServer map "
+"file)"
 
 # 947224af220a427184c9262f6145f038
 #: ../../source/docs/user_manual/preamble/features.rst:116
 msgid "Offline Editing (Allow offline editing and synchronizing with database)"
 msgstr ""
+"Offline-Bearbeitung (Ermöglicht Offlinebearbeitung und Synchronisierung mit "
+"Datenbanken)"
 
 # 4dba6a7cdfd94e7dac6e9f56f1c28d15
 #: ../../source/docs/user_manual/preamble/features.rst:117
 msgid "OpenStreetMap plugin (Viewer and editor for openstreetmap data)"
 msgstr ""
+"OpenStreetMap Erweiterung (Anzeigen und Bearbeiten von OpenStreetMapdaten)"
 
 # f88cccdda42b4445a599de3412eebfcf
 #: ../../source/docs/user_manual/preamble/features.rst:118
 msgid "Oracle Spatial GeoRaster support"
-msgstr ""
+msgstr "Oracle Spatial GeoRaster Unterstützung"
 
 # d2d1f0df23e548979a4c31b43c26616e
 #: ../../source/docs/user_manual/preamble/features.rst:119
 msgid "Plugin Installer (Download and install QGIS python plugins)"
 msgstr ""
+"Plugin Installer (Herunterladen und Installieren von QGIS Python "
+"Erweiterungen)"
 
 # 3d8dd29b6c3840ac9ef3ce999403adb7
 #: ../../source/docs/user_manual/preamble/features.rst:120
 msgid "Raster terrain analysis (Raster based terrain analysis)"
-msgstr ""
+msgstr "Rastergeländeanalyse (Rasterbasierte Geländeanalyse)"
 
 # ae7f6bd05f394933a777b1f28bac6281
 #: ../../source/docs/user_manual/preamble/features.rst:121
 msgid "Road graph plugin (Shortest Path network analysis)"
-msgstr ""
+msgstr "Straßengraph-Erweiterung (Kürzester Weg - Netzwerkanalyse)"
 
 # 20ab1c319e4347d49d4c1f326c77f0d8
 #: ../../source/docs/user_manual/preamble/features.rst:122
 msgid "SPIT (Import Shapefile to PostgreSQL/PostGIS)"
-msgstr ""
+msgstr "SPIT (Importieren von Shapefiles in PostgreSQL/PostGIS)"
 
 # b0ac95e0837847b99a706e720de7d2b6
 #: ../../source/docs/user_manual/preamble/features.rst:123
 msgid ""
 "SQL Anywhere Plugin (Store vector layers within a SQL Anywhere database)"
 msgstr ""
+"SQL Anywhere Erweiterung (Speichern von Vektorlayern in einer SQL Anywhere - "
+"Datenbank)"
 
 # bb8a64c8caae4177833bfe2f8920c5f2
 #: ../../source/docs/user_manual/preamble/features.rst:124
@@ -438,26 +453,29 @@ msgid ""
 "Zonal statictics plugin (Calculate count, sum, mean of raster for each "
 "polygon of a vector layer)"
 msgstr ""
+"Zonenstatistikerweiterung (Berechnung von count, sum und mean eines Rasters "
+"für jedes Polygon eines Vektorlayers)"
 
 # 0af6748ea47249cf866d2562bd7b4781
 #: ../../source/docs/user_manual/preamble/features.rst:126
 msgid "Spatial Query plugin (Makes spatial queries on vector layers)"
 msgstr ""
+"Räumliche Abfrageerweiterung (Erstellt räumliche Abfragen an Vektorlayer)"
 
 # 3d3f7bd129d843858908e155f2645b01
 #: ../../source/docs/user_manual/preamble/features.rst:127
 msgid "eVIS (Event Visualization Tool)"
-msgstr ""
+msgstr "eVIS (Event Visualization Tool)"
 
 # 6eb540435296497aa2534e505b0c5925
 #: ../../source/docs/user_manual/preamble/features.rst:128
 msgid "fTools (Tools for vector data analysis and management)"
-msgstr ""
+msgstr "fTools (Werkzeuge für Vektordatenanalyse und -management)"
 
 # 4709134110ed46dfa413418ec2bc5b80
 #: ../../source/docs/user_manual/preamble/features.rst:131
 msgid "External Python Plugins"
-msgstr ""
+msgstr "Externe Python Plugins"
 
 # 15f03686c03c449aa649a93f907cc28d
 #: ../../source/docs/user_manual/preamble/features.rst:133
@@ -467,11 +485,16 @@ msgid ""
 "can be easily installed using the Python Plugin Installer (See Section "
 ":ref:`load_external_plugin`)."
 msgstr ""
+"QGIS stellt eine wachsende Anzahl von externen Python Plugins bereit, die "
+"von Anwendern erstellt wurden. Diese werden in einem offiziellen sowie\n"
+"zahlreichen inoffiziellen PyQGIS Repositories vorgehalten und können mit "
+"Hilfe des Python Plugin Installers in QGIS integriert werden (siehe\n"
+"Kapitel :ref:`load_external_plugin`)."
 
 # ac3009be2f3d42288beb86e7bb6b038d
 #: ../../source/docs/user_manual/preamble/features.rst:139
 msgid "What's new in the version 1.8"
-msgstr ""
+msgstr "Was ist neu in Version 1.8"
 
 # e3d9769d3e5c495c903f8d69fce4fde1
 #: ../../source/docs/user_manual/preamble/features.rst:141
@@ -481,6 +504,11 @@ msgid ""
 "QGIS 1.0.x and QGIS 1.7.0. We recommend that you use this version over "
 "previous releases."
 msgstr ""
+"Bitte beachten Sie dass es sich hier um eine Veröffentlichung der neuesten "
+"Entwicklerversionen handelt.Als solche enthält sie neue Funktionen und "
+"erweitert die Programmierschnittstelle von QGIS 1.0.x und QGIS 1.7.0. Wir "
+"empfehlen dass Sie diese Version statt der vorherigen Veröffentlichungen "
+"benutzen."
 
 # e04c9deaed0e4e948e95cf3ed517da57
 #: ../../source/docs/user_manual/preamble/features.rst:145
@@ -488,11 +516,13 @@ msgid ""
 "This release includes hundreds of bug fixes and many new features and "
 "enhancements that will be described in this manual."
 msgstr ""
+"Diese Version enthält hunderte von Fehlerkorrekturen und viele neue "
+"Funktionen und Erweiterungen die in diesem Handbuch beschrieben werden."
 
 # cce6007af8c542a9b256ec5fa223a04d
 #: ../../source/docs/user_manual/preamble/features.rst:148
 msgid "**QGIS Browser**"
-msgstr ""
+msgstr "**QGIS Browser**"
 
 # 5a6576fb5a5b40749dd343528e011519
 #: ../../source/docs/user_manual/preamble/features.rst:150
@@ -501,11 +531,15 @@ msgid ""
 "navigate your file system and connection based (PostGIS, WFS etc.) datasets, "
 "preview them and drag and drop items into the canvas."
 msgstr ""
+"Eine eigenständige Anwendung und neues Bedienfeld in QGIS. Mit dem Browser "
+"können Sie auf einfache Art unf Weise in Ihrem Dateisystem und "
+"Datenbankverbindungen navigieren, eine Vorschau machen und Objekte per drag "
+"und drop in die Karte bringen."
 
 # 33789bad794443539cf2cf2a9fe70255
 #: ../../source/docs/user_manual/preamble/features.rst:154
 msgid "**DB Manager**"
-msgstr ""
+msgstr "**DB Manager**"
 
 # 83640c899e8f462fb439a9ca62d48557
 #: ../../source/docs/user_manual/preamble/features.rst:156
@@ -518,11 +552,19 @@ msgid ""
 "the results to QGIS as a query layer. You can also create, edit, delete, and "
 "empty tables, and move them to another schema."
 msgstr ""
+"Der DB Manager ist jetzt offiziell Teil des QGIS Kerns. Wenn Sie Layer aus "
+"dem QGIS Browser in den DB Manager draggen wird dies Ihren Layer in Ihre "
+"räumliche Datenbank importieren. Mit Drag und Drop zwischen räumlichen "
+"Datenbanken werde diese importiert. Sie können den DB Manager für SQL "
+"Abfragen Ihrer räumlichen Datenbank verwenden und dann den räumlichen Output "
+"visualisieren indem die Ergebnisse als Abfragelayer in QGIS hinzufügen. Sie "
+"können des weiteren Tabellen erstellen, bearbeiten, löschen und leeren sowie "
+"diese in ein anderes Schema verschieben."
 
 # ea45561ab9e147c185e4d06f0107f762
 #: ../../source/docs/user_manual/preamble/features.rst:164
 msgid "**Terrain Analysis Plugin**"
-msgstr ""
+msgstr "**Geländeanalyseerweiterung**"
 
 # 4f5347f891a946089438a4343a9e7f09
 #: ../../source/docs/user_manual/preamble/features.rst:166
@@ -530,32 +572,36 @@ msgid ""
 "A new core plugin was added for doing terrain analysis (slope, aspect, "
 "hillshade, relief and ruggedness index)."
 msgstr ""
+"Es wurde eine neue Erweiterung um Geländeanalysen durchführen zu können "
+"hinzugefügt (Hangneigungs-, Expositions-, Schummmerungs- und "
+"Rauhigkeitsindex)."
 
 # 248aaf1fd60943c0ac83b29ebac85231
 #: ../../source/docs/user_manual/preamble/features.rst:169
 msgid "**New symbol layer types**"
-msgstr ""
+msgstr "**Neue Symbollayertypen**"
 
 # 2d67d8e73ee44cc49eb96fec30a03d41
 #: ../../source/docs/user_manual/preamble/features.rst:171
 msgid "Line Pattern Fill"
-msgstr ""
+msgstr "Linienmusterfüllung"
 
 # a2de86dd570047db96716de44b66a22e
 #: ../../source/docs/user_manual/preamble/features.rst:172
 msgid "Point Pattern Fill"
-msgstr ""
+msgstr "Punktmusterfüllung"
 
 # 69855c8175cb42beaec8f850a1e35296
 #: ../../source/docs/user_manual/preamble/features.rst:173
 msgid ""
 "Ellipse renderer (render ellipse and also rectangles, triangles, crosses)"
 msgstr ""
+"Ellipsenmarkierung (rendert Ellipsen und auch Rechtecke, Dreiecke und Kreuze)"
 
 # 39f3149c29ab4fc0ad9b792bfad48d12
 #: ../../source/docs/user_manual/preamble/features.rst:175
 msgid "**New plugin repository**"
-msgstr ""
+msgstr "**Neues Erweiterungsrepository**"
 
 # c58ac943ea524889b2155d4e61a8662e
 #: ../../source/docs/user_manual/preamble/features.rst:177
@@ -564,11 +610,15 @@ msgid ""
 "authors are kindly requested to move their plugins to the new repository. "
 "Get the QGIS Plugins list at http://plugins.qgis.org/plugins/"
 msgstr ""
+"Bedenken Sie dass die alten Repositories nicht länger standardmäßig "
+"unterstützt werden; Plugin-Autoren werden gebeten, Ihre neuen Plugins in das "
+"neue Repository zu verschieben. Die QGIS Plugins Liste bekommen Sie unter "
+"http://plugins.qgis.org/plugins/ ."
 
 # fbdb59faaf3f49c3ac4d0195c1fb6497
 #: ../../source/docs/user_manual/preamble/features.rst:181
 msgid "**More new features**"
-msgstr ""
+msgstr "**Weitere neue Funktionen**"
 
 # 5f4128aaa362404b8a23b22c03d6bad7
 #: ../../source/docs/user_manual/preamble/features.rst:183
